@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1a73e8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Simulacro SERUMS - Enfermería 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; color: #333; }
+    .header { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: #fff; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; }
+    .header h1 { font-size: 1.4em; }
+    .header p { font-size: 0.85em; opacity: 0.9; margin-top: 4px; }
+    .container { max-width: 800px; margin: 0 auto; padding: 16px; }
+
+    /* MENU */
+    .menu { text-align: center; margin-top: 40px; }
+    .menu h2 { margin-bottom: 20px; color: #1a73e8; }
+    .menu-grid { display: grid; gap: 12px; }
+    .menu-btn { padding: 16px; font-size: 1em; border: 2px solid #1a73e8; background: #fff; color: #1a73e8; border-radius: 10px; cursor: pointer; transition: all 0.2s; font-weight: 600; }
+    .menu-btn:hover { background: #1a73e8; color: #fff; }
+    .menu-config { margin-top: 20px; padding: 16px; background: #fff; border-radius: 10px; }
+    .menu-config label { font-weight: 600; display: block; margin-bottom: 6px; }
+    .menu-config select, .menu-config input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 1em; margin-bottom: 12px; }
+
+    /* QUIZ */
+    .quiz-header { display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 12px 16px; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .timer { font-weight: 700; color: #e53935; font-size: 1.1em; }
+    .progress { font-size: 0.9em; color: #666; }
+    .question-card { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .question-card .q-num { font-size: 0.8em; color: #1a73e8; font-weight: 700; margin-bottom: 6px; }
+    .question-card .q-tema { font-size: 0.7em; color: #999; margin-bottom: 8px; }
+    .question-card .q-text { font-size: 0.95em; line-height: 1.5; margin-bottom: 14px; font-weight: 500; }
+    .option { display: block; padding: 12px 14px; margin-bottom: 8px; border: 2px solid #e0e0e0; border-radius: 8px; cursor: pointer; transition: all 0.15s; font-size: 0.9em; line-height: 1.4; }
+    .option:hover { border-color: #1a73e8; background: #e8f0fe; }
+    .option.selected { border-color: #1a73e8; background: #e8f0fe; font-weight: 600; }
+    .option.correct { border-color: #2e7d32; background: #e8f5e9; }
+    .option.incorrect { border-color: #c62828; background: #ffebee; }
+    .option.show-correct { border-color: #2e7d32; background: #e8f5e9; }
+
+    /* NAV */
+    .nav-btns { display: flex; gap: 10px; justify-content: center; margin: 20px 0; flex-wrap: wrap; }
+    .nav-btn { padding: 12px 28px; border: none; border-radius: 8px; font-size: 1em; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .btn-prev { background: #e0e0e0; color: #333; }
+    .btn-next { background: #1a73e8; color: #fff; }
+    .btn-finish { background: #2e7d32; color: #fff; }
+    .btn-back { background: #e53935; color: #fff; }
+    .nav-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    /* QUESTION MAP */
+    .q-map { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 16px 0; }
+    .q-dot { width: 36px; height: 36px; border-radius: 6px; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 0.75em; cursor: pointer; font-weight: 600; background: #fff; transition: all 0.15s; }
+    .q-dot.answered { background: #1a73e8; color: #fff; border-color: #1a73e8; }
+    .q-dot.current { border: 2px solid #ff9800; }
+    .q-dot.correct-dot { background: #2e7d32; color: #fff; }
+    .q-dot.incorrect-dot { background: #c62828; color: #fff; }
+
+    /* RESULTS */
+    .results { text-align: center; background: #fff; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .results .score { font-size: 3em; font-weight: 800; margin: 16px 0; }
+    .results .score.pass { color: #2e7d32; }
+    .results .score.fail { color: #c62828; }
+    .results .detail { font-size: 0.95em; color: #666; margin-bottom: 20px; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; }
+    .stat-box { padding: 14px; border-radius: 8px; }
+    .stat-box.green { background: #e8f5e9; color: #2e7d32; }
+    .stat-box.red { background: #ffebee; color: #c62828; }
+    .stat-box.gray { background: #f5f5f5; color: #666; }
+    .stat-box .stat-num { font-size: 1.8em; font-weight: 800; }
+    .stat-box .stat-label { font-size: 0.75em; }
+
+    .hidden { display: none !important; }
+    .balotario-info { text-align: center; padding: 10px; background: #fff3e0; border-radius: 8px; margin-bottom: 16px; font-size: 0.85em; color: #e65100; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📋 Simulacro SERUMS - Enfermería 2026</h1>
+    <p id="headerSub">Balotario de preguntas para preparar tu examen</p>
+  </div>
+
+  <div class="container">
+    <!-- MENU -->
+    <div id="menuScreen">
+      <div class="balotario-info">
+        📚 Balotario actual: <strong><span id="totalPreguntas"></span> preguntas</strong> disponibles
+      </div>
+      <div class="menu">
+        <h2>Elige tu modo de práctica</h2>
+        <div class="menu-config">
+          <label>Cantidad de preguntas:</label>
+          <select id="numPreguntas">
+            <option value="10">10 preguntas (rápido)</option>
+            <option value="20" selected>20 preguntas</option>
+            <option value="30">30 preguntas</option>
+            <option value="50">50 preguntas</option>
+            <option value="100">100 preguntas (simulacro real)</option>
+            <option value="0">Todas las disponibles</option>
+          </select>
+          <label>Origen de preguntas:</label>
+          <select id="filtroOrigen">
+            <option value="todos">Todas (examen + nuevas)</option>
+            <option value="examen">Solo de exámenes anteriores</option>
+            <option value="nueva">Solo preguntas nuevas</option>
+          </select>
+          <label>Filtrar por tema:</label>
+          <select id="filtroTema">
+            <option value="todos">Todos los temas</option>
+          </select>
+          <label>Modo:</label>
+          <select id="modo">
+            <option value="simulacro">Simulacro (ver resultado al final)</option>
+            <option value="practica">Práctica (ver respuesta por pregunta)</option>
+          </select>
+        </div>
+        <div class="menu-grid" style="margin-top: 16px;">
+          <button class="menu-btn" onclick="iniciarQuiz()">🚀 Comenzar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quizScreen" class="hidden">
+      <div class="quiz-header">
+        <span class="progress" id="progressText">1 / 20</span>
+        <span class="timer" id="timerText">00:00</span>
+      </div>
+      <div class="q-map" id="questionMap"></div>
+      <div id="questionContainer"></div>
+      <div class="nav-btns">
+        <button class="nav-btn btn-prev" onclick="navegar(-1)">← Anterior</button>
+        <button class="nav-btn btn-next" id="btnNext" onclick="navegar(1)">Siguiente →</button>
+        <button class="nav-btn btn-finish hidden" id="btnFinish" onclick="terminar()">✅ Terminar</button>
+        <button class="nav-btn btn-back" onclick="volverMenu()">✖ Salir</button>
+      </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div id="resultsScreen" class="hidden">
+      <div class="results">
+        <h2>📊 Resultados</h2>
+        <div class="score" id="scoreText"></div>
+        <div class="detail" id="detailText"></div>
+        <div class="stats-grid">
+          <div class="stat-box green"><div class="stat-num" id="correctas">0</div><div class="stat-label">Correctas</div></div>
+          <div class="stat-box red"><div class="stat-num" id="incorrectas">0</div><div class="stat-label">Incorrectas</div></div>
+          <div class="stat-box gray"><div class="stat-num" id="sinResponder">0</div><div class="stat-label">Sin responder</div></div>
+        </div>
+        <div class="nav-btns">
+          <button class="nav-btn btn-next" onclick="revisarRespuestas()">🔍 Revisar respuestas</button>
+          <button class="nav-btn btn-prev" onclick="volverMenu()">🏠 Volver al menú</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEW -->
+    <div id="reviewScreen" class="hidden">
+      <h2 style="text-align:center;margin-bottom:16px;color:#1a73e8;">📝 Revisión de respuestas</h2>
+      <div id="reviewContainer"></div>
+      <div class="nav-btns">
+        <button class="nav-btn btn-prev" onclick="volverMenu()">🏠 Volver al menú</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="preguntas.js" charset="UTF-8"></script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js');}</script>
+  <script>
+    let quizPreguntas = [];
+    let respuestasUsuario = {};
+    let preguntaActual = 0;
+    let timerInterval = null;
+    let segundos = 0;
+    let modoActual = 'simulacro';
+
+    // Init
+    document.getElementById('totalPreguntas').textContent = preguntas.length;
+    cargarTemas();
+
+    function cargarTemas() {
+      const temas = [...new Set(preguntas.map(p => p.tema))].sort();
+      const sel = document.getElementById('filtroTema');
+      temas.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t; opt.textContent = t;
+        sel.appendChild(opt);
+      });
+    }
+
+    function iniciarQuiz() {
+      const num = parseInt(document.getElementById('numPreguntas').value);
+      const tema = document.getElementById('filtroTema').value;
+      const origen = document.getElementById('filtroOrigen').value;
+      modoActual = document.getElementById('modo').value;
+
+      let pool = [...preguntas];
+      if (origen !== 'todos') pool = pool.filter(p => p.origen === origen);
+      if (tema !== 'todos') pool = pool.filter(p => p.tema === tema);
+      pool = shuffle(pool);
+      quizPreguntas = num === 0 ? pool : pool.slice(0, Math.min(num, pool.length));
+
+      if (quizPreguntas.length === 0) { alert('No hay preguntas con ese filtro'); return; }
+
+      respuestasUsuario = {};
+      preguntaActual = 0;
+      segundos = 0;
+
+      document.getElementById('menuScreen').classList.add('hidden');
+      document.getElementById('quizScreen').classList.remove('hidden');
+      document.getElementById('resultsScreen').classList.add('hidden');
+      document.getElementById('reviewScreen').classList.add('hidden');
+
+      renderMap();
+      renderPregunta();
+      iniciarTimer();
+    }
+
+    function renderPregunta() {
+      const p = quizPreguntas[preguntaActual];
+      const sel = respuestasUsuario[preguntaActual];
+      document.getElementById('progressText').textContent = `${preguntaActual + 1} / ${quizPreguntas.length}`;
+
+      let html = `<div class="question-card">
+        <div class="q-num">Pregunta ${preguntaActual + 1} de ${quizPreguntas.length} <span style="background:${p.origen==='nueva'?'#ff9800':'#1a73e8'};color:#fff;padding:2px 8px;border-radius:4px;font-size:0.85em;margin-left:6px">${p.origen==='nueva'?'🆕 Nueva':'📋 Examen'}</span></div>
+        <div class="q-tema">${p.tema}</div>
+        <div class="q-text">${p.pregunta}</div>`;
+
+      for (const [letra, texto] of Object.entries(p.opciones)) {
+        let cls = 'option';
+        if (sel === letra) cls += ' selected';
+        if (modoActual === 'practica' && sel) {
+          if (letra === p.respuesta) cls += ' correct show-correct';
+          else if (sel === letra && sel !== p.respuesta) cls += ' incorrect';
+        }
+        const disabled = modoActual === 'practica' && sel ? 'style="pointer-events:none"' : '';
+        html += `<div class="${cls}" onclick="seleccionar(${preguntaActual},'${letra}')" ${disabled}><strong>${letra}.</strong> ${texto}</div>`;
+      }
+
+      if (modoActual === 'practica' && sel) {
+        const ok = sel === p.respuesta;
+        html += `<div style="margin-top:12px;padding:10px;border-radius:8px;background:${ok ? '#e8f5e9' : '#ffebee'};font-size:0.85em;">
+          ${ok ? '✅ ¡Correcto!' : `❌ Incorrecto. La respuesta correcta es: <strong>${p.respuesta}</strong>`}
+        </div>`;
+      }
+
+      html += '</div>';
+      document.getElementById('questionContainer').innerHTML = html;
+
+      document.getElementById('btnNext').classList.toggle('hidden', preguntaActual === quizPreguntas.length - 1);
+      document.getElementById('btnFinish').classList.toggle('hidden', preguntaActual !== quizPreguntas.length - 1);
+      updateMap();
+    }
+
+    function seleccionar(idx, letra) {
+      respuestasUsuario[idx] = letra;
+      renderPregunta();
+    }
+
+    function navegar(dir) {
+      preguntaActual = Math.max(0, Math.min(quizPreguntas.length - 1, preguntaActual + dir));
+      renderPregunta();
+    }
+
+    function renderMap() {
+      let html = '';
+      for (let i = 0; i < quizPreguntas.length; i++) {
+        html += `<div class="q-dot" id="dot-${i}" onclick="irA(${i})">${i + 1}</div>`;
+      }
+      document.getElementById('questionMap').innerHTML = html;
+    }
+
+    function updateMap() {
+      for (let i = 0; i < quizPreguntas.length; i++) {
+        const dot = document.getElementById(`dot-${i}`);
+        dot.className = 'q-dot';
+        if (respuestasUsuario[i]) dot.classList.add('answered');
+        if (i === preguntaActual) dot.classList.add('current');
+      }
+    }
+
+    function irA(i) { preguntaActual = i; renderPregunta(); }
+
+    function iniciarTimer() {
+      clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        segundos++;
+        const m = String(Math.floor(segundos / 60)).padStart(2, '0');
+        const s = String(segundos % 60).padStart(2, '0');
+        document.getElementById('timerText').textContent = `${m}:${s}`;
+      }, 1000);
+    }
+
+    function terminar() {
+      const sinResp = quizPreguntas.length - Object.keys(respuestasUsuario).length;
+      if (sinResp > 0 && !confirm(`Tienes ${sinResp} preguntas sin responder. ¿Deseas terminar?`)) return;
+      clearInterval(timerInterval);
+      mostrarResultados();
+    }
+
+    function mostrarResultados() {
+      let correctas = 0, incorrectas = 0, sinResp = 0;
+      quizPreguntas.forEach((p, i) => {
+        if (!respuestasUsuario[i]) sinResp++;
+        else if (respuestasUsuario[i] === p.respuesta) correctas++;
+        else incorrectas++;
+      });
+
+      const nota = ((correctas / quizPreguntas.length) * 20).toFixed(1);
+      const pct = ((correctas / quizPreguntas.length) * 100).toFixed(0);
+
+      document.getElementById('quizScreen').classList.add('hidden');
+      document.getElementById('resultsScreen').classList.remove('hidden');
+
+      const scoreEl = document.getElementById('scoreText');
+      scoreEl.textContent = `${nota} / 20`;
+      scoreEl.className = `score ${parseFloat(nota) >= 11 ? 'pass' : 'fail'}`;
+
+      document.getElementById('detailText').textContent = `${pct}% de aciertos — Tiempo: ${document.getElementById('timerText').textContent}`;
+      document.getElementById('correctas').textContent = correctas;
+      document.getElementById('incorrectas').textContent = incorrectas;
+      document.getElementById('sinResponder').textContent = sinResp;
+    }
+
+    function revisarRespuestas() {
+      document.getElementById('resultsScreen').classList.add('hidden');
+      document.getElementById('reviewScreen').classList.remove('hidden');
+
+      let html = '';
+      quizPreguntas.forEach((p, i) => {
+        const sel = respuestasUsuario[i];
+        const ok = sel === p.respuesta;
+        html += `<div class="question-card" style="border-left:4px solid ${!sel ? '#999' : ok ? '#2e7d32' : '#c62828'}">
+          <div class="q-num">Pregunta ${i + 1}</div>
+          <div class="q-tema">${p.tema}</div>
+          <div class="q-text">${p.pregunta}</div>`;
+
+        for (const [letra, texto] of Object.entries(p.opciones)) {
+          let cls = 'option';
+          if (letra === p.respuesta) cls += ' correct show-correct';
+          else if (sel === letra && sel !== p.respuesta) cls += ' incorrect';
+          html += `<div class="${cls}" style="pointer-events:none"><strong>${letra}.</strong> ${texto}</div>`;
+        }
+
+        if (!sel) html += `<div style="margin-top:8px;color:#999;font-size:0.85em;">⚠️ No respondida — Respuesta: <strong>${p.respuesta}</strong></div>`;
+        else if (!ok) html += `<div style="margin-top:8px;color:#c62828;font-size:0.85em;">❌ Tu respuesta: <strong>${sel}</strong> — Correcta: <strong>${p.respuesta}</strong></div>`;
+        else html += `<div style="margin-top:8px;color:#2e7d32;font-size:0.85em;">✅ ¡Correcto!</div>`;
+
+        html += '</div>';
+      });
+      document.getElementById('reviewContainer').innerHTML = html;
+    }
+
+    function volverMenu() {
+      clearInterval(timerInterval);
+      ['quizScreen','resultsScreen','reviewScreen'].forEach(id => document.getElementById(id).classList.add('hidden'));
+      document.getElementById('menuScreen').classList.remove('hidden');
+    }
+
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+  </script>
+</body>
+</html>
