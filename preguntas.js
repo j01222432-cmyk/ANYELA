@@ -2610,7 +2610,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Conceptos basicos"
+    "tema": "Salud Pública - Conceptos básicos"
   },
   {
     "id": 202,
@@ -2623,7 +2623,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Epidemiologia"
+    "tema": "Salud Pública - Epidemiología"
   },
   {
     "id": 203,
@@ -2636,7 +2636,7 @@ const preguntas = [
     },
     "respuesta": "C",
     "origen": "nueva",
-    "tema": "Salud Publica - Causalidad y riesgo"
+    "tema": "Salud Pública - Causalidad y riesgo"
   },
   {
     "id": 204,
@@ -2649,7 +2649,7 @@ const preguntas = [
     },
     "respuesta": "C",
     "origen": "nueva",
-    "tema": "Salud Publica - Demografia en salud"
+    "tema": "Salud Pública - Demografía en salud"
   },
   {
     "id": 205,
@@ -2662,7 +2662,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Historia natural de la enfermedad"
+    "tema": "Salud Pública - Historia natural de la enfermedad"
   },
   {
     "id": 206,
@@ -2675,7 +2675,7 @@ const preguntas = [
     },
     "respuesta": "C",
     "origen": "nueva",
-    "tema": "Salud Publica - Niveles de prevencion"
+    "tema": "Salud Pública - Niveles de prevención"
   },
   {
     "id": 207,
@@ -2688,7 +2688,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Pruebas diagnosticas"
+    "tema": "Salud Pública - Pruebas diagnósticas"
   },
   {
     "id": 208,
@@ -2701,7 +2701,7 @@ const preguntas = [
     },
     "respuesta": "C",
     "origen": "nueva",
-    "tema": "Salud Publica - Brotes y epidemias"
+    "tema": "Salud Pública - Brotes y epidemias"
   },
   {
     "id": 209,
@@ -2714,7 +2714,7 @@ const preguntas = [
     },
     "respuesta": "C",
     "origen": "nueva",
-    "tema": "Salud Publica - Prevencion y control de infecciones"
+    "tema": "Salud Pública - Prevención y control de infecciones"
   },
   {
     "id": 210,
@@ -2740,7 +2740,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Comunitaria - Sectorizacion y ficha familiar"
+    "tema": "Salud Comunitaria - Sectorización y ficha familiar"
   },
   {
     "id": 212,
@@ -2753,7 +2753,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Comunitaria - Sistemas de informacion"
+    "tema": "Salud Comunitaria - Sistemas de información"
   },
   {
     "id": 213,
@@ -2805,7 +2805,7 @@ const preguntas = [
     },
     "respuesta": "C",
     "origen": "nueva",
-    "tema": "Salud Publica - Promocion de la salud"
+    "tema": "Salud Pública - Promoción de la salud"
   },
   {
     "id": 217,
@@ -2818,7 +2818,7 @@ const preguntas = [
     },
     "respuesta": "C",
     "origen": "nueva",
-    "tema": "Salud Publica - Bioseguridad"
+    "tema": "Salud Pública - Bioseguridad"
   },
   {
     "id": 218,
@@ -2831,7 +2831,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Emergencias y desastres"
+    "tema": "Salud Pública - Emergencias y desastres"
   },
   {
     "id": 219,
@@ -2844,7 +2844,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Proceso de atencion de enfermeria"
+    "tema": "Cuidado Integral - Proceso de atención de enfermería"
   },
   {
     "id": 220,
@@ -2857,7 +2857,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Vacunacion y ESAVI"
+    "tema": "Cuidado Integral - Vacunación y ESAVI"
   },
   {
     "id": 221,
@@ -2870,7 +2870,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Vacunacion y ESAVI"
+    "tema": "Cuidado Integral - Vacunación y ESAVI"
   },
   {
     "id": 222,
@@ -2883,7 +2883,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Prevencion y control de anemia"
+    "tema": "Cuidado Integral - Prevención y control de anemia"
   },
   {
     "id": 223,
@@ -2896,7 +2896,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Prevencion y control del Cancer"
+    "tema": "Cuidado Integral - Prevención y control del Cáncer"
   },
   {
     "id": 224,
@@ -2935,7 +2935,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Alimentacion y nutricion"
+    "tema": "Cuidado Integral - Alimentación y nutrición"
   },
   {
     "id": 227,
@@ -3000,7 +3000,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Etica - Deontologia"
+    "tema": "Ética - Deontología"
   },
   {
     "id": 232,
@@ -3013,7 +3013,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Etica - Derechos de los usuarios"
+    "tema": "Ética - Derechos de los usuarios"
   },
   {
     "id": 233,
@@ -3026,7 +3026,7 @@ const preguntas = [
     },
     "respuesta": "A",
     "origen": "nueva",
-    "tema": "Etica - Interculturalidad"
+    "tema": "Ética - Interculturalidad"
   },
   {
     "id": 234,
@@ -3039,7 +3039,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Tipos de investigacion"
+    "tema": "Investigación - Tipos de investigación"
   },
   {
     "id": 235,
@@ -3052,7 +3052,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Metodologia"
+    "tema": "Investigación - Metodología"
   },
   {
     "id": 236,
@@ -3065,7 +3065,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Documentos normativos"
+    "tema": "Gestión - Documentos normativos"
   },
   {
     "id": 237,
@@ -3091,7 +3091,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Calidad de servicios de salud"
+    "tema": "Gestión - Calidad de servicios de salud"
   },
   {
     "id": 239,
@@ -3104,7 +3104,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Pruebas diagnosticas"
+    "tema": "Salud Pública - Pruebas diagnósticas"
   },
   {
     "id": 240,
@@ -3117,7 +3117,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Demografia en salud"
+    "tema": "Salud Pública - Demografía en salud"
   },
   {
     "id": 241,
@@ -3156,7 +3156,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Demografia en salud"
+    "tema": "Salud Pública - Demografía en salud"
   },
   {
     "id": 244,
@@ -5730,7 +5730,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Procesamiento y analisis de datos"
+    "tema": "Investigación - Procesamiento y análisis de datos"
   },
   {
     "id": 442,
@@ -5743,7 +5743,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Demografia en salud"
+    "tema": "Salud Pública - Demografía en salud"
   },
   {
     "id": 443,
@@ -5756,7 +5756,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Uso racional de medicamentos"
+    "tema": "Salud Pública - Uso racional de medicamentos"
   },
   {
     "id": 444,
@@ -5769,7 +5769,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Emergencias y desastres"
+    "tema": "Salud Pública - Emergencias y desastres"
   },
   {
     "id": 445,
@@ -5795,7 +5795,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Comunitaria - Participacion social y comunitaria"
+    "tema": "Salud Comunitaria - Participación social y comunitaria"
   },
   {
     "id": 447,
@@ -5808,7 +5808,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Promocion de la salud"
+    "tema": "Salud Pública - Promoción de la salud"
   },
   {
     "id": 448,
@@ -5821,7 +5821,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Vacunacion y ESAVI"
+    "tema": "Cuidado Integral - Vacunación y ESAVI"
   },
   {
     "id": 449,
@@ -5834,7 +5834,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Alimentacion y nutricion"
+    "tema": "Cuidado Integral - Alimentación y nutrición"
   },
   {
     "id": 450,
@@ -5860,7 +5860,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Emergencias obstetricas"
+    "tema": "Cuidado Integral - Emergencias obstétricas"
   },
   {
     "id": 452,
@@ -5886,7 +5886,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Etica - Funcion publica"
+    "tema": "Ética - Función pública"
   },
   {
     "id": 454,
@@ -5899,7 +5899,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Tipos de investigacion"
+    "tema": "Investigación - Tipos de investigación"
   },
   {
     "id": 455,
@@ -5912,7 +5912,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Procesamiento y analisis de datos"
+    "tema": "Investigación - Procesamiento y análisis de datos"
   },
   {
     "id": 456,
@@ -5925,7 +5925,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Planificacion y Presupuesto"
+    "tema": "Gestión - Planificación y Presupuesto"
   },
   {
     "id": 457,
@@ -5938,7 +5938,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Control de inventario y medicamentos"
+    "tema": "Gestión - Control de inventario y medicamentos"
   },
   {
     "id": 458,
@@ -5951,7 +5951,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Coordinacion intersectorial"
+    "tema": "Gestión - Coordinación intersectorial"
   },
   {
     "id": 459,
@@ -5964,7 +5964,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Etica - Derechos de los usuarios"
+    "tema": "Ética - Derechos de los usuarios"
   },
   {
     "id": 460,
@@ -5977,7 +5977,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Historia clinica"
+    "tema": "Gestión - Historia clínica"
   },
   {
     "id": 461,
@@ -5990,7 +5990,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Procesamiento y analisis de datos"
+    "tema": "Investigación - Procesamiento y análisis de datos"
   },
   {
     "id": 462,
@@ -6003,7 +6003,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Procesamiento y analisis de datos"
+    "tema": "Investigación - Procesamiento y análisis de datos"
   },
   {
     "id": 463,
@@ -6016,7 +6016,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Tipos de investigacion"
+    "tema": "Investigación - Tipos de investigación"
   },
   {
     "id": 464,
@@ -6042,7 +6042,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Enfermedades metaxenicas y zoonoticas"
+    "tema": "Cuidado Integral - Enfermedades metaxénicas y zoonóticas"
   },
   {
     "id": 466,
@@ -6107,7 +6107,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Aspectos eticos"
+    "tema": "Investigación - Aspectos éticos"
   },
   {
     "id": 471,
@@ -6120,7 +6120,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Etica - Interculturalidad"
+    "tema": "Ética - Interculturalidad"
   },
   {
     "id": 472,
@@ -6133,7 +6133,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Calidad de servicios de salud"
+    "tema": "Gestión - Calidad de servicios de salud"
   },
   {
     "id": 473,
@@ -6146,7 +6146,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Uso racional de medicamentos"
+    "tema": "Gestión - Uso racional de medicamentos"
   },
   {
     "id": 474,
@@ -6159,7 +6159,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Clima y cultura organizacional"
+    "tema": "Gestión - Clima y cultura organizacional"
   },
   {
     "id": 475,
@@ -6172,7 +6172,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Vacunacion y ESAVI"
+    "tema": "Cuidado Integral - Vacunación y ESAVI"
   },
   {
     "id": 476,
@@ -6185,7 +6185,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Paquete del nino"
+    "tema": "Cuidado Integral - Paquete del niño"
   },
   {
     "id": 477,
@@ -6198,7 +6198,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Paquete del nino"
+    "tema": "Cuidado Integral - Paquete del niño"
   },
   {
     "id": 478,
@@ -6211,7 +6211,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Prevencion y control de anemia"
+    "tema": "Cuidado Integral - Prevención y control de anemia"
   },
   {
     "id": 479,
@@ -6224,7 +6224,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Emergencias y desastres"
+    "tema": "Salud Pública - Emergencias y desastres"
   },
   {
     "id": 480,
@@ -6237,7 +6237,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Metodologia"
+    "tema": "Investigación - Metodología"
   },
   {
     "id": 481,
@@ -6250,7 +6250,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Publica - Brotes y epidemias"
+    "tema": "Salud Pública - Brotes y epidemias"
   },
   {
     "id": 482,
@@ -6263,7 +6263,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Salud Comunitaria - Gestion de residuos solidos"
+    "tema": "Salud Comunitaria - Gestión de residuos sólidos"
   },
   {
     "id": 483,
@@ -6315,7 +6315,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Proceso de atencion de enfermeria"
+    "tema": "Cuidado Integral - Proceso de atención de enfermería"
   },
   {
     "id": 487,
@@ -6328,7 +6328,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Atencion primaria de salud"
+    "tema": "Cuidado Integral - Atención primaria de salud"
   },
   {
     "id": 488,
@@ -6341,7 +6341,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Procesamiento y analisis de datos"
+    "tema": "Investigación - Procesamiento y análisis de datos"
   },
   {
     "id": 489,
@@ -6354,7 +6354,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Etica - Derechos de los usuarios"
+    "tema": "Ética - Derechos de los usuarios"
   },
   {
     "id": 490,
@@ -6367,7 +6367,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Calidad de servicios de salud"
+    "tema": "Gestión - Calidad de servicios de salud"
   },
   {
     "id": 491,
@@ -6380,7 +6380,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Uso racional de medicamentos"
+    "tema": "Gestión - Uso racional de medicamentos"
   },
   {
     "id": 492,
@@ -6393,7 +6393,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Recursos humanos"
+    "tema": "Gestión - Recursos humanos"
   },
   {
     "id": 493,
@@ -6406,7 +6406,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Prevencion y control de anemia"
+    "tema": "Cuidado Integral - Prevención y control de anemia"
   },
   {
     "id": 494,
@@ -6419,7 +6419,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Paquete del nino"
+    "tema": "Cuidado Integral - Paquete del niño"
   },
   {
     "id": 495,
@@ -6445,7 +6445,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Cuidado Integral - Emergencias obstetricas"
+    "tema": "Cuidado Integral - Emergencias obstétricas"
   },
   {
     "id": 497,
@@ -6458,7 +6458,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Investigacion - Conceptos basicos"
+    "tema": "Investigación - Conceptos básicos"
   },
   {
     "id": 498,
@@ -6471,7 +6471,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Calidad de servicios de salud"
+    "tema": "Gestión - Calidad de servicios de salud"
   },
   {
     "id": 499,
@@ -6484,7 +6484,7 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Etica - Derechos de los usuarios"
+    "tema": "Ética - Derechos de los usuarios"
   },
   {
     "id": 500,
@@ -6497,6 +6497,6 @@ const preguntas = [
     },
     "respuesta": "B",
     "origen": "nueva",
-    "tema": "Gestion - Trabajo colaborativo"
+    "tema": "Gestión - Trabajo colaborativo"
   }
 ];
