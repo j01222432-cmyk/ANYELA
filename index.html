@@ -74,6 +74,28 @@
 
     .hidden { display: none !important; }
     .balotario-info { text-align: center; padding: 10px; background: #fff3e0; border-radius: 8px; margin-bottom: 16px; font-size: 0.85em; color: #e65100; }
+
+    /* STATS */
+    .stats-screen { max-width: 800px; }
+    .stats-summary { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+    .stats-summary .s-card { background: #fff; border-radius: 10px; padding: 16px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .s-card .s-num { font-size: 2em; font-weight: 800; }
+    .s-card .s-lbl { font-size: 0.75em; color: #666; margin-top: 2px; }
+    .tema-card { background: #fff; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
+    .tema-card .tema-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .tema-card .tema-name { font-size: 0.85em; font-weight: 600; flex: 1; margin-right: 8px; }
+    .tema-card .tema-pct { font-size: 0.85em; font-weight: 800; min-width: 48px; text-align: right; }
+    .tema-card .tema-detail { font-size: 0.72em; color: #888; margin-bottom: 6px; }
+    .bar-bg { height: 8px; background: #e0e0e0; border-radius: 4px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+    .tema-card .tema-actions { margin-top: 8px; text-align: right; }
+    .btn-practice { padding: 6px 14px; font-size: 0.75em; border: 1.5px solid #1a73e8; background: #fff; color: #1a73e8; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.15s; }
+    .btn-practice:hover { background: #1a73e8; color: #fff; }
+    .filter-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; justify-content: center; }
+    .filter-tab { padding: 6px 14px; border-radius: 20px; border: 1.5px solid #ddd; background: #fff; font-size: 0.8em; cursor: pointer; font-weight: 600; transition: all 0.15s; }
+    .filter-tab.active { background: #1a73e8; color: #fff; border-color: #1a73e8; }
+    .btn-reset-stats { padding: 8px 16px; font-size: 0.8em; border: 1.5px solid #e53935; background: #fff; color: #e53935; border-radius: 6px; cursor: pointer; font-weight: 600; margin-top: 12px; }
+    .btn-reset-stats:hover { background: #e53935; color: #fff; }
   </style>
 </head>
 <body>
@@ -119,6 +141,7 @@
         </div>
         <div class="menu-grid" style="margin-top: 16px;">
           <button class="menu-btn" onclick="iniciarQuiz()">🚀 Comenzar</button>
+          <button class="menu-btn" onclick="mostrarStats()" style="border-color:#ff9800;color:#ff9800;">📊 Mis Estadísticas</button>
         </div>
       </div>
     </div>
@@ -163,6 +186,19 @@
       <div id="reviewContainer"></div>
       <div class="nav-btns">
         <button class="nav-btn btn-prev" onclick="volverMenu()">🏠 Volver al menú</button>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div id="statsScreen" class="hidden stats-screen">
+      <h2 style="text-align:center;margin-bottom:6px;color:#ff9800;">📊 Mis Estadísticas</h2>
+      <p style="text-align:center;font-size:0.8em;color:#888;margin-bottom:16px;">Basado en todas tus sesiones de práctica y simulacro</p>
+      <div class="stats-summary" id="statsSummary"></div>
+      <div class="filter-tabs" id="statsFilter"></div>
+      <div id="statsTemasContainer"></div>
+      <div class="nav-btns">
+        <button class="nav-btn btn-prev" onclick="volverMenu()">🏠 Volver al menú</button>
+        <button class="btn-reset-stats" onclick="resetStats()">🗑️ Borrar estadísticas</button>
       </div>
     </div>
   </div>
@@ -323,6 +359,8 @@
         else incorrectas++;
       });
 
+      guardarStats();
+
       const nota = ((correctas / quizPreguntas.length) * 20).toFixed(1);
       const pct = ((correctas / quizPreguntas.length) * 100).toFixed(0);
 
@@ -375,7 +413,7 @@
 
     function volverMenu() {
       clearInterval(timerInterval);
-      ['quizScreen','resultsScreen','reviewScreen'].forEach(id => document.getElementById(id).classList.add('hidden'));
+      ['quizScreen','resultsScreen','reviewScreen','statsScreen'].forEach(id => document.getElementById(id).classList.add('hidden'));
       document.getElementById('menuScreen').classList.remove('hidden');
     }
 
@@ -385,6 +423,104 @@
         [arr[i], arr[j]] = [arr[j], arr[i]];
       }
       return arr;
+    }
+
+    // ========== STATS SYSTEM ==========
+    function getStats() {
+      try { return JSON.parse(localStorage.getItem('serumsStats')) || {}; } catch { return {}; }
+    }
+    function saveStats(s) { localStorage.setItem('serumsStats', JSON.stringify(s)); }
+
+    function guardarStats() {
+      const s = getStats();
+      quizPreguntas.forEach((p, i) => {
+        if (!respuestasUsuario[i]) return;
+        const t = p.tema || 'Sin tema';
+        if (!s[t]) s[t] = { ok: 0, mal: 0, total: 0 };
+        s[t].total++;
+        if (respuestasUsuario[i] === p.respuesta) s[t].ok++;
+        else s[t].mal++;
+      });
+      saveStats(s);
+    }
+
+    function mostrarStats() {
+      const s = getStats();
+      ['menuScreen','quizScreen','resultsScreen','reviewScreen'].forEach(id => document.getElementById(id).classList.add('hidden'));
+      document.getElementById('statsScreen').classList.remove('hidden');
+
+      let totalOk = 0, totalMal = 0, totalResp = 0;
+      const temas = Object.entries(s).map(([tema, d]) => {
+        totalOk += d.ok; totalMal += d.mal; totalResp += d.total;
+        return { tema, ...d, pct: d.total > 0 ? Math.round((d.ok / d.total) * 100) : 0 };
+      });
+
+      const globalPct = totalResp > 0 ? Math.round((totalOk / totalResp) * 100) : 0;
+      document.getElementById('statsSummary').innerHTML = `
+        <div class="s-card"><div class="s-num" style="color:#1a73e8">${totalResp}</div><div class="s-lbl">Preguntas respondidas</div></div>
+        <div class="s-card"><div class="s-num" style="color:${globalPct>=60?'#2e7d32':'#c62828'}">${globalPct}%</div><div class="s-lbl">Acierto global</div></div>
+        <div class="s-card"><div class="s-num" style="color:#2e7d32">${totalOk}</div><div class="s-lbl">Correctas</div></div>
+        <div class="s-card"><div class="s-num" style="color:#c62828">${totalMal}</div><div class="s-lbl">Incorrectas</div></div>
+      `;
+
+      // Filtros
+      const cats = [...new Set(temas.map(t => t.tema.split(' - ')[0]))].sort();
+      let filterHtml = '<div class="filter-tab active" onclick="filtrarStats(\'todos\',this)">Todos</div>';
+      cats.forEach(c => { filterHtml += `<div class="filter-tab" onclick="filtrarStats('${c}',this)">${c}</div>`; });
+      filterHtml += '<div class="filter-tab" style="border-color:#c62828;color:#c62828" onclick="filtrarStats(\'debiles\',this)">🔴 Más débiles</div>';
+      document.getElementById('statsFilter').innerHTML = filterHtml;
+
+      renderStatsTemas(temas, 'todos');
+    }
+
+    function filtrarStats(filtro, el) {
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      if (el) el.classList.add('active');
+      const s = getStats();
+      let temas = Object.entries(s).map(([tema, d]) => ({ tema, ...d, pct: d.total > 0 ? Math.round((d.ok / d.total) * 100) : 0 }));
+      if (filtro === 'debiles') temas.sort((a, b) => a.pct - b.pct);
+      else if (filtro !== 'todos') temas = temas.filter(t => t.tema.startsWith(filtro));
+      renderStatsTemas(temas, filtro);
+    }
+
+    function renderStatsTemas(temas, filtro) {
+      if (filtro !== 'debiles') temas.sort((a, b) => a.pct - b.pct);
+      if (temas.length === 0) {
+        document.getElementById('statsTemasContainer').innerHTML = '<div style="text-align:center;padding:40px;color:#999;">No hay datos aún. ¡Empieza a practicar! 💪</div>';
+        return;
+      }
+      let html = '';
+      temas.forEach(t => {
+        const color = t.pct >= 80 ? '#2e7d32' : t.pct >= 50 ? '#ff9800' : '#c62828';
+        const emoji = t.pct >= 80 ? '🟢' : t.pct >= 50 ? '🟡' : '🔴';
+        html += `<div class="tema-card">
+          <div class="tema-head">
+            <span class="tema-name">${emoji} ${t.tema}</span>
+            <span class="tema-pct" style="color:${color}">${t.pct}%</span>
+          </div>
+          <div class="tema-detail">✅ ${t.ok} correctas · ❌ ${t.mal} incorrectas · 📝 ${t.total} respondidas</div>
+          <div class="bar-bg"><div class="bar-fill" style="width:${t.pct}%;background:${color}"></div></div>
+          <div class="tema-actions"><button class="btn-practice" onclick="practicarTema('${t.tema.replace(/'/g,"\\'")}')">🎯 Practicar este tema</button></div>
+        </div>`;
+      });
+      document.getElementById('statsTemasContainer').innerHTML = html;
+    }
+
+    function practicarTema(tema) {
+      document.getElementById('statsScreen').classList.add('hidden');
+      document.getElementById('menuScreen').classList.remove('hidden');
+      document.getElementById('filtroTema').value = tema;
+      document.getElementById('modo').value = 'practica';
+      document.getElementById('numPreguntas').value = '20';
+      document.getElementById('filtroOrigen').value = 'todos';
+      iniciarQuiz();
+    }
+
+    function resetStats() {
+      if (confirm('¿Segura que deseas borrar todas tus estadísticas? Esta acción no se puede deshacer.')) {
+        localStorage.removeItem('serumsStats');
+        mostrarStats();
+      }
     }
   </script>
 </body>
