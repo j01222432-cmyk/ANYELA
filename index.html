@@ -102,9 +102,10 @@
           </select>
           <label>Origen de preguntas:</label>
           <select id="filtroOrigen">
-            <option value="todos">Todas (examen + nuevas)</option>
+            <option value="todos">Todas (examen + nuevas + vacunas)</option>
             <option value="examen">Solo de exámenes anteriores</option>
             <option value="nueva">Solo preguntas nuevas</option>
+            <option value="vacunas">Solo preguntas de vacunas</option>
           </select>
           <label>Filtrar por tema:</label>
           <select id="filtroTema">
@@ -167,6 +168,8 @@
   </div>
 
   <script src="preguntas.js" charset="UTF-8"></script>
+  <script src="vacunas.js" charset="UTF-8"></script>
+  <script>if(typeof preguntasVacunas!=='undefined') preguntas.push(...preguntasVacunas);</script>
   <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js');}</script>
   <script>
     let quizPreguntas = [];
@@ -179,15 +182,22 @@
     // Init
     document.getElementById('totalPreguntas').textContent = preguntas.length;
     cargarTemas();
+    document.getElementById('filtroOrigen').addEventListener('change', cargarTemas);
 
     function cargarTemas() {
-      const temas = [...new Set(preguntas.map(p => p.tema))].sort();
+      const origen = document.getElementById('filtroOrigen').value;
+      let pool = [...preguntas];
+      if (origen !== 'todos') pool = pool.filter(p => p.origen === origen);
+      const temas = [...new Set(pool.map(p => p.tema))].sort();
       const sel = document.getElementById('filtroTema');
+      const prev = sel.value;
+      sel.innerHTML = '<option value="todos">Todos los temas</option>';
       temas.forEach(t => {
         const opt = document.createElement('option');
         opt.value = t; opt.textContent = t;
         sel.appendChild(opt);
       });
+      if ([...sel.options].some(o => o.value === prev)) sel.value = prev;
     }
 
     function iniciarQuiz() {
@@ -244,6 +254,11 @@
         html += `<div style="margin-top:12px;padding:10px;border-radius:8px;background:${ok ? '#e8f5e9' : '#ffebee'};font-size:0.85em;">
           ${ok ? '✅ ¡Correcto!' : `❌ Incorrecto. La respuesta correcta es: <strong>${p.respuesta}</strong>`}
         </div>`;
+        if (p.explicacion) {
+          html += `<div style="margin-top:8px;padding:12px;border-radius:8px;background:#e3f2fd;font-size:0.85em;border-left:4px solid #1a73e8;">
+            💡 <strong>Explicación:</strong> ${p.explicacion}
+          </div>`;
+        }
       }
 
       html += '</div>';
@@ -347,6 +362,11 @@
         if (!sel) html += `<div style="margin-top:8px;color:#999;font-size:0.85em;">⚠️ No respondida — Respuesta: <strong>${p.respuesta}</strong></div>`;
         else if (!ok) html += `<div style="margin-top:8px;color:#c62828;font-size:0.85em;">❌ Tu respuesta: <strong>${sel}</strong> — Correcta: <strong>${p.respuesta}</strong></div>`;
         else html += `<div style="margin-top:8px;color:#2e7d32;font-size:0.85em;">✅ ¡Correcto!</div>`;
+        if (p.explicacion) {
+          html += `<div style="margin-top:8px;padding:12px;border-radius:8px;background:#e3f2fd;font-size:0.85em;border-left:4px solid #1a73e8;">
+            💡 <strong>Explicación:</strong> ${p.explicacion}
+          </div>`;
+        }
 
         html += '</div>';
       });
