@@ -96,6 +96,17 @@
     .filter-tab.active { background: #1a73e8; color: #fff; border-color: #1a73e8; }
     .btn-reset-stats { padding: 8px 16px; font-size: 0.8em; border: 1.5px solid #e53935; background: #fff; color: #e53935; border-radius: 6px; cursor: pointer; font-weight: 600; margin-top: 12px; }
     .btn-reset-stats:hover { background: #e53935; color: #fff; }
+
+    /* AUTH BAR */
+    .auth-bar { background: #fff; border-radius: 10px; padding: 12px 16px; margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.08); gap: 10px; }
+    .auth-bar .user-info { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+    .auth-bar .user-avatar { width: 36px; height: 36px; border-radius: 50%; border: 2px solid #1a73e8; }
+    .auth-bar .user-name { font-size: 0.85em; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .auth-bar .sync-badge { font-size: 0.65em; background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+    .btn-google { display: flex; align-items: center; gap: 8px; padding: 10px 18px; border: 2px solid #4285f4; background: #fff; color: #4285f4; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.9em; transition: all 0.2s; }
+    .btn-google:hover { background: #4285f4; color: #fff; }
+    .btn-logout { padding: 6px 12px; border: 1.5px solid #999; background: #fff; color: #666; border-radius: 6px; cursor: pointer; font-size: 0.75em; font-weight: 600; }
+    .btn-logout:hover { background: #eee; }
   </style>
 </head>
 <body>
@@ -105,6 +116,24 @@
   </div>
 
   <div class="container">
+    <!-- AUTH -->
+    <div id="authBar">
+      <div id="loggedOut" class="auth-bar">
+        <span style="font-size:0.85em;color:#666;">🔒 Inicia sesión para sincronizar entre dispositivos</span>
+        <button class="btn-google" onclick="loginGoogle()">🔵 Google</button>
+      </div>
+      <div id="loggedIn" class="auth-bar hidden">
+        <div class="user-info">
+          <img id="userAvatar" class="user-avatar" src="" alt="">
+          <div>
+            <div class="user-name" id="userName"></div>
+            <span class="sync-badge">☁️ Sincronizado</span>
+          </div>
+        </div>
+        <button class="btn-logout" onclick="logoutGoogle()">Cerrar sesión</button>
+      </div>
+    </div>
+
     <!-- MENU -->
     <div id="menuScreen">
       <div class="balotario-info">
@@ -207,6 +236,25 @@
   <script src="vacunas.js" charset="UTF-8"></script>
   <script>if(typeof preguntasVacunas!=='undefined') preguntas.push(...preguntasVacunas);</script>
   <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js');}</script>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBA3AgPUOJsltDMNpGh-F_iIikSTaty6a0",
+      authDomain: "anyela-serums.firebaseapp.com",
+      projectId: "anyela-serums",
+      storageBucket: "anyela-serums.firebasestorage.app",
+      messagingSenderId: "947580440267",
+      appId: "1:947580440267:web:8e89fb244be3778285554e"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    let currentUser = null;
+  </script>
   <script>
     let quizPreguntas = [];
     let respuestasUsuario = {};
@@ -425,11 +473,67 @@
       return arr;
     }
 
+    // ========== AUTH ==========
+    function loginGoogle() {
+      auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).catch(e => {
+        if (e.code !== 'auth/popup-closed-by-user') alert('Error al iniciar sesión: ' + e.message);
+      });
+    }
+    function logoutGoogle() {
+      if (confirm('¿Cerrar sesión? Tus datos locales se mantienen.')) auth.signOut();
+    }
+
+    auth.onAuthStateChanged(async user => {
+      currentUser = user;
+      if (user) {
+        document.getElementById('loggedOut').classList.add('hidden');
+        document.getElementById('loggedIn').classList.remove('hidden');
+        document.getElementById('userName').textContent = user.displayName || user.email;
+        document.getElementById('userAvatar').src = user.photoURL || '';
+        await syncFromCloud();
+      } else {
+        document.getElementById('loggedOut').classList.remove('hidden');
+        document.getElementById('loggedIn').classList.add('hidden');
+      }
+    });
+
     // ========== STATS SYSTEM ==========
     function getStats() {
       try { return JSON.parse(localStorage.getItem('serumsStats')) || {}; } catch { return {}; }
     }
-    function saveStats(s) { localStorage.setItem('serumsStats', JSON.stringify(s)); }
+    function saveStats(s) {
+      localStorage.setItem('serumsStats', JSON.stringify(s));
+      syncToCloud(s);
+    }
+
+    async function syncToCloud(s) {
+      if (!currentUser) return;
+      try {
+        await db.collection('stats').doc(currentUser.uid).set({ data: s, updated: firebase.firestore.FieldValue.serverTimestamp() }, { merge: true });
+      } catch (e) { console.warn('Error sync to cloud:', e); }
+    }
+
+    async function syncFromCloud() {
+      if (!currentUser) return;
+      try {
+        const doc = await db.collection('stats').doc(currentUser.uid).get();
+        if (doc.exists && doc.data().data) {
+          const cloud = doc.data().data;
+          const local = getStats();
+          const merged = { ...cloud };
+          for (const [tema, d] of Object.entries(local)) {
+            if (!merged[tema]) merged[tema] = { ok: 0, mal: 0, total: 0 };
+            merged[tema].ok = Math.max(merged[tema].ok, d.ok);
+            merged[tema].mal = Math.max(merged[tema].mal, d.mal);
+            merged[tema].total = Math.max(merged[tema].total, d.total);
+          }
+          localStorage.setItem('serumsStats', JSON.stringify(merged));
+          await syncToCloud(merged);
+        } else {
+          await syncToCloud(getStats());
+        }
+      } catch (e) { console.warn('Error sync from cloud:', e); }
+    }
 
     function guardarStats() {
       const s = getStats();
@@ -519,6 +623,7 @@
     function resetStats() {
       if (confirm('¿Segura que deseas borrar todas tus estadísticas? Esta acción no se puede deshacer.')) {
         localStorage.removeItem('serumsStats');
+        if (currentUser) db.collection('stats').doc(currentUser.uid).delete().catch(()=>{});
         mostrarStats();
       }
     }

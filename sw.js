@@ -1,4 +1,4 @@
-const CACHE_NAME = 'serums-v3';
+const CACHE_NAME = 'serums-v4';
 const urlsToCache = ['./index.html', './preguntas.js', './vacunas.js', './manifest.json'];
 
 self.addEventListener('install', e => {
