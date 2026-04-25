@@ -254,6 +254,7 @@
     const auth = firebase.auth();
     const db = firebase.firestore();
     let currentUser = null;
+    auth.getRedirectResult().catch(() => {});
   </script>
   <script>
     let quizPreguntas = [];
@@ -475,8 +476,13 @@
 
     // ========== AUTH ==========
     function loginGoogle() {
-      auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).catch(e => {
-        if (e.code !== 'auth/popup-closed-by-user') alert('Error al iniciar sesión: ' + e.message);
+      const provider = new firebase.auth.GoogleAuthProvider();
+      auth.signInWithPopup(provider).catch(e => {
+        if (e.code === 'auth/operation-not-supported-in-this-environment' || e.code === 'auth/popup-blocked') {
+          auth.signInWithRedirect(provider);
+        } else if (e.code !== 'auth/popup-closed-by-user') {
+          alert('Error al iniciar sesión: ' + e.message);
+        }
       });
     }
     function logoutGoogle() {
