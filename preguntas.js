@@ -22,10 +22,10 @@ const preguntas = [
       "D": "I-4"
     },
     "id": 2,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Gestión - Clasificación de establecimientos",
     "origen": "examen",
-    "explicacion": "La categoría I-3 corresponde a un centro de salud con población asignada que atiende mínimo 6 horas diarias, con médico, enfermera, obstetra y técnico de enfermería. Se diferencia del I-2 (puesto de salud con médico) y del I-4 que cuenta con internamiento y atención de 12 a 24 horas."
+    "explicacion": "La categoría I-2 corresponde a un puesto de salud con población asignada que atiende mínimo 6 horas diarias, con médico, enfermera, obstetra y técnico de enfermería. Se diferencia del I-3 (centro de salud con 12 horas, laboratorio y farmacia) y del I-4 que cuenta con internamiento."
   },
   {
     "pregunta": "El instrumento de gestión que comprende la programación de actividades operativas e inversiones en todas las dependencias del ministerio con sus respectivas metas físicas y financieras es el:",
@@ -92,10 +92,10 @@ const preguntas = [
       "D": "Higienización de manos"
     },
     "id": 7,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Salud Pública - Bioseguridad",
     "origen": "examen",
-    "explicacion": "La higienización de manos es la medida de bioseguridad más importante y prioritaria según la OMS para prevenir infecciones asociadas a la atención de salud. Es la primera barrera de protección tanto para el personal como para el paciente, y debe realizarse antes y después de todo contacto con el paciente."
+    "explicacion": "Ante un niño con tos persistente de 15 días, fiebre y dificultad respiratoria (sospecha de tos ferina u otra infección respiratoria), la medida de bioseguridad prioritaria para el personal es el uso de mascarilla, ya que la transmisión es por gotitas respiratorias. La mascarilla protege directamente al personal de la vía de contagio principal."
   },
   {
     "pregunta": "Niño de 6 años, es llevado al puesto de salud 1-I por presentar fiebre, con erupción maculo papular no vesicular en cara y tronco, el personal sospecha de sarampión. Dentro del sistema de vigilancia epidemiológica. ¿Cuál es la conducta a seguir?",
@@ -204,10 +204,10 @@ const preguntas = [
       "D": "4"
     },
     "id": 15,
-    "respuesta": "D",
+    "respuesta": "A",
     "tema": "Cuidado Integral - Tuberculosis",
     "origen": "examen",
-    "explicacion": "Según la norma técnica de TB, los contactos de casos de TB resistente deben recibir como mínimo 4 controles durante el seguimiento. Esto es más riguroso que en TB sensible debido al mayor riesgo de desarrollar enfermedad resistente, que tiene peor pronóstico y tratamiento más complejo."
+    "explicacion": "Según la norma técnica de TB, los contactos de casos de TB resistente deben recibir como mínimo 6 controles durante el seguimiento. Esto es más riguroso que en TB sensible debido al mayor riesgo de desarrollar enfermedad resistente, que tiene peor pronóstico y tratamiento más complejo."
   },
   {
     "pregunta": "En un establecimiento de salud de Miguel Grau, se han reunido todos los profesionales de salud y han desarrollado su análisis FODA. Dentro de su análisis la mejora al acceso digital y mayor conectividad en esta zona rural se considera una:",
@@ -316,10 +316,10 @@ const preguntas = [
       "D": "Continuar con la dosis preventiva durante 3 meses y repetir dosaje de hemoglobina"
     },
     "id": 23,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Cuidado Integral - Prevención y control de anemia",
     "origen": "examen",
-    "explicacion": "Con Hb 11.5 g/dL (con factor de corrección por altitud) la niña no tiene anemia (punto de corte: 11 g/dL en menores de 5 años). Como abandonó la suplementación preventiva, se debe iniciar un nuevo esquema de suplementación preventiva con hierro y brindar consejería nutricional para asegurar la adherencia."
+    "explicacion": "Con Hb 11.5 g/dL (con factor de corrección por altitud) la niña no tiene anemia. Como abandonó la suplementación preventiva desde los 7 meses, se debe continuar con la dosis preventiva hasta completar los 6 meses de suplementación, previa consejería nutricional para asegurar la adherencia."
   },
   {
     "pregunta": "El responsable del establecimiento de salud, está recibiendo la relación y stock de materiales e insumos para la atención de la gestante y se percata que hay productos vencidos (hace un mes), que ya no pueden ser consumidos para la atención. ¿Cuál es el procedimiento a seguir?",
@@ -372,10 +372,10 @@ const preguntas = [
       "D": "Diversificación intercultural"
     },
     "id": 27,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Ética - Interculturalidad",
     "origen": "examen",
-    "explicacion": "La adecuación cultural es la entrega de servicios de salud construidos a través del diálogo entre prestadores y usuarios, acordando las características de los servicios según los parámetros culturales de la población. Se diferencia de la pertinencia cultural (que evalúa si el servicio es culturalmente apropiado) y de la interculturalidad en salud (concepto más amplio)."
+    "explicacion": "La pertinencia cultural es la entrega de servicios de salud de acuerdo con los parámetros culturales de los usuarios, construidos a través de espacios de diálogo donde prestadores y usuarios acuerdan las características de los servicios ofertados por el Estado. Se diferencia de la adecuación cultural (ajuste técnico del servicio) y de la interculturalidad en salud (concepto más amplio)."
   },
   {
     "pregunta": "La obstetra del P.S. Lircay recibe multigesta de 38 sem de gestación, con evidente hemorragia vaginal, al examen: piel fría, signos vitales alterados. La coloca en decúbito lateral izquierdo, la abriga y despeja sus vías aéreas, administrándole oxigeno con cánula binasal. ¿Qué tipo de respuesta empleó ante esta emergencia?",
@@ -400,10 +400,10 @@ const preguntas = [
       "D": "1"
     },
     "id": 29,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Gestión - Planeamiento estratégico",
     "origen": "examen",
-    "explicacion": "La fase 2 del ciclo de planeamiento estratégico según CEPLAN se encarga del diseño de objetivos y acciones estratégicas sectoriales. La fase 1 es el conocimiento integral de la realidad, la fase 3 es el futuro deseado y la fase 4 es el seguimiento y evaluación."
+    "explicacion": "La fase 3 del ciclo de planeamiento estratégico según CEPLAN se encarga del diseño de objetivos y acciones estratégicas sectoriales en consistencia y coherencia con la definición de objetivos. La fase 1 es el conocimiento integral de la realidad, la fase 2 es el futuro deseado y la fase 4 es el seguimiento y evaluación."
   },
   {
     "pregunta": "¿Cuál es la herramienta que describe y analiza los problemas de salud de un distrito o provincia, su relación casual con los determinantes sociales, se construye de manera participativa, es útil para la toma de decisiones y necesaria para la planificación en salud?",
@@ -540,10 +540,10 @@ const preguntas = [
       "D": "TB"
     },
     "id": 39,
-    "respuesta": "A",
+    "respuesta": "D",
     "tema": "Cuidado Integral - Tuberculosis",
     "origen": "examen",
-    "explicacion": "Toda persona diagnosticada con TB (pulmonar o extrapulmonar) que debe registrarse en el SIGTB, inicie o no tratamiento, se clasifica como caso de TB. Esta definición operativa permite el registro y seguimiento de todos los casos diagnosticados independientemente de su condición de tratamiento."
+    "explicacion": "Toda persona diagnosticada con TB (pulmonar o extrapulmonar) que debe registrarse en el SIGTB, inicie o no tratamiento, se clasifica como caso de TB. Esta definición operativa permite el registro y seguimiento de todos los casos diagnosticados independientemente de su condición de tratamiento. No se clasifica como TB MDR sin confirmación de resistencia."
   },
   {
     "pregunta": "En un estudio de investigación epidemiológico, de campo y cualitativo basada en la observación y entrevista, los principios éticos consideran lo siguiente:",
@@ -610,10 +610,10 @@ const preguntas = [
       "D": "Crecimiento inadecuado por ganancia excesiva"
     },
     "id": 44,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Paquete del niño",
     "origen": "examen",
-    "explicacion": "Cuando el indicador P/T está por encima de +3 DS se clasifica como crecimiento inadecuado por ganancia excesiva de peso, incluso con lactancia materna exclusiva. Aunque la tendencia sea paralela al patrón, el valor absoluto por encima de +3 DS indica obesidad y requiere evaluación médica para descartar causas endócrinas."
+    "explicacion": "En un lactante de 4 meses alimentado exclusivamente con lactancia materna, cuyo incremento de peso es paralelo al patrón de referencia, se clasifica como crecimiento adecuado para la edad. En menores de 6 meses con lactancia materna exclusiva, el P/T elevado no se considera patológico si la tendencia es paralela al patrón, ya que es esperable una ganancia rápida de peso en este periodo."
   },
   {
     "pregunta": "Adolescente de 15 años llega al EESS I-1 acompañada por su madre y profesor, por propiciarse cortes profundos en la muñecas con sangrado considerable; después de su atención en tópico, la Enfermera pregunta a la paciente ¿Cómo se hizo esas lesiones?, ella responde, “quiero morirme, mi vida no me interesa”. Enfermera determina que este caso debe ser referido. ¿Quién firma el consentimiento informado para la referencia?",
@@ -624,10 +624,10 @@ const preguntas = [
       "D": "Paciente"
     },
     "id": 45,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Ética - Derechos de los usuarios",
     "origen": "examen",
-    "explicacion": "En una emergencia con riesgo vital (intento de suicidio con sangrado considerable), cuando la paciente no está en condiciones de decidir por sí misma y expresa deseos de morir, la enfermera como profesional de salud responsable firma el consentimiento informado para la referencia, priorizando la vida de la paciente sobre su autonomía momentánea."
+    "explicacion": "Al tratarse de una menor de edad (15 años), el consentimiento informado para la referencia debe ser firmado por la madre, quien está presente como representante legal. Aunque sea una emergencia, la madre acompaña a la paciente y es quien tiene la potestad legal para autorizar procedimientos en menores de edad."
   },
   {
     "pregunta": "Usted atiende a una mujer joven de 25 años; encuentra los siguientes valores: índice de masa corporal de 31 y perímetro abdominal de 94 cm. ¿Cuál es su clasificación nutricional y su riesgo cardio metabólico?",
@@ -638,10 +638,10 @@ const preguntas = [
       "D": "Obesidad tipo 3 / muy elevado"
     },
     "id": 46,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Cuidado Integral - Enfermedades no transmisibles",
     "origen": "examen",
-    "explicacion": "IMC de 31 corresponde a Obesidad tipo 1 (30-34.9). El perímetro abdominal de 94 cm en mujer se clasifica como riesgo cardiometabólico elevado (>88 cm es muy elevado según ATP III, pero según la guía peruana el punto de corte para 'muy elevado' en mujeres es >88 cm). Con 94 cm el riesgo es elevado pero no muy elevado según el criterio aplicado en la pregunta."
+    "explicacion": "IMC de 31 corresponde a Obesidad tipo 1 (30-34.9). El perímetro abdominal de 94 cm en mujer supera el punto de corte de 88 cm, clasificándose como riesgo cardiometabólico muy elevado. La combinación de obesidad tipo 1 con perímetro abdominal >88 cm indica riesgo cardiovascular muy elevado que requiere intervención integral."
   },
   {
     "pregunta": "¿Cuál es el lavado de manos que implica una buena práctica de atención para la seguridad del paciente según la OMS?",
@@ -666,10 +666,10 @@ const preguntas = [
       "D": "Gestante con antecedente de miomectomías"
     },
     "id": 48,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Ética - Parto vertical",
     "origen": "examen",
-    "explicacion": "Según la norma técnica de parto vertical, los criterios de inclusión contemplan gestantes sin complicación obstétrica. Las opciones C y D (distocias de contracción y antecedente de miomectomías) son criterios de exclusión. La opción B sobre falta de colaboración por problemas psiquiátricos es un criterio de exclusión, pero la respuesta marcada como correcta en el examen es B."
+    "explicacion": "Según la norma técnica de parto vertical, el criterio de inclusión es: gestantes sin complicación obstétrica, incluye adolescentes y mujeres jóvenes. Las opciones B (falta de colaboración por problemas psiquiátricos), C (distocias de contracción) y D (antecedente de miomectomías) son criterios de exclusión para parto vertical."
   },
   {
     "pregunta": "Para la formulación del plan estratégico institucional según el CEPLAN. ¿Cuál es la fase que se encarga de elaborar el futuro deseado?",
@@ -680,10 +680,10 @@ const preguntas = [
       "D": "1"
     },
     "id": 49,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Gestión - Planeamiento estratégico",
     "origen": "examen",
-    "explicacion": "Según el CEPLAN, la fase 3 del ciclo de planeamiento estratégico se encarga de elaborar el futuro deseado, que incluye la construcción de la visión y los escenarios futuros. La fase 1 es conocimiento de la realidad, la fase 2 es diseño de objetivos y la fase 4 es seguimiento y evaluación."
+    "explicacion": "Según el CEPLAN, la fase 2 del ciclo de planeamiento estratégico se encarga de elaborar el futuro deseado, que incluye la construcción de la visión y los escenarios futuros. La fase 1 es conocimiento de la realidad, la fase 3 es el diseño de objetivos y acciones estratégicas, y la fase 4 es seguimiento y evaluación."
   },
   {
     "pregunta": "¿Cuál es la actividad técnica operativa de residuos sólidos que involucre manipuleo, acondicionamiento, transporte, transferencia, tratamiento, disposición final o procedimiento técnico operativo hasta su disposición final?",
@@ -722,7 +722,7 @@ const preguntas = [
       "D": "Hospitalización, fiebre súbita, efectos secundarios severos, anafilaxia."
     },
     "id": 52,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Vacunación y ESAVI",
     "origen": "examen",
     "explicacion": "Un ESAVI severo cumple al menos uno de estos criterios: hospitalización o prolongación de hospitalización, riesgo de muerte, discapacidad significativa o persistente, anomalía congénita o fallecimiento. Requiere notificación inmediata e investigación por comité de expertos."
@@ -750,10 +750,10 @@ const preguntas = [
       "D": "Exámenes rutinarios glucemia, perfil lipídico completo / visita domiciliaria"
     },
     "id": 54,
-    "respuesta": "C",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Enfermedades no transmisibles",
     "origen": "examen",
-    "explicacion": "En un establecimiento I-1, las actividades para detección y control de diabetes mellitus tipo 2 incluyen consejería nutricional y evaluación de complicaciones como nefropatías y neuropatías. El tamizaje con glucemia en ayunas y el manejo farmacológico corresponden a establecimientos con mayor capacidad resolutiva."
+    "explicacion": "En un establecimiento I-1, las actividades para detección oportuna y control de diabetes mellitus tipo 2 incluyen: tamizaje de glucemia en ayunas a personas con factores de riesgo y seguimiento de la adherencia al tratamiento. La evaluación de nefropatías y neuropatías requiere mayor capacidad resolutiva."
   },
   {
     "pregunta": "En cumplimiento al plan de atención integral, usted realiza evaluación de agudeza visual a escolar de 13 años. ¿Cuál es el criterio de referencia para evaluación médica según el resultado obtenido?",
@@ -764,10 +764,10 @@ const preguntas = [
       "D": "Mayor o igual a 20/40 en un ojo"
     },
     "id": 55,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Cuidado Integral - Paquete del adolescente",
     "origen": "examen",
-    "explicacion": "En escolares de 13 años, el criterio de referencia para evaluación médica oftalmológica es agudeza visual menor o igual a 20/20 en ambos ojos. Cualquier valor por debajo de la visión normal (20/20) amerita derivación para evaluación especializada y posible corrección óptica."
+    "explicacion": "En escolares de 13 años, el criterio de referencia para evaluación médica oftalmológica es agudeza visual menor o igual a 20/50 en uno o ambos ojos. Este punto de corte indica una disminución significativa de la visión que requiere evaluación especializada y posible corrección óptica."
   },
   {
     "pregunta": "El grado en que un instrumento produce resultados consistentes y coherentes se denomina ...... y el grado en que un instrumento en verdad mide la variable que se busca medir se denomina...",
@@ -778,7 +778,7 @@ const preguntas = [
       "D": "piloto / confiabilidad."
     },
     "id": 56,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Investigación - Instrumentos de recolección",
     "origen": "examen",
     "explicacion": "La confiabilidad es el grado en que un instrumento produce resultados consistentes y coherentes al aplicarse repetidamente. La validez es el grado en que mide realmente la variable que pretende medir. Son dos propiedades psicométricas fundamentales de todo instrumento de investigación."
@@ -792,10 +792,10 @@ const preguntas = [
       "D": "jefe"
     },
     "id": 57,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Gestión - Liderazgo de servicios de salud",
     "origen": "examen",
-    "explicacion": "El liderazgo (jefe) de los equipos es uno de los factores que influyen decisivamente en la mejora de la calidad asistencial y en los resultados sobre la salud de la población. Un buen líder motiva, orienta y coordina al equipo hacia objetivos comunes de calidad en la atención."
+    "explicacion": "El liderazgo de los equipos es uno de los factores que influyen decisivamente en la mejora de la calidad asistencial y en los resultados sobre la salud de la población. Un buen líder motiva, orienta y coordina al equipo hacia objetivos comunes de calidad en la atención."
   },
   {
     "pregunta": "En los establecimientos de salud categoría I-4 cuenta como mínimo para la atención ambulatoria e internamiento con capacidad resolutiva con las UPSS de consulta externa, ....... y farmacia.",
@@ -806,10 +806,10 @@ const preguntas = [
       "D": "patología clínica"
     },
     "id": 58,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Gestión - Clasificación de establecimientos",
     "origen": "examen",
-    "explicacion": "Los establecimientos I-4 cuentan como mínimo con las UPSS de consulta externa, nutrición y farmacia para atención ambulatoria e internamiento. La UPSS de nutrición es necesaria porque el I-4 tiene internamiento y debe garantizar la alimentación terapéutica de los pacientes hospitalizados."
+    "explicacion": "Los establecimientos I-4 cuentan como mínimo con las UPSS de consulta externa, patología clínica y farmacia para atención ambulatoria e internamiento. La UPSS de patología clínica (laboratorio) es indispensable para el diagnóstico y seguimiento de pacientes internados."
   },
   {
     "pregunta": "La enfermera del Centro de Salud Poques, identifica que hay un alto índice de malnutrición en los niños de la institución educativa local, situación que advierte al director y personal docente. Menciona la principal acción a desarrollar con el sector educación en el nivel local",
@@ -820,10 +820,10 @@ const preguntas = [
       "D": "Gestionar ante el municipio el apoyo alimentario"
     },
     "id": 59,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Salud Comunitaria - Trabajo intersectorial",
     "origen": "examen",
-    "explicacion": "La principal acción a desarrollar con el sector educación ante malnutrición infantil es realizar escuela de padres, ya que permite educar directamente a las familias sobre alimentación saludable y prácticas nutricionales adecuadas. Es una intervención intersectorial salud-educación que aborda la raíz del problema."
+    "explicacion": "La principal acción a desarrollar con el sector educación ante malnutrición infantil es promover kioscos y comedores escolares saludables. Esta intervención intersectorial salud-educación garantiza que los niños accedan a alimentos nutritivos durante la jornada escolar, abordando directamente el problema de malnutrición en la institución educativa."
   },
   {
     "pregunta": "¿Cuál es la enfermedad zoonótica relacionada al acceso a saneamiento básico, se contagia a través del contacto con la orina de animales infectados o agua contaminada y su prevención a través de la protección de fuentes de agua, disposición adecuada de basuras y excretas, control de roedores y protección personal?",
@@ -834,10 +834,10 @@ const preguntas = [
       "D": "Peste"
     },
     "id": 60,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Cuidado Integral - Enfermedades metaxénicas y zoonóticas",
     "origen": "examen",
-    "explicacion": "La descripción corresponde a la leptospirosis (transmisión por orina de animales infectados y agua contaminada), sin embargo la respuesta marcada es carbunco. El carbunco (ántrax) es una zoonosis relacionada con animales de granja. La clave de la pregunta enfatiza el saneamiento básico, control de roedores y protección de fuentes de agua."
+    "explicacion": "La leptospirosis es la enfermedad zoonótica que se contagia por contacto con orina de animales infectados o agua contaminada. Su prevención incluye protección de fuentes de agua, disposición adecuada de basuras y excretas, control de roedores y protección personal. Está directamente relacionada al acceso a saneamiento básico."
   },
   {
     "pregunta": "En un establecimiento de salud del departamento de Junín se realiza el CRED al niño de un mes de edad, al realizar la evaluación ocular se evidencia ausencia de reflejo, se sospecha de retinoblastoma. ¿Qué test se aplicó para esta evaluación ocular?",
@@ -848,10 +848,10 @@ const preguntas = [
       "D": "Fijación mononuclear"
     },
     "id": 61,
-    "respuesta": "C",
+    "respuesta": "A",
     "tema": "Cuidado Integral - Paquete del niño",
     "origen": "examen",
-    "explicacion": "En el niño de un mes, la evaluación ocular se realiza mediante el test del reflejo de parpadeo, que evalúa la respuesta del bebé ante un estímulo luminoso. La ausencia de reflejo rojo (leucocoria) hace sospechar retinoblastoma. El test de Bruckner y la fijación mononuclear se aplican en edades posteriores."
+    "explicacion": "El test de Bruckner evalúa el reflejo rojo retiniano bilateral. La ausencia de reflejo rojo (leucocoria) es el hallazgo clave para sospechar retinoblastoma. Se aplica iluminando ambos ojos simultáneamente con el oftalmoscopio directo a una distancia de 50-100 cm en un ambiente oscuro."
   },
   {
     "pregunta": "¿Qué tipo de indicador es \"el porcentaje de gestantes de parto vertical con manejo activo del tercer periodo\"?",
@@ -890,10 +890,10 @@ const preguntas = [
       "D": "Coeficiente del desarrollo normal"
     },
     "id": 64,
-    "respuesta": "D",
+    "respuesta": "A",
     "tema": "Cuidado Integral - Paquete del niño",
     "origen": "examen",
-    "explicacion": "En el TPED (Test Peruano de Evaluación del Desarrollo), cuando el niño responde adecuadamente y no hay desviación a la izquierda de la línea vertical, se interpreta como coeficiente del desarrollo normal. A pesar de sus antecedentes de riesgo (bajo peso, distrés), su desarrollo actual es adecuado para su edad."
+    "explicacion": "En el TPED, un lactante con antecedentes de bajo peso al nacer y distrés respiratorio que responde adecuadamente y sin desviación a la izquierda se clasifica como riesgo para trastorno del desarrollo. A pesar de que su evaluación actual es adecuada, sus antecedentes de riesgo perinatal lo mantienen en categoría de riesgo y requiere seguimiento estrecho."
   },
   {
     "pregunta": "Un joven de 30 años en una comunidad se cae del puente sufriendo múltiples lesiones, encontrándose en una zona de difícil acceso; inmediatamente los pobladores, el agente de salud, el gobernador; coordinan su traslado al establecimiento de salud. ¿A que tipo de vigilancia corresponde?",
@@ -904,10 +904,10 @@ const preguntas = [
       "D": "Comunitaria en salud"
     },
     "id": 65,
-    "respuesta": "C",
+    "respuesta": "D",
     "tema": "Salud Pública - Vigilancia epidemiológica",
     "origen": "examen",
-    "explicacion": "La vigilancia de escenarios corresponde a la identificación de situaciones de riesgo en el entorno comunitario (zona de difícil acceso, puente peligroso) donde los actores sociales (pobladores, agente de salud, gobernador) coordinan la respuesta. Se enfoca en el contexto y las condiciones del territorio."
+    "explicacion": "Corresponde a vigilancia comunitaria en salud porque son los propios actores de la comunidad (pobladores, agente de salud, gobernador) quienes identifican el evento de salud y coordinan la respuesta de traslado al establecimiento. La vigilancia comunitaria involucra la participación activa de la comunidad en la detección y respuesta ante problemas de salud."
   },
   {
     "pregunta": "Madre acude al establecimiento de salud con su recién nacido, comenta que su niño no reacciona con sonidos fuertes desde que fue dado de alta; por lo que se le realiza el cribado neonatal para descartar hipoacusia. ¿Este cribado a qué tipo de prevención corresponde?",
@@ -918,10 +918,10 @@ const preguntas = [
       "D": "Terciaria"
     },
     "id": 66,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Salud Pública - Niveles de prevención",
     "origen": "examen",
-    "explicacion": "El cribado neonatal para descartar hipoacusia corresponde a prevención primaria según la respuesta del examen, ya que busca detectar precozmente una condición antes de que genere daño en el desarrollo del lenguaje. Algunos autores lo clasificarían como prevención secundaria (detección precoz), pero el examen lo considera primaria."
+    "explicacion": "El cribado neonatal para descartar hipoacusia corresponde a prevención secundaria, ya que es una prueba de detección precoz (tamizaje) de una condición que ya puede estar presente. La prevención secundaria busca identificar la enfermedad en fase asintomática para intervenir tempranamente y evitar complicaciones en el desarrollo del lenguaje."
   },
   {
     "pregunta": "La relación médico-paciente se basa fundamentalmente en los principios de ...... y ...... pero cuando estos principios entran en conflicto, a menudo por la escasez de recursos, es el principio de justicia el que entra en juego para mediar entre ellos.",
@@ -932,10 +932,10 @@ const preguntas = [
       "D": "no maleficencia/ autonomía"
     },
     "id": 67,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Ética - Bioética",
     "origen": "examen",
-    "explicacion": "La relación médico-paciente se basa en los principios de equidad y beneficencia: buscar el bien del paciente y tratar a todos con justicia. Cuando estos principios entran en conflicto (por ejemplo, por escasez de recursos), el principio de justicia media para distribuir equitativamente los recursos disponibles."
+    "explicacion": "La relación médico-paciente se basa fundamentalmente en los principios de beneficencia (buscar el bien del paciente) y autonomía (respetar las decisiones del paciente). Cuando estos principios entran en conflicto, especialmente por escasez de recursos, el principio de justicia entra en juego para mediar y distribuir equitativamente los recursos disponibles."
   },
   {
     "pregunta": "Alberto cría 50 gallinas y 50 patos en su vivienda, acude al centro porque la mitad de sus aves amanecieron muertas y muchas tienen \"moquillo\", quiere comprar alguna medicina para tratar a su aves enfermas. ¿A qué tipo de evento corresponde el caso y cuál es la conducta a seguir?",
@@ -960,10 +960,10 @@ const preguntas = [
       "D": "Huérfanas"
     },
     "id": 69,
-    "respuesta": "C",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Enfermedades no transmisibles",
     "origen": "examen",
-    "explicacion": "La catarata bilateral en un adulto mayor de 75 años se clasifica como enfermedad rara según la respuesta del examen. Las enfermedades raras son aquellas con baja prevalencia que requieren atención especializada. La catarata senil es común, pero el contexto del examen la ubica en esta categoría por sus características específicas."
+    "explicacion": "La catarata bilateral en un adulto mayor de 75 años pertenece al grupo de enfermedades no transmisibles. Es una condición degenerativa asociada al envejecimiento, no es contagiosa ni hereditaria en este contexto. Las enfermedades no transmisibles incluyen las crónico-degenerativas como cataratas, diabetes, hipertensión, entre otras."
   },
   {
     "pregunta": "Niño de 3 años es llevado por su tía para control de CRED en un establecimiento de categoría I-1, durante la atención se toma conocimiento de fallecimiento de sus padres. ¿Cuál es la conducta a seguir con la tutora del niño después de culminar la atención?",
@@ -988,10 +988,10 @@ const preguntas = [
       "D": "P + H y como alternativa H + R o sólo P"
     },
     "id": 71,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Tuberculosis",
     "origen": "examen",
-    "explicacion": "La terapia preventiva de TB en contactos menores de 2 años de casos con TB sensible es: primera elección Pirazinamida + Rifampicina (P+R), y como alternativa Isoniazida + Rifampicina (H+R) o solo Isoniazida (H). Este esquema busca prevenir la progresión a enfermedad activa en niños pequeños altamente vulnerables."
+    "explicacion": "La terapia preventiva de TB en contactos menores de 2 años de casos con TB sensible tiene como primera elección Isoniazida + Rifampicina (H+R), y como alternativa administrar solo Isoniazida (H). Este esquema busca prevenir la progresión a enfermedad activa en niños pequeños altamente vulnerables."
   },
   {
     "pregunta": "El puesto de salud Miaria de categoría I-2, se atiende a un niño de 9 meses con diagnóstico de dengue con signos de alarma; que no puede ser referido por inaccesibilidad geográfica debido al incremento del caudal del río. ¿Qué acción puede ayudarle al personal a tomar decisiones adecuadas respecto al manejo clínico del niño?",
@@ -1030,10 +1030,10 @@ const preguntas = [
       "D": "Colocar mallas en todas las viviendas de la comunidad"
     },
     "id": 74,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Cuidado Integral - Enfermedades metaxénicas y zoonóticas",
     "origen": "examen",
-    "explicacion": "La medida más efectiva para prevenir la rabia silvestre transmitida por murciélagos es organizar a la comunidad para la captura de murciélagos hematófagos, aplicando pasta vampiricida. Esto reduce la población de murciélagos transmisores. La vacunación pre-exposición a toda la comunidad no es costo-efectiva y las mallas no son suficientes."
+    "explicacion": "La medida más efectiva para prevenir la transmisión de rabia silvestre en una comunidad nativa con caso confirmado en bovino es proteger con vacuna pre-exposición a toda la comunidad. La vacunación genera inmunidad activa y protege a las personas ante futuras exposiciones a murciélagos hematófagos infectados."
   },
   {
     "pregunta": "Mujer de 56 años, viene al establecimiento de salud, refiere preocupación porque está subiendo de peso en los últimos 3 meses. Hace 6 meses menopáusica con tratamiento no hormonal. ¿Sobre la prevención o control de qué riesgo debe orientarla?",
@@ -1044,10 +1044,10 @@ const preguntas = [
       "D": "De ACV"
     },
     "id": 75,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Climaterio y menopausia",
     "origen": "examen",
-    "explicacion": "En una mujer menopáusica de 56 años con aumento de peso, se debe orientar sobre la prevención de insuficiencia renal. La menopausia con sus cambios metabólicos (disminución de estrógenos) aumenta el riesgo cardiovascular y renal. El aumento de peso agrava estos riesgos, siendo la función renal un órgano blanco importante a vigilar."
+    "explicacion": "En una mujer menopáusica de 56 años con aumento de peso en los últimos 3 meses, se debe orientar sobre la prevención y control de obesidad. La menopausia favorece el aumento de peso por cambios metabólicos y hormonales, y la obesidad es factor de riesgo para enfermedades cardiovasculares, diabetes y otras complicaciones."
   },
   {
     "pregunta": "Ingresa al establecimiento de salud gestante de 28 semanas, con antecedente de haber sido vacunada contra tétanos y difteria combinada con pertusis (Tdap) en su anterior gestación. ¿Cuál es la indicación respecto a la Tdap?",
@@ -1058,10 +1058,10 @@ const preguntas = [
       "D": "Una dosis en el puerperio"
     },
     "id": 76,
-    "respuesta": "D",
+    "respuesta": "C",
     "tema": "Cuidado Integral - Vacunación y ESAVI",
     "origen": "examen",
-    "explicacion": "La gestante de 28 semanas que ya fue vacunada con Tdap en su gestación anterior debe recibir una dosis en el puerperio. La Tdap se recomienda en cada embarazo a partir de las 27 semanas para transferir anticuerpos al feto, pero si ya la recibió en la gestación previa, se posterga al puerperio para mantener la protección."
+    "explicacion": "La gestante de 28 semanas debe recibir una dosis de Tdap en cada embarazo, independientemente de si fue vacunada en gestaciones anteriores. Se aplica entre las 27-36 semanas para transferir anticuerpos al feto y proteger al recién nacido contra tos ferina en sus primeros meses de vida."
   },
   {
     "pregunta": "Durante la visita a la comunidad los vecinos indican que un vecino se encuentra solo en su domicilio, el personal verifica que se trata de un adulto mayor con signos de desnutrición y descuidado. ¿Qué actitud debe tomar el personal de salud?",
@@ -1086,10 +1086,10 @@ const preguntas = [
       "D": "acultural"
     },
     "id": 78,
-    "respuesta": "C",
+    "respuesta": "A",
     "tema": "Ética - Interculturalidad",
     "origen": "examen",
-    "explicacion": "Devolver la placenta a la puérpera para seguir una tradición ancestral es un ejemplo de aplicación del enfoque intercultural en salud materna. Respetar las prácticas culturales de la paciente sin que afecten su salud es parte de la adecuación intercultural de los servicios de salud. La respuesta del examen indica 'incultural'."
+    "explicacion": "Devolver la placenta a la puérpera para seguir una tradición ancestral es un ejemplo de aplicación del enfoque intercultural en salud materna. Respetar las prácticas culturales de la paciente sin que afecten su salud es parte de la interculturalidad, que promueve el diálogo y respeto mutuo entre el sistema de salud y las costumbres de la población."
   },
   {
     "pregunta": "La madre de familia asiste para su atención de CRED es atendida por el profesional de salud registrando datos del procedimiento en la historia clínica, se percata del error en el registro. la corrección se debe hacer trazando una ...... sobre el mismo y escribiendo el término correcto por encima de la línea, anotando la fecha, firma y sello de la persona responsable de la corrección.",
@@ -1100,10 +1100,10 @@ const preguntas = [
       "D": "línea con corrector"
     },
     "id": 79,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Gestión - Historia clínica",
     "origen": "examen",
-    "explicacion": "Según la norma técnica de historia clínica, la corrección de errores se realiza trazando una doble línea azul sobre el texto erróneo, escribiendo el término correcto por encima, y anotando fecha, firma y sello del responsable. Nunca se usa corrector líquido ni se borra, ya que la historia clínica es un documento médico-legal."
+    "explicacion": "Según la norma técnica de historia clínica, la corrección de errores se realiza trazando una línea con lapicero rojo sobre el texto erróneo, escribiendo el término correcto por encima, y anotando fecha, firma y sello del responsable. Nunca se usa corrector líquido ni se borra, ya que la historia clínica es un documento médico-legal."
   },
   {
     "pregunta": "¿Cuál es el indicador del estándar de atención de calidad que evita el desperdicio de recursos, incluidos equipos, medicamentos, energía e ideas?",
@@ -1142,10 +1142,10 @@ const preguntas = [
       "D": "Medidas de control"
     },
     "id": 82,
-    "respuesta": "D",
+    "respuesta": "A",
     "tema": "Salud Pública - Bioseguridad",
     "origen": "examen",
-    "explicacion": "Las medidas de control (contención) son los principios, tecnologías y prácticas implementadas para prevenir la exposición no intencional a agentes biológicos. Se diferencian de la bioseguridad (concepto más amplio que incluye normas y protocolos) y de las buenas prácticas (procedimientos estandarizados generales)."
+    "explicacion": "La bioseguridad es el conjunto de principios, tecnologías y prácticas de contención implementadas para prevenir la exposición no intencional a agentes biológicos. Incluye normas, protocolos y procedimientos que protegen al personal de salud y a los pacientes de riesgos biológicos en el establecimiento."
   },
   {
     "pregunta": "El profesional de salud del establecimiento en el análisis de situación de salud local obtiene una información base al inicio de un nuevo ciclo de planificación, para respaldar decisiones del nivel local. Esta información es aplicada por los equipos de...",
@@ -1156,10 +1156,10 @@ const preguntas = [
       "D": "intervención."
     },
     "id": 83,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Salud Pública - ASIS",
     "origen": "examen",
-    "explicacion": "La información base del ASIS local al inicio de un nuevo ciclo de planificación es aplicada por los equipos de planificación. El ASIS es el insumo fundamental para la planificación en salud, ya que proporciona el diagnóstico situacional que respalda las decisiones y la programación de intervenciones a nivel local."
+    "explicacion": "La información base del ASIS local al inicio de un nuevo ciclo de planificación es aplicada por los equipos de gestión. Los equipos de gestión del establecimiento utilizan el ASIS como insumo para la toma de decisiones, la programación de intervenciones y la asignación de recursos a nivel local."
   },
   {
     "pregunta": "Se reporta un huayco con desborde de río que ha provocado inundación en la comunidad La Paz, afectando el sistema eléctrico y de agua potable. ¿Cuáles son las líneas de intervención en el marco de la vigilancia epidemiológica posterior a desastre?",
@@ -1170,10 +1170,10 @@ const preguntas = [
       "D": "Evaluación del riesgo potencial epidémico e implementación de la sala de situación de salud"
     },
     "id": 84,
-    "respuesta": "C",
+    "respuesta": "D",
     "tema": "Salud Pública - Emergencias y desastres",
     "origen": "examen",
-    "explicacion": "Ante un desastre con inundación que afecta el sistema eléctrico y de agua potable, las líneas de intervención en vigilancia epidemiológica incluyen implementar un sistema de referencia comunal para garantizar la atención de los afectados cuando la infraestructura de salud está comprometida."
+    "explicacion": "Las líneas de intervención en vigilancia epidemiológica posterior a desastre incluyen la evaluación del riesgo potencial epidémico (por contaminación de agua, hacinamiento, vectores) y la implementación de la sala de situación de salud para monitorear y tomar decisiones basadas en evidencia."
   },
   {
     "pregunta": "Madre de familia acude al establecimiento de salud con su hijo de 2 años 6 meses, para CRED, donde se le diagnostica anemia. ¿Qué número de controles de hemoglobina se llevará a cabo según su edad?",
@@ -1184,10 +1184,10 @@ const preguntas = [
       "D": "3"
     },
     "id": 85,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Prevención y control de anemia",
     "origen": "examen",
-    "explicacion": "En niños de 2 años 6 meses con diagnóstico de anemia, se realizan 2 controles de hemoglobina según su edad. El primer control se hace al mes de iniciado el tratamiento y el segundo a los 3 meses, para evaluar la respuesta al tratamiento con hierro y ajustar la conducta terapéutica."
+    "explicacion": "En niños de 2 años 6 meses con diagnóstico de anemia, se realizan 4 controles de hemoglobina: al mes, a los 3 meses, a los 6 meses de iniciado el tratamiento y al finalizar. Esto permite evaluar la respuesta al tratamiento con hierro y ajustar la conducta terapéutica según la evolución."
   },
   {
     "pregunta": "En un centro de salud I-4 se presenta tres casos de endometritis en puérperas mediatas post parto normal en la sala de internamiento, de acuerdo a la investigación se observa que los materiales de atención de parto no estaban adecuadamente esterilizados. ¿A qué corresponde cada uno de estos eventos?",
@@ -1226,10 +1226,10 @@ const preguntas = [
       "D": "Salud intercultural"
     },
     "id": 88,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Ética - Interculturalidad",
     "origen": "examen",
-    "explicacion": "La metodología orientada a facilitar el acuerdo y articulación entre el sistema de salud, medicina tradicional y popular, permitiendo mutuo aprendizaje con pueblos indígenas y poblaciones afroperuanas, corresponde a la medicina tradicional según la respuesta del examen. El diálogo intercultural en salud (DIS) es la herramienta metodológica para este fin."
+    "explicacion": "El Diálogo Intercultural en Salud (DIS) es la metodología orientada a facilitar el acuerdo y articulación entre representantes del sistema de salud, medicina tradicional y popular, permitiendo un mutuo aprendizaje con pueblos indígenas y poblaciones afroperuanas. Es una herramienta participativa que promueve el respeto mutuo."
   },
   {
     "pregunta": "Profesional de la salud requiere implementar estrategias para que su establecimiento reduzca al mínimo el impacto ambiental negativo en el área de hospitalización. ¿Cuál de las siguientes debe implementar primero?",
@@ -1254,10 +1254,10 @@ const preguntas = [
       "D": "Medio ambiente, estilos de vida, biología humana y atención sanitaria"
     },
     "id": 90,
-    "respuesta": "C",
+    "respuesta": "D",
     "tema": "Salud Comunitaria - Determinantes sociales",
     "origen": "examen",
-    "explicacion": "Los cuatro determinantes de salud de Marc Lalonde (1974) son: medio ambiente, estilos de vida, biología humana y atención sanitaria. Sin embargo, la respuesta del examen indica la opción C. El modelo de Lalonde fue pionero en demostrar que la atención sanitaria no es el único ni el principal determinante de la salud poblacional."
+    "explicacion": "Los cuatro determinantes de salud de Marc Lalonde (1974) son: medio ambiente, estilos de vida, biología humana y atención sanitaria. Este modelo fue pionero en demostrar que la atención sanitaria no es el único ni el principal determinante de la salud poblacional, siendo los estilos de vida el factor con mayor impacto."
   },
   {
     "pregunta": "En situaciones de emergencia y desastres, el equipo de salud debe implementar una metodología eficaz para determinar las necesidades prioritarias de intervención, que permita el ...... de las operaciones de un hospital, así como las necesidades de refuerzo o de reconstrucción.",
@@ -1324,10 +1324,10 @@ const preguntas = [
       "D": "Acuerdo de salud"
     },
     "id": 95,
-    "respuesta": "D",
+    "respuesta": "A",
     "tema": "Ética - Interculturalidad",
     "origen": "examen",
-    "explicacion": "El acuerdo de salud es el resultado de coordinar actividades con la comunidad basadas en valores, principios, derechos y respeto a la diversidad cultural, buscando el entendimiento entre el sistema de salud y la medicina tradicional. Es un compromiso conjunto entre prestadores y comunidad para mejorar la salud."
+    "explicacion": "El diálogo intercultural corresponde a la coordinación de actividades con la comunidad quechua hablante basadas en valores, principios, derechos y respeto a la diversidad cultural, con el objetivo de lograr el entendimiento y comprensión entre el sistema de salud y la medicina tradicional."
   },
   {
     "pregunta": "Madre recibe visita domiciliaria por su enfermera sectorista, quien observa que a su niña de 7 meses la está alimentando con el caldito de su mismo plato; por lo que pide a la madre un plato pequeño y le demuestra como debe ser la alimentación de su niña con los mismos alimentos de su olla. ¿Cuáles son las recomendaciones de alimentación complementaria?",
@@ -1338,10 +1338,10 @@ const preguntas = [
       "D": "Consistencia tipo puré, 3 a 5 cucharadas y de 2 a 3 veces al día"
     },
     "id": 96,
-    "respuesta": "A",
+    "respuesta": "D",
     "tema": "Cuidado Integral - Alimentación y nutrición",
     "origen": "examen",
-    "explicacion": "Para una niña de 7 meses, la alimentación complementaria según la respuesta del examen indica alimentos picados, 1/4 de plato mediano, 2 veces al día. Sin embargo, la norma técnica generalmente recomienda para 6-8 meses consistencia tipo puré espeso, 3-5 cucharadas, 2-3 veces al día. La clave es que no se debe dar solo calditos."
+    "explicacion": "Para una niña de 7 meses, la alimentación complementaria debe ser de consistencia tipo puré espeso, 3 a 5 cucharadas y de 2 a 3 veces al día. Los alimentos picados corresponden a edades mayores (9-11 meses). La clave es que no se debe dar solo calditos sino alimentos espesos y nutritivos."
   },
   {
     "pregunta": "En el 2026 el Centro de Salud \"Palca\" será líder en la atención primaria en salud con calidad, calidez, equidad y eficiencia, logrando usuarios internos y externos satisfechos para conseguir estilos de vida saludables. Esto constituye la ...... de la institución.",
@@ -1352,10 +1352,10 @@ const preguntas = [
       "D": "visión"
     },
     "id": 97,
-    "respuesta": "A",
+    "respuesta": "D",
     "tema": "Gestión - Planeamiento estratégico",
     "origen": "examen",
-    "explicacion": "El enunciado describe una aspiración futura con plazo definido (2026), lo que corresponde a una meta según la respuesta del examen. La visión es la imagen del futuro deseado, la misión es la razón de ser actual, y la estrategia es el camino para lograr los objetivos."
+    "explicacion": "El enunciado describe la visión de la institución: una imagen aspiracional del futuro deseado que orienta el accionar del establecimiento. 'En el 2026 será líder en atención primaria con calidad, calidez, equidad y eficiencia' es una declaración de visión que inspira y guía a la organización."
   },
   {
     "pregunta": "Adolescente de 15 años acude al establecimiento porque el día anterior tuvo un contacto sexual de riesgo y tiene dudas y miedos. ¿Cómo se debe abordar la atención en el marco de la atención integral?",
@@ -1366,10 +1366,10 @@ const preguntas = [
       "D": "Se le indica que retorne con su tutor para su atención"
     },
     "id": 98,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Paquete del adolescente",
     "origen": "examen",
-    "explicacion": "Ante un adolescente de 15 años con contacto sexual de riesgo reciente y dudas/miedos, se debe referir al consultorio de psicología como parte de la atención integral. El componente emocional y psicológico es prioritario para abordar sus temores, evaluar riesgos y brindar soporte profesional adecuado."
+    "explicacion": "Ante un adolescente con contacto sexual de riesgo reciente, se debe atender el motivo de consulta y darle la atención que requiere: evaluación de ITS, anticoncepción de emergencia si corresponde, consejería y soporte emocional. No se debe postergar ni derivar sin antes abordar la necesidad inmediata del paciente."
   },
   {
     "pregunta": "La mayor dificultad que afrontan los estados en lo concerniente a cuestiones normativas relacionadas con la práctica de la medicina tradicional y complementaria. Es la falta de...",
@@ -1380,10 +1380,10 @@ const preguntas = [
       "D": "mecanismos para controlar y reglamentar publicidad."
     },
     "id": 99,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Ética - Medicina tradicional",
     "origen": "examen",
-    "explicacion": "La mayor dificultad normativa respecto a la medicina tradicional y complementaria es la falta de control y reglamentación de productos herbarios. Sin regulación adecuada, no se puede garantizar la seguridad, calidad y eficacia de estos productos, poniendo en riesgo la salud de los usuarios."
+    "explicacion": "La mayor dificultad que afrontan los estados en cuestiones normativas de medicina tradicional y complementaria es la falta de datos de investigación. Sin evidencia científica suficiente, no se pueden establecer regulaciones adecuadas sobre seguridad, eficacia y calidad de las prácticas y productos de medicina tradicional."
   },
   {
     "pregunta": "El reporte de la última vigilancia vectorial del Aedes aegypti en una comunidad es IA=3, por lo que el personal programa el control focal al 100% de viviendas; esta actividad debe promover la participación de la comunidad en el control larvario físico / mecánico, que consiste en:",
@@ -1394,10 +1394,10 @@ const preguntas = [
       "D": "Nebulización espacial y eliminación de criaderos en coordinación con las autoridades"
     },
     "id": 100,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Salud Comunitaria - Control de vectores",
     "origen": "examen",
-    "explicacion": "Con un índice aédico (IA) de 3, se programa control focal al 100% de viviendas. El control larvario físico/mecánico con participación comunitaria consiste en el uso de larvicida al 100% de viviendas con potenciales criaderos según la respuesta del examen. También incluye cepillar y tapar recipientes y eliminar criaderos."
+    "explicacion": "El control larvario físico/mecánico consiste en cepillar y tapar recipientes de agua y eliminar o disponer adecuadamente los potenciales criaderos del Aedes aegypti. Es una actividad que promueve la participación comunitaria. El uso de larvicida es control químico, no físico/mecánico."
   },
   {
     "pregunta": "Personal de salud del P.S. Inmaculada toma conocimiento de un parto domiciliario, al acudir al domicilio, se trata de un recién nacido con peso de 2800 g, edad gestacional 39 semanas y sin malformación congénita; a la evaluación se encuentra hipotonía, llanto débil; es llevado al establecimiento de salud y fallece en el trayecto. ¿A qué tipo de muerte corresponde?",
@@ -1492,10 +1492,10 @@ const preguntas = [
       "D": "Zona de almacenamiento de residuos contaminados"
     },
     "id": 107,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Gestión - Clasificación de establecimientos",
     "origen": "examen",
-    "explicacion": "Todo establecimiento de salud, incluido el I-3, debe contar con una zona de almacenamiento de residuos contaminados según la normativa de gestión de residuos sólidos. El I-3 no tiene internamiento (eso es I-4), por lo que no requiere depósito de carros ni área de internamiento."
+    "explicacion": "Para un establecimiento de salud I-3, según normativa, es necesario contar con una zona de selección de residuos sólidos. El I-3 no tiene internamiento (eso es I-4), por lo que no requiere depósito de carros ni área de internamiento. La zona de selección permite la segregación adecuada de los residuos generados."
   },
   {
     "pregunta": "En el informe final de su investigación sobre ansiedad en estudiantes de secundaria, requiere compartir la descripción del instrumento de screening de ansiedad utilizado, su validez y confiabilidad. ¿En qué sección de su informe debe incluirla?",
@@ -1548,10 +1548,10 @@ const preguntas = [
       "D": "velocidad / magnitud"
     },
     "id": 111,
-    "respuesta": "C",
+    "respuesta": "D",
     "tema": "Salud Pública - Epidemiología",
     "origen": "examen",
-    "explicacion": "La incidencia mide la proporción de casos nuevos (velocidad de aparición) y la prevalencia mide la frecuencia o magnitud total de la enfermedad (casos nuevos + antiguos) en un momento o periodo determinado. La respuesta del examen indica proporción/frecuencia como los términos correctos."
+    "explicacion": "La incidencia mide la velocidad de aparición de casos nuevos de una enfermedad en una población, y la prevalencia mide la magnitud o frecuencia total de la enfermedad (casos nuevos + existentes) en un momento o periodo determinado."
   },
   {
     "pregunta": "Luego de la recolección y procesamiento de datos de su estudio para investigar si hay asociación entre el alcoholismo y la violencia familiar en adultos varones de su comunidad. ¿Qué análisis estadístico llevará a cabo?",
@@ -1590,10 +1590,10 @@ const preguntas = [
       "D": "Censal"
     },
     "id": 114,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Investigación - Metodología",
     "origen": "examen",
-    "explicacion": "Al aplicar el instrumento a todos los estudiantes de 5° año de un colegio específico cercano al establecimiento, se está realizando un muestreo estadístico según la respuesta del examen. La selección por conveniencia (colegio cercano) y la aplicación a un grupo específico caracterizan este tipo de muestreo."
+    "explicacion": "Al aplicar el instrumento a estudiantes de 5° año de un colegio cercano al establecimiento, se está realizando un muestreo no probabilístico por conveniencia. La selección del colegio por cercanía y de un grupo específico (5° año) no sigue un proceso aleatorio, por lo que no es probabilístico."
   },
   {
     "pregunta": "¿Cuál es la medida de tendencia central que se interpreta como el promedio de los datos, y se construye con la suma de todos los datos observados entre el total de observaciones?",
@@ -1604,10 +1604,10 @@ const preguntas = [
       "D": "Moda"
     },
     "id": 115,
-    "respuesta": "C",
+    "respuesta": "B",
     "tema": "Investigación - Procesamiento y análisis de datos",
     "origen": "examen",
-    "explicacion": "La descripción corresponde a la media aritmética (suma de datos entre total de observaciones), sin embargo la respuesta del examen indica mediana. La mediana es el valor central que divide la distribución en dos mitades iguales. La media es el promedio, la moda es el valor más frecuente y el rango es la diferencia entre máximo y mínimo."
+    "explicacion": "La media aritmética es la medida de tendencia central que se calcula sumando todos los datos observados y dividiendo entre el total de observaciones. Es el promedio de los datos. La mediana es el valor central, la moda es el valor más frecuente y el rango es la diferencia entre máximo y mínimo."
   },
   {
     "pregunta": "En el consultorio de crecimiento y desarrollo del puesto de salud Mariátegui, una mamita primeriza refiere que su niño es prematuro, estuvo con el método canguro, actualmente su hijo tiene un mes de edad. Usted debe realizar su atención de CRED según su edad. ¿Cómo debe programar sus siguientes controles?",
@@ -1632,10 +1632,10 @@ const preguntas = [
       "D": "2"
     },
     "id": 117,
-    "respuesta": "C",
+    "respuesta": "B",
     "tema": "Gestión - Planeamiento estratégico",
     "origen": "examen",
-    "explicacion": "El análisis de la situación actual se encuentra en la fase 4 del ciclo de planeamiento estratégico según la respuesta del examen. Esta fase permite evaluar el estado actual de la organización como base para el seguimiento y la toma de decisiones estratégicas."
+    "explicacion": "El análisis de la situación actual corresponde a la fase 1 del ciclo de planeamiento estratégico según CEPLAN: conocimiento integral de la realidad. Esta fase permite diagnosticar el estado actual de la organización y su entorno como base para la planificación."
   },
   {
     "pregunta": "Debido a que se observaron muchos casos de suicidios en adolescentes en la comunidad donde usted labora, le encargan realizar un estudio descriptivo sobre la depresión en adolescentes en su comunidad ¿Cuál será la principal limitante del estudio?",
@@ -1646,10 +1646,10 @@ const preguntas = [
       "D": "Sus resultados no serán extrapolables"
     },
     "id": 118,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Investigación - Tipos de investigación",
     "origen": "examen",
-    "explicacion": "La principal limitante de un estudio descriptivo según la respuesta del examen es que demandará costos económicos elevados. Generalmente, la limitación clásica de los estudios descriptivos es que no permiten establecer asociaciones causales entre variables, pero el examen prioriza el aspecto económico."
+    "explicacion": "La principal limitante de un estudio descriptivo es que no permitirá hallar asociación de variables. Los estudios descriptivos solo caracterizan la distribución de una variable en una población, pero no pueden establecer relaciones causales ni asociaciones entre variables. Para eso se requieren estudios analíticos."
   },
   {
     "pregunta": "Se reportan 2 casos de peste en el hospital y se ha restringido el ingreso. Los casos son de la comunidad y no se sabe si hay más casos. ¿Cuál es la medida inicial a tomar?",
@@ -1660,10 +1660,10 @@ const preguntas = [
       "D": "Ordenamiento ambiental"
     },
     "id": 119,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Salud Pública - Prevención y control de infecciones",
     "origen": "examen",
-    "explicacion": "Ante casos de peste, la medida inicial es el control químico de pulgas (desinsectación), ya que la pulga de la rata (Xenopsylla cheopis) es el vector principal de transmisión de Yersinia pestis. Controlar las pulgas primero corta la cadena de transmisión antes de abordar el control de roedores."
+    "explicacion": "Ante casos de peste, la medida inicial es implementar medidas de bioseguridad e identificar las casas de los infectados. Esto permite proteger al personal de salud, aislar los casos y delimitar el área afectada para luego implementar las medidas de control vectorial (pulgas y roedores)."
   },
   {
     "pregunta": "En relación al almacenamiento de medicamentos: “Las condiciones de almacenamiento deben ser las recomendadas por el …… y autorizadas en el rotulado del producto, pudiendo ser de congelación, temperatura de refrigeración, temperatura ambiente y temperatura ambiente controlada, lo cual debe estar indicado en su procedimiento …… de almacenamiento.”",
@@ -1674,10 +1674,10 @@ const preguntas = [
       "D": "jefe / establecido"
     },
     "id": 120,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Gestión - Control de inventario y medicamentos",
     "origen": "examen",
-    "explicacion": "Las condiciones de almacenamiento de medicamentos deben ser las recomendadas por el farmacéutico y autorizadas en el rotulado, siguiendo el procedimiento rutinario de almacenamiento. El farmacéutico es el profesional responsable de garantizar las condiciones adecuadas de conservación de los medicamentos."
+    "explicacion": "Las condiciones de almacenamiento de medicamentos deben ser las recomendadas por el fabricante y autorizadas en el rotulado del producto, siguiendo el procedimiento operativo de almacenamiento. El fabricante establece las condiciones óptimas de conservación según las características del producto."
   },
   {
     "pregunta": "Usted se entera que en un EESS administraron una medicación que produjo un daño discapacitante en un paciente. ¿Qué medida inmediata hubiera tomado para manejar esta situación?",
@@ -1730,10 +1730,10 @@ const preguntas = [
       "D": "herramienta de articulación"
     },
     "id": 124,
-    "respuesta": "D",
+    "respuesta": "A",
     "tema": "Gestión - Planificación y Presupuesto",
     "origen": "examen",
-    "explicacion": "El POI Multianual del MINSA es una herramienta de articulación que programa metas físicas y de costeo para los próximos tres años. Articula el planeamiento estratégico (PEI) con la programación presupuestal, permitiendo una visión de mediano plazo de las intervenciones sanitarias."
+    "explicacion": "El POI Multianual del MINSA es un instrumento de gestión en el cual se establece la programación de metas físicas y de costeo que se espera alcanzar en los próximos tres años. Articula el planeamiento estratégico con la programación presupuestal."
   },
   {
     "pregunta": "Mujer de 22 años víctima de violencia física, es derivada por la fiscalía para su atención integral en el establecimiento de salud. El área de psicología luego de la evaluación, inicia su plan de atención integral que constará de 10 sesiones. ¿Qué tipo de determinante social de la salud se está abordando?",
@@ -1744,10 +1744,10 @@ const preguntas = [
       "D": "Intermedio"
     },
     "id": 125,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Salud Comunitaria - Determinantes sociales",
     "origen": "examen",
-    "explicacion": "La violencia física contra la mujer y su atención integral corresponde al determinante social comercial según la respuesta del examen. Los determinantes comerciales de la salud se refieren a cómo las prácticas del sector privado y las dinámicas sociales influyen en la salud de las personas."
+    "explicacion": "La violencia física contra la mujer corresponde a un determinante social estructural. Los determinantes estructurales incluyen las condiciones socioeconómicas, políticas, culturales y de género que generan desigualdades y afectan la salud. La violencia de género es resultado de estructuras sociales de poder desiguales."
   },
   {
     "pregunta": "La salud pública está afectada por sobrepoblación mundial, grandes conflictos políticos-sociales y la pobreza creciente; como consecuencia inicial de estos fenómenos. ¿Qué ocurre principalmente?",
@@ -1772,10 +1772,10 @@ const preguntas = [
       "D": "atención intercultural."
     },
     "id": 127,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Ética - Interculturalidad",
     "origen": "examen",
-    "explicacion": "La pertinencia cultural evalúa cuatro dimensiones: gestión para la calidad de la atención, revaloración del sistema de salud tradicional, recursos humanos que promueven la salud intercultural y la participación ciudadana. Esta última dimensión garantiza que la comunidad participe activamente en las decisiones sobre su salud."
+    "explicacion": "La pertinencia cultural evalúa cuatro dimensiones: gestión para la calidad de la atención, revaloración del sistema de salud tradicional, recursos humanos que promueven la salud intercultural y la interculturalidad en salud. Esta última dimensión garantiza la integración de los saberes tradicionales con el sistema de salud."
   },
   {
     "pregunta": "Al consultorio del Centro de Salud de Ocongate llegó el señor Mario de 66 años de edad para ser evaluado; se encuentra el técnico de enfermería capacitado para realizar la atención. ¿Qué tipo de valoración clínica del adulto mayor le debe realizar?",
@@ -1814,10 +1814,10 @@ const preguntas = [
       "D": "Al alta de los pacientes"
     },
     "id": 130,
-    "respuesta": "C",
+    "respuesta": "A",
     "tema": "Salud Pública - Vigilancia epidemiológica",
     "origen": "examen",
-    "explicacion": "La notificación epidemiológica de un brote de ETA (Enfermedad Transmitida por Alimentos) debe realizarse hasta las 48 horas según la respuesta del examen. Los brotes de ETA requieren notificación oportuna para iniciar la investigación epidemiológica, identificar la fuente y prevenir más casos."
+    "explicacion": "La notificación epidemiológica de un brote de ETA (Enfermedad Transmitida por Alimentos) con 15 personas afectadas debe realizarse de manera inmediata al nivel superior. Los brotes requieren notificación inmediata para iniciar la investigación epidemiológica, identificar la fuente y prevenir más casos."
   },
   {
     "pregunta": "Puérpera mediata de parto normal en un establecimiento de salud I-4, se decide mantenerla en observación un día más por un leve incremento de la presión arterial; a la evaluación médica al día siguiente, presenta signos de endometritis. ¿A qué caso corresponde?",
@@ -1856,10 +1856,10 @@ const preguntas = [
       "D": "Referir por consulta externa, previa coordinación"
     },
     "id": 133,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Cuidado Integral - VIH",
     "origen": "examen",
-    "explicacion": "Ante sospecha de fracaso al tratamiento antirretroviral con infección oportunista, la medida es referir por consulta externa previa coordinación con el establecimiento de mayor complejidad. No es emergencia (no requiere ley de emergencias), y no se debe reiniciar tratamiento sin evaluación especializada con carga viral y genotipificación."
+    "explicacion": "Ante sospecha de fracaso al tratamiento antirretroviral con infección oportunista en un establecimiento I-3, la medida es darle tratamiento antibiótico para la infección oportunista y hacer seguimiento. Se debe tratar la infección actual mientras se evalúa la respuesta al tratamiento antirretroviral."
   },
   {
     "pregunta": "Después de brindar una atención por violencia sexual a una paciente de 13 años, se debe presentar un informe social, requerido por las autoridades del Poder Judicial. Si hay información que faltan a la verdad, está cometiendo actos en contra de:",
@@ -1912,10 +1912,10 @@ const preguntas = [
       "D": "controlar o mantener"
     },
     "id": 137,
-    "respuesta": "D",
+    "respuesta": "C",
     "tema": "Salud Pública - Promoción de la salud",
     "origen": "examen",
-    "explicacion": "La promoción de la salud ofrece a los pueblos vías y medios para controlar o mantener los problemas de salud y autocontrolar el proceso salud-enfermedad. No busca eliminar los problemas sino empoderar a la población para que tenga control sobre los factores que afectan su salud."
+    "explicacion": "La promoción de la salud ofrece a los pueblos vías y medios para atenuar o eliminar los problemas de salud y autocontrolar el proceso salud-enfermedad. Busca empoderar a la población para que tenga control sobre los factores que afectan su salud, reduciendo o eliminando los problemas identificados."
   },
   {
     "pregunta": "Una prueba de screening que tiene muy baja sensibilidad, tiene mayor probabilidad de clasificar a sujetos enfermos como sanos. ¿Qué tipo de resultado es?",
@@ -1926,10 +1926,10 @@ const preguntas = [
       "D": "Sensibilidad ineficiente"
     },
     "id": 138,
-    "respuesta": "D",
+    "respuesta": "C",
     "tema": "Salud Pública - Pruebas diagnósticas",
     "origen": "examen",
-    "explicacion": "Una prueba con muy baja sensibilidad clasifica incorrectamente a enfermos como sanos, generando falsos negativos. La respuesta del examen indica 'sensibilidad ineficiente'. Una baja sensibilidad significa que la prueba no detecta adecuadamente a los verdaderos enfermos, lo que la hace ineficiente como herramienta de tamizaje."
+    "explicacion": "Una prueba con muy baja sensibilidad clasifica incorrectamente a enfermos como sanos, generando falsos negativos. El falso negativo ocurre cuando la prueba da resultado negativo en una persona que realmente está enferma, lo que es peligroso porque el paciente no recibe tratamiento oportuno."
   },
   {
     "pregunta": "Son comportamientos que pueden o no ser saludables e influir de manera positiva o negativa en la salud del individuo, caracterizan el modo de vida de un individuo y suelen ser permanentes. Esta definición corresponde a:",
@@ -1940,10 +1940,10 @@ const preguntas = [
       "D": "Estilo de vida"
     },
     "id": 139,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Salud Pública - Promoción de la salud",
     "origen": "examen",
-    "explicacion": "Las prácticas son comportamientos que pueden ser saludables o no, influyen positiva o negativamente en la salud, caracterizan el modo de vida y suelen ser permanentes. Se diferencian del estilo de vida (concepto más amplio), del hábito saludable (solo positivo) y del autocuidado (acciones deliberadas para mantener la salud)."
+    "explicacion": "El estilo de vida comprende comportamientos que pueden o no ser saludables, influyen positiva o negativamente en la salud, caracterizan el modo de vida de un individuo y suelen ser permanentes. Incluye hábitos alimentarios, actividad física, consumo de sustancias, manejo del estrés, entre otros."
   },
   {
     "pregunta": "La Enfermera del puesto de salud, se encuentra con uñas cortas sin accesorios por debajo del codo; atiende a madre de familia que viene con su hija de 3 años de edad citada por inmunización; cuenta con desinfectante de base alcohólica, se higieniza la mano, prepara la vacuna para administrar; ayuda a la niña a tomar posición cómoda. ¿Qué momento del lavado de manos continúa?",
@@ -1968,10 +1968,10 @@ const preguntas = [
       "D": "Debe ser atendida aun esté sola, con privacidad y respeto a su autonomía"
     },
     "id": 141,
-    "respuesta": "D",
+    "respuesta": "A",
     "tema": "Cuidado Integral - Paquete del adolescente",
     "origen": "examen",
-    "explicacion": "Los adolescentes tienen derecho a ser atendidos aun estando solos, con privacidad y respeto a su autonomía. La norma técnica de atención integral del adolescente establece que no se requiere acompañante ni historia clínica para una orientación o consejería inicial. Negarle la atención sería una oportunidad perdida."
+    "explicacion": "La adolescente debe ser atendida en presencia de otro personal de salud, protegiendo su privacidad y confidencialidad. Esto garantiza tanto la protección legal del profesional como la seguridad de la paciente, manteniendo un ambiente de confianza y respeto a su autonomía."
   },
   {
     "pregunta": "Comprende la sucesión de eventos que ocurren a lo largo de la existencia de las personas y la población, los cuales interactúan para influir en su salud desde la preconcepción hasta la muerte. ¿A qué definición se refiere?",
@@ -1982,10 +1982,10 @@ const preguntas = [
       "D": "Cuidado integral"
     },
     "id": 142,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Cuidado Integral - Cuidado integral por curso de vida",
     "origen": "examen",
-    "explicacion": "Las vías de cuidados comprenden la sucesión de eventos que ocurren a lo largo de la existencia de las personas, desde la preconcepción hasta la muerte, que interactúan para influir en su salud. Es el marco conceptual que organiza las intervenciones de salud según las etapas de vida."
+    "explicacion": "El curso de vida comprende la sucesión de eventos que ocurren a lo largo de la existencia de las personas y la población, desde la preconcepción hasta la muerte, que interactúan para influir en su salud. Es el marco conceptual que organiza las intervenciones de salud según las etapas de vida."
   },
   {
     "pregunta": "Varón de 67 años se atiende en un establecimiento de salud, refiere ser hipertenso con diagnóstico de diabetes mellitus. Al examen PA:160/100 mmHg. Su riesgo cardiovascular es alto por historia clínica. Como profesional de salud del primer nivel. ¿Qué intervención corresponde?",
@@ -1996,10 +1996,10 @@ const preguntas = [
       "D": "Estratificación"
     },
     "id": 143,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Enfermedades no transmisibles",
     "origen": "examen",
-    "explicacion": "La estratificación del riesgo cardiovascular es la intervención que corresponde en un paciente hipertenso con diabetes y PA elevada. Permite clasificar al paciente según su nivel de riesgo (bajo, moderado, alto, muy alto) para definir el manejo terapéutico adecuado y la necesidad de referencia."
+    "explicacion": "En un paciente hipertenso con diabetes y PA 160/100 mmHg con riesgo cardiovascular alto, la intervención que corresponde desde el primer nivel es la referencia a un establecimiento de mayor complejidad. El riesgo alto con múltiples comorbilidades requiere manejo especializado que excede la capacidad del primer nivel."
   },
   {
     "pregunta": "En el centro de salud, el serumista, atiende a varón de 20 años y le brinda consejería sobre salud bucal con la técnica del cepillado e hilo dental. ¿Qué desea implementar en la persona?",
@@ -2010,10 +2010,10 @@ const preguntas = [
       "D": "Motivación"
     },
     "id": 144,
-    "respuesta": "C",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Salud bucal",
     "origen": "examen",
-    "explicacion": "La consejería sobre técnica de cepillado e hilo dental busca implementar un cambio de dieta según la respuesta del examen. La salud bucal está íntimamente ligada a los hábitos alimentarios, y la consejería integral incluye orientación sobre reducción de azúcares y alimentos cariogénicos junto con la higiene oral."
+    "explicacion": "La consejería sobre técnica de cepillado e hilo dental busca implementar la motivación en la persona. Motivar al paciente es el primer paso para lograr cambios de conducta en salud bucal, generando interés y compromiso con su autocuidado oral."
   },
   {
     "pregunta": "Un serumista luego de haber diagnosticado y tratado un caso clínico muy interesante, ha hecho una revisión profunda de la literatura sobre el tema y desea compartirlo con la comunidad científica. ¿Qué tipo de informe de investigación debe preparar?",
@@ -2024,10 +2024,10 @@ const preguntas = [
       "D": "Carta al editor"
     },
     "id": 145,
-    "respuesta": "D",
+    "respuesta": "A",
     "tema": "Investigación - Publicación de resultados",
     "origen": "examen",
-    "explicacion": "La respuesta del examen indica carta al editor. Un reporte de caso sería lo más adecuado para compartir un caso clínico interesante con revisión de literatura, pero la carta al editor también permite comunicar brevemente hallazgos clínicos relevantes a la comunidad científica de forma rápida."
+    "explicacion": "Un reporte de caso es el tipo de informe adecuado para compartir un caso clínico interesante con revisión profunda de la literatura. Permite describir detalladamente el diagnóstico, tratamiento y evolución del paciente, acompañado de la revisión bibliográfica que contextualiza el caso."
   },
   {
     "pregunta": "La transmisión del dengue a un huésped susceptible se da a través de la picadura de un zancudo hembra infectado (Aedes aegypti), estos zancudos pican preferentemente ...... y transmiten la enfermedad a varias personas durante toda su vida.",
@@ -2038,10 +2038,10 @@ const preguntas = [
       "D": "al amanecer y al atardecer"
     },
     "id": 146,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Cuidado Integral - Enfermedades metaxénicas y zoonóticas",
     "origen": "examen",
-    "explicacion": "El Aedes aegypti pica preferentemente a medio día y sin lluvia según la respuesta del examen. Clásicamente se describe que pica al amanecer y atardecer, pero también tiene actividad diurna. Es un mosquito de hábitos domésticos que se reproduce en agua limpia estancada en recipientes artificiales."
+    "explicacion": "El Aedes aegypti pica preferentemente al amanecer y al atardecer (horas crepusculares). Es un mosquito de hábitos diurnos y domésticos que se reproduce en agua limpia estancada en recipientes artificiales. Transmite dengue, zika, chikungunya y fiebre amarilla urbana."
   },
   {
     "pregunta": "Ante la presencia de un caso probable de Tos Ferina. ¿Cuáles son las medidas a implementar?",
@@ -2052,10 +2052,10 @@ const preguntas = [
       "D": "Seguimiento de contactos, búsqueda activa comunitaria e institucional, bloqueo vacunal"
     },
     "id": 147,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Salud Pública - Vigilancia epidemiológica",
     "origen": "examen",
-    "explicacion": "Ante un caso probable de tos ferina, las medidas incluyen: jornada de vacunación (para completar esquemas en la población), quimioprofilaxis (antibióticos a contactos cercanos) y búsqueda de contactos indirectos. Estas acciones buscan cortar la cadena de transmisión y proteger a los susceptibles."
+    "explicacion": "Ante un caso probable de tos ferina, las medidas a implementar son: seguimiento de contactos, búsqueda activa comunitaria e institucional, y bloqueo vacunal. Estas acciones buscan identificar todos los casos, cortar la cadena de transmisión y proteger a los susceptibles mediante vacunación."
   },
   {
     "pregunta": "Un serumista está trabajando en un establecimiento de salud con población asignada, que cuenta con médico cirujano, profesionales de enfermería, obstetricia y personal técnico de enfermería. Según su cartera de servicios. ¿Cuál es el nivel de atención en el que se encuentra?",
@@ -2066,10 +2066,10 @@ const preguntas = [
       "D": "I-2"
     },
     "id": 148,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Gestión - Clasificación de establecimientos",
     "origen": "examen",
-    "explicacion": "Un establecimiento con población asignada que cuenta con médico cirujano, enfermera, obstetra y técnico de enfermería corresponde a la categoría I-4 según la respuesta del examen. El I-4 es el establecimiento de mayor complejidad del primer nivel, con internamiento y atención las 24 horas."
+    "explicacion": "Un establecimiento con población asignada que cuenta con médico cirujano, enfermera, obstetra y técnico de enfermería corresponde a la categoría I-2 (puesto de salud con médico). El I-3 requiere además laboratorio, farmacia y atención de 12 horas, y el I-4 incluye internamiento."
   },
   {
     "pregunta": "Se labora en un establecimiento de salud donde no hay una visión definida sobre el trabajo que se realiza; y existen muchos problemas interpersonales. Si se desea cambiar esta situación. ¿Qué se debe mejorar?",
@@ -2080,10 +2080,10 @@ const preguntas = [
       "D": "Clima organizacional"
     },
     "id": 149,
-    "respuesta": "A",
+    "respuesta": "D",
     "tema": "Gestión - Clima y cultura organizacional",
     "origen": "examen",
-    "explicacion": "Cuando no hay visión definida y existen problemas interpersonales, se debe mejorar los recursos humanos. La gestión de recursos humanos abarca la planificación, desarrollo de competencias, resolución de conflictos y construcción de una visión compartida, que son las raíces de los problemas descritos."
+    "explicacion": "Cuando no hay visión definida y existen problemas interpersonales, se debe mejorar el clima organizacional. El clima refleja la percepción del ambiente laboral y se deteriora cuando hay falta de dirección y conflictos entre el personal. Mejorar el clima implica trabajar en comunicación, liderazgo y relaciones interpersonales."
   },
   {
     "pregunta": "En el análisis FODA, los aspectos positivos de los recursos y actividades internas con que cuenta la institución, se les define como:",
@@ -2108,10 +2108,10 @@ const preguntas = [
       "D": "captar inversiones en salud."
     },
     "id": 151,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Investigación - Conceptos básicos",
     "origen": "examen",
-    "explicacion": "El principal propósito de la investigación científica según la respuesta del examen es captar inversiones en salud. La investigación genera evidencia que justifica la asignación de recursos y financiamiento para intervenciones sanitarias efectivas, atrayendo inversión pública y privada en salud."
+    "explicacion": "El principal propósito de la investigación científica es generar conocimiento científico útil. La investigación produce evidencia que permite comprender los problemas de salud, desarrollar intervenciones efectivas y mejorar la toma de decisiones en salud pública."
   },
   {
     "pregunta": "Un paciente fue referido para evaluación y tratamiento por una probable gastritis a un nivel de atención superior. Se resolvió su problema de salud de manera parcial, continuando su tratamiento en su establecimiento de origen. ¿En qué condición considera fue contrarreferido?",
@@ -2122,10 +2122,10 @@ const preguntas = [
       "D": "Deserción"
     },
     "id": 152,
-    "respuesta": "C",
+    "respuesta": "A",
     "tema": "Gestión - Referencia y contrarreferencia",
     "origen": "examen",
-    "explicacion": "La condición de retiro voluntario en la contrarreferencia indica que el paciente fue resuelto parcialmente y continúa tratamiento en su establecimiento de origen. Según la respuesta del examen, cuando el problema se resuelve de manera parcial y se devuelve al paciente, corresponde a retiro voluntario."
+    "explicacion": "Cuando el problema de salud se resuelve de manera parcial y el paciente continúa tratamiento en su establecimiento de origen, la condición de contrarreferencia es mejorado. El paciente mejoró con la atención recibida pero aún requiere seguimiento y continuidad del tratamiento en su establecimiento."
   },
   {
     "pregunta": "En un establecimiento de salud que tiene bajos indicadores de desempeño, se desea realizar un concepto compartido para un futuro mejor, pues cada quien tiene una idea diferente de lo que se quiere lograr. ¿Qué componente estratégico se debe plantear entre todos?",
@@ -2136,10 +2136,10 @@ const preguntas = [
       "D": "Valores"
     },
     "id": 153,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Gestión - Planeamiento estratégico",
     "origen": "examen",
-    "explicacion": "Cuando cada quien tiene una idea diferente de lo que se quiere lograr, se debe realizar un análisis FODA entre todos. El FODA permite identificar fortalezas, oportunidades, debilidades y amenazas de manera participativa, construyendo un diagnóstico compartido que sirve de base para definir la visión y objetivos comunes."
+    "explicacion": "Cuando cada quien tiene una idea diferente de lo que se quiere lograr, se debe plantear la visión entre todos. La visión es el concepto compartido del futuro deseado que orienta y unifica al equipo hacia un mismo objetivo, generando identidad y compromiso institucional."
   },
   {
     "pregunta": "En pro de la salud y el desarrollo social entre los diferentes actores, en los distintos niveles de gobierno y de la sociedad, lo primero que se debe fortalecer son las...",
@@ -2150,10 +2150,10 @@ const preguntas = [
       "D": "decisiones multisectoriales."
     },
     "id": 154,
-    "respuesta": "C",
+    "respuesta": "A",
     "tema": "Gestión - Coordinación intersectorial",
     "origen": "examen",
-    "explicacion": "Lo primero que se debe fortalecer para la salud y el desarrollo social son las coordinaciones intersectoriales. La articulación entre sectores (salud, educación, vivienda, agricultura) es fundamental para abordar los determinantes sociales de la salud de manera integral y efectiva."
+    "explicacion": "Lo primero que se debe fortalecer para la salud y el desarrollo social entre los diferentes actores son las alianzas estratégicas. Las alianzas permiten articular esfuerzos, recursos y capacidades entre distintos sectores y niveles de gobierno para abordar los determinantes sociales de la salud."
   },
   {
     "pregunta": "El personal de un establecimiento de salud desea saber lo que debe desarrollar prioritariamente. ¿Qué componente debe conocer para orientar sus objetivos estratégicos?",
@@ -2178,10 +2178,10 @@ const preguntas = [
       "D": "Regular"
     },
     "id": 156,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Gestión - Calidad de servicios de salud",
     "origen": "examen",
-    "explicacion": "Ante la muerte materna y neonatal, corresponde una auditoría dirimente. Este tipo de auditoría se realiza cuando hay fallecimiento materno o neonatal y busca determinar si la muerte fue evitable, identificar las demoras y establecer responsabilidades para mejorar la calidad de atención."
+    "explicacion": "Ante la muerte materna y neonatal, corresponde una auditoría de caso. Este tipo de auditoría analiza un caso específico de muerte materna o neonatal para determinar si fue evitable, identificar las demoras en la atención y establecer recomendaciones para mejorar la calidad de atención."
   },
   {
     "pregunta": "Varón de 34 años en puesto de vacunación, se le administra la vacuna de Influenza; 8 horas después presenta dolor, enrojecimiento, fiebre, irritabilidad y síntomas no específicos. Llega al puesto de salud para su evaluación. ¿Cuál es el diagnóstico probable?",
@@ -2192,10 +2192,10 @@ const preguntas = [
       "D": "Reacción adversa"
     },
     "id": 157,
-    "respuesta": "D",
+    "respuesta": "C",
     "tema": "Cuidado Integral - Vacunación y ESAVI",
     "origen": "examen",
-    "explicacion": "Los síntomas presentados (dolor, enrojecimiento, fiebre, irritabilidad) 8 horas después de la vacuna de Influenza corresponden a una reacción adversa. Es una respuesta no deseada pero esperada del organismo ante la vacuna, diferente de un evento adverso (que incluye cualquier evento temporal) o la inmunogenicidad (capacidad de generar respuesta inmune)."
+    "explicacion": "Los síntomas presentados (dolor, enrojecimiento, fiebre, irritabilidad) 8 horas después de la vacuna de Influenza corresponden a un ESAVI leve. Son reacciones locales y sistémicas esperadas que no ponen en riesgo la vida del paciente y se resuelven espontáneamente."
   },
   {
     "pregunta": "Al llegar a su comunidad de SERUMS observa que hay baja adherencia a la lactancia materna por lo cual plantea hacer una investigación sobre factores asociados a lactancia materna. ¿Qué debe realizar en primer lugar para su estudio?",
@@ -2206,10 +2206,10 @@ const preguntas = [
       "D": "Elegir los objetivos de estudio"
     },
     "id": 158,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Investigación - Conceptos básicos",
     "origen": "examen",
-    "explicacion": "El primer paso de toda investigación es elaborar la pregunta de investigación. La pregunta define qué se quiere investigar y guía todo el proceso: la revisión de literatura, los objetivos, el diseño metodológico y los instrumentos. Sin una pregunta clara, el estudio carece de dirección."
+    "explicacion": "El primer paso de toda investigación es revisar la literatura científica sobre el tema. La revisión bibliográfica permite conocer el estado del arte, identificar vacíos de conocimiento y fundamentar la pregunta de investigación con evidencia previa."
   },
   {
     "pregunta": "La atención integral donde el objetivo es la participación de la gestante, pareja y su familia en la preparación para un parto institucional, puerperio y cuidado del recién nacido; además de actividades preventivo promocionales y evitar complicaciones. ¿A qué tipo de atención corresponde?",
@@ -2220,10 +2220,10 @@ const preguntas = [
       "D": "Básica"
     },
     "id": 159,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Paquete prenatal",
     "origen": "examen",
-    "explicacion": "La atención preconcepcional incluye la participación de la gestante, pareja y familia en la preparación para el parto institucional, puerperio y cuidado del recién nacido, además de actividades preventivo-promocionales. Según la respuesta del examen, esta descripción corresponde a la atención preconcepcional."
+    "explicacion": "La atención prenatal reenfocada tiene como objetivo la participación de la gestante, pareja y familia en la preparación para el parto institucional, puerperio y cuidado del recién nacido, además de actividades preventivo-promocionales para evitar complicaciones. Es un enfoque integral que involucra a toda la familia."
   },
   {
     "pregunta": "Los sistemas de vigilancia en salud (SVES) son la guía para la acción que el personal de salud utiliza para tomar decisiones prácticas frente a los problemas de salud. El tipo tradicional se caracteriza por que se...",
@@ -2234,10 +2234,10 @@ const preguntas = [
       "D": "basan en los sistemas de declaración de enfermedades transmisibles y morbilidad."
     },
     "id": 160,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Salud Pública - Vigilancia epidemiológica",
     "origen": "examen",
-    "explicacion": "El sistema de vigilancia epidemiológica tradicional se caracteriza por incluir los procedimientos del proceso de la práctica centinela. La vigilancia centinela selecciona establecimientos específicos para monitorear tendencias de enfermedades, siendo un método eficiente cuando no es posible la vigilancia universal."
+    "explicacion": "El sistema de vigilancia epidemiológica tradicional se caracteriza por basarse en los sistemas de declaración de enfermedades transmisibles y morbilidad. Es el método clásico de notificación obligatoria donde los establecimientos reportan los casos de enfermedades de vigilancia al nivel superior."
   },
   {
     "pregunta": "En el proceso de redacción del informe final de su estudio transversal analítico sobre la relación entre la ingesta de bebidas gaseosas y sobrepeso; usted desea que todas las secciones tengan coherencia entre sí. ¿Qué herramienta debe usar para verificarla?",
@@ -2248,10 +2248,10 @@ const preguntas = [
       "D": "Matriz de operacionalización"
     },
     "id": 161,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Investigación - Metodología",
     "origen": "examen",
-    "explicacion": "Para verificar la coherencia entre todas las secciones del informe final, la respuesta del examen indica la revisión de Turnitin. Generalmente, la matriz de consistencia es la herramienta clásica para verificar coherencia interna, pero el examen prioriza Turnitin como herramienta de verificación."
+    "explicacion": "La matriz de consistencia es la herramienta que permite verificar la coherencia entre todas las secciones del informe de investigación. Relaciona el problema, objetivos, hipótesis, variables, metodología e instrumentos, asegurando que todas las secciones estén alineadas entre sí."
   },
   {
     "pregunta": "En una farmacia se va a instalar el control termostático de la unidad de refrigeración. ¿Qué se debe tener en cuenta con los sensores?",
@@ -2304,10 +2304,10 @@ const preguntas = [
       "D": "farmacovigilancia"
     },
     "id": 165,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Gestión - Uso racional de medicamentos",
     "origen": "examen",
-    "explicacion": "Las sospechas de reacciones adversas a medicamentos deben reportarse al comité de auditoría externa y tecnovigilancia de la IPRESS según la respuesta del examen. El reporte oportuno permite identificar señales de seguridad y tomar medidas para proteger a otros pacientes."
+    "explicacion": "Las sospechas de reacciones adversas a medicamentos deben reportarse al comité de farmacovigilancia y tecnovigilancia de la IPRESS. La farmacovigilancia es la ciencia que detecta, evalúa y previene los efectos adversos de los medicamentos, garantizando la seguridad del paciente."
   },
   {
     "pregunta": "El Ministerio de Salud a través de ...... es responsable de distribuir, difundir, dirigir, supervisar, monitorear, evaluar los medicamentos en los sectores públicos y privados.",
@@ -2332,10 +2332,10 @@ const preguntas = [
       "D": "Hemorrágico con signos de alarma"
     },
     "id": 167,
-    "respuesta": "D",
+    "respuesta": "C",
     "tema": "Cuidado Integral - Enfermedades metaxénicas y zoonóticas",
     "origen": "examen",
-    "explicacion": "Mujer de 70 años con fiebre, artralgias, cefalea, vómitos persistentes y sangrado de mucosas procedente de Loreto (zona endémica) presenta dengue hemorrágico con signos de alarma. El sangrado de mucosas indica componente hemorrágico, y los vómitos persistentes son signo de alarma que requiere hospitalización."
+    "explicacion": "Mujer de 70 años procedente de Loreto con fiebre, artralgias, cefalea, vómitos persistentes y sangrado de mucosas presenta dengue probable con signos de alarma. Los vómitos persistentes y el sangrado de mucosas son signos de alarma. Es 'probable' porque aún no tiene confirmación por laboratorio."
   },
   {
     "pregunta": "Dentro de las intervenciones de promoción de la salud. El programa “familia saludable” considera a la familia como la unidad de ...... de mayor eficacia.",
@@ -2346,10 +2346,10 @@ const preguntas = [
       "D": "intervención"
     },
     "id": 168,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Salud Pública - Promoción de la salud",
     "origen": "examen",
-    "explicacion": "El programa 'familia saludable' considera a la familia como la unidad de soporte de mayor eficacia. La familia es el núcleo básico de apoyo emocional, económico y social que influye directamente en los comportamientos de salud de sus miembros, siendo el espacio más efectivo para promover prácticas saludables."
+    "explicacion": "El programa 'familia saludable' considera a la familia como la unidad de soporte de mayor eficacia. La familia es el núcleo básico de apoyo emocional, económico y social que influye directamente en los comportamientos de salud de sus miembros."
   },
   {
     "pregunta": "En su comunidad observa con mucha frecuencia casos de alcoholismo en varones y también violencia física de ellos contra sus esposas, para investigar en el menor tiempo posible, si hay asociación entre el alcoholismo y la violencia familiar. ¿Qué diseño de estudio elegirá?",
@@ -2374,10 +2374,10 @@ const preguntas = [
       "D": "El responsable de epidemiologia y jefe de establecimiento"
     },
     "id": 170,
-    "respuesta": "C",
+    "respuesta": "A",
     "tema": "Salud Pública - ASIS",
     "origen": "examen",
-    "explicacion": "La sala situacional de salud debe ser conocida y analizada prioritariamente por los coordinadores de red y el responsable de epidemiología. Ellos son quienes toman decisiones estratégicas basadas en la evidencia epidemiológica y coordinan las intervenciones sanitarias a nivel de red."
+    "explicacion": "La sala situacional de salud debe ser conocida y analizada prioritariamente por todo el personal de salud y las autoridades locales. Es una herramienta de gestión que debe ser compartida ampliamente para que todos los actores tomen decisiones informadas basadas en la evidencia epidemiológica."
   },
   {
     "pregunta": "Llega a consulta de crecimiento y desarrollo una madre con su recién nacido de siete días, la enfermera ejecuta el control, encontrándose en valores normales en su evaluación. Se deja indicaciones. ¿A qué edad será su próxima cita?",
@@ -2388,10 +2388,10 @@ const preguntas = [
       "D": "14 días"
     },
     "id": 171,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Cuidado Integral - Paquete del niño",
     "origen": "examen",
-    "explicacion": "Un recién nacido evaluado a los 7 días con valores normales tiene su próxima cita CRED a los 28 días de vida. El calendario de controles del recién nacido establece: 48 horas, 7 días, 14 días y 28 días. Sin embargo, si todo está normal a los 7 días, el siguiente control es a los 28 días."
+    "explicacion": "Un recién nacido evaluado a los 7 días con valores normales tiene su próxima cita CRED a los 14 días de vida. El calendario de controles del recién nacido establece: 48 horas, 7 días, 14 días y 28 días. El siguiente control después de los 7 días es a los 14 días."
   },
   {
     "pregunta": "Según la historia natural de la enfermedad, identificar una persona con diabetes en la fase subclínica corresponde al periodo ...... y el nivel de prevención es...",
@@ -2402,10 +2402,10 @@ const preguntas = [
       "D": "pre patogénico / secundario."
     },
     "id": 172,
-    "respuesta": "C",
+    "respuesta": "A",
     "tema": "Salud Pública - Historia natural de la enfermedad",
     "origen": "examen",
-    "explicacion": "Identificar diabetes en fase subclínica corresponde al periodo patogénico (la enfermedad ya inició pero aún no hay síntomas). Según la respuesta del examen, el nivel de prevención es terciario. Clásicamente, la detección en fase subclínica corresponde a prevención secundaria (diagnóstico precoz)."
+    "explicacion": "Identificar diabetes en fase subclínica corresponde al periodo patogénico (la enfermedad ya inició pero aún no hay síntomas) y el nivel de prevención es secundario. La prevención secundaria busca la detección precoz de la enfermedad en fase asintomática mediante tamizaje para intervenir tempranamente."
   },
   {
     "pregunta": "En el centro de salud de Lamas, reportan que un varón de 30 años, presenta fiebre, malestar general, sangrado y shock. Se informa que han aparecido muchos más casos en estos días y se sospecha de un brote de fiebre amarilla. Siendo Ro: el número promedio de casos nuevos que genera un caso dado a lo largo de un período infeccioso. ¿Cuál es el Ro que se espera tener en brote de fiebre amarilla?",
@@ -2416,10 +2416,10 @@ const preguntas = [
       "D": "Ro = 0"
     },
     "id": 173,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Salud Pública - Epidemiología",
     "origen": "examen",
-    "explicacion": "En un brote de fiebre amarilla se espera un Ro > 0.5 según la respuesta del examen. El número reproductivo básico (Ro) indica cuántos casos nuevos genera un caso. Clásicamente, un Ro > 1 indica que la epidemia se propaga, pero la fiebre amarilla tiene transmisión vectorial, no directa persona a persona."
+    "explicacion": "En un brote de fiebre amarilla se espera un Ro > 1, lo que indica que cada caso genera más de un caso nuevo y la epidemia se propaga. Un Ro > 1 significa que la transmisión se mantiene y el brote crece. Si Ro < 1, el brote tiende a extinguirse."
   },
   {
     "pregunta": "Usted va a realizar un estudio sobre la obesidad infantil en un colegio de la pequeña comunidad donde labora, pero el director le pide que los padres autoricen voluntariamente la participación de sus menores hijos. ¿Qué documento debe usar para este cometido?",
@@ -2430,10 +2430,10 @@ const preguntas = [
       "D": "Consentimiento informado"
     },
     "id": 174,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Investigación - Aspectos éticos",
     "origen": "examen",
-    "explicacion": "Para que los padres autoricen la participación de sus hijos menores en un estudio, se utiliza una carta de investigación según la respuesta del examen. Generalmente se usa el consentimiento informado (firmado por los padres) y el asentimiento informado (aceptación del menor), pero el examen indica carta de investigación."
+    "explicacion": "Para que los padres autoricen voluntariamente la participación de sus hijos menores en un estudio de investigación, se utiliza el consentimiento informado. Este documento explica los objetivos, procedimientos, riesgos y beneficios del estudio, y los padres firman autorizando la participación de sus hijos."
   },
   {
     "pregunta": "Cuenta con las herramientas administrativas para garantizar que la profesión se ejerza de manera ética. Este enunciado pertenece a la:",
@@ -2444,10 +2444,10 @@ const preguntas = [
       "D": "Moral"
     },
     "id": 175,
-    "respuesta": "D",
+    "respuesta": "C",
     "tema": "Ética - Deontología",
     "origen": "examen",
-    "explicacion": "La moral cuenta con las herramientas administrativas para garantizar que la profesión se ejerza de manera ética según la respuesta del examen. Clásicamente esta definición corresponde a la deontología (normas y deberes profesionales), pero el examen la atribuye a la moral como marco regulador del ejercicio profesional."
+    "explicacion": "La deontología cuenta con las herramientas administrativas para garantizar que la profesión se ejerza de manera ética. Incluye códigos de ética profesional, normas de conducta, sanciones disciplinarias y mecanismos de regulación del ejercicio profesional a través de los colegios profesionales."
   },
   {
     "pregunta": "¿Cuáles son los medicamentos y productos biológicos que cubren la mayor parte de la morbilidad en el país, que luego de una evaluación técnica especializada multidisciplinaria han demostrado ser seguros, eficaces, costo-efectivos y deben estar disponibles en todo momento?",
@@ -2458,10 +2458,10 @@ const preguntas = [
       "D": "Básicos"
     },
     "id": 176,
-    "respuesta": "C",
+    "respuesta": "B",
     "tema": "Gestión - Uso racional de medicamentos",
     "origen": "examen",
-    "explicacion": "Los medicamentos comunes según la respuesta del examen son aquellos que cubren la mayor parte de la morbilidad del país, han demostrado ser seguros, eficaces, costo-efectivos y deben estar disponibles en todo momento. Clásicamente esta definición corresponde a los medicamentos esenciales."
+    "explicacion": "Los medicamentos esenciales son aquellos que cubren la mayor parte de la morbilidad del país, han demostrado ser seguros, eficaces, costo-efectivos y deben estar disponibles en todo momento. La OMS define los medicamentos esenciales como los que satisfacen las necesidades prioritarias de salud de la población."
   },
   {
     "pregunta": "Para investigar la relación entre la anemia y la talla de niños de 5° grado de primaria de un colegio, usted acude un día de la semana para medir la Hb y talla a todos ellos. ¿Qué enfoque de investigación está realizando?",
@@ -2472,10 +2472,10 @@ const preguntas = [
       "D": "Observacional"
     },
     "id": 177,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Investigación - Enfoques de investigación",
     "origen": "examen",
-    "explicacion": "Medir Hb y talla en un solo día sin intervenir corresponde a un enfoque observacional según la respuesta del examen. El investigador solo observa y mide variables sin manipularlas. Es un estudio transversal donde se recolectan datos en un momento único para analizar la relación entre anemia y talla."
+    "explicacion": "Medir Hb y talla en un solo día para investigar su relación corresponde a un enfoque cuantitativo. Se recolectan datos numéricos (Hb en g/dL, talla en cm) que serán analizados estadísticamente para determinar si existe relación entre las variables."
   },
   {
     "pregunta": "Personal de serenazgo, lleva al centro de salud a un paciente adulto mayor con problemas de salud y sin familiares, presenta indigencia y sin documentos. ¿Qué derecho se le atribuye?",
@@ -2486,10 +2486,10 @@ const preguntas = [
       "D": "Consentimiento informado"
     },
     "id": 178,
-    "respuesta": "C",
+    "respuesta": "A",
     "tema": "Ética - Derechos de los usuarios",
     "origen": "examen",
-    "explicacion": "El derecho que se le atribuye al adulto mayor indigente sin documentos es el acceso a la información según la respuesta del examen. Todo paciente tiene derecho a recibir información sobre su estado de salud, los servicios disponibles y los procedimientos a realizar, independientemente de su condición social."
+    "explicacion": "El derecho que se le atribuye al adulto mayor indigente sin documentos es el acceso a servicios de salud. Todo paciente tiene derecho a recibir atención de salud independientemente de su condición social, económica o documentaria. La falta de documentos no puede ser barrera para la atención."
   },
   {
     "pregunta": "Un paciente desea realizar un reclamo por un posible maltrato de un trabajador del establecimiento de salud contra él, al no respetarse el orden de llegada para la atención. ¿Qué procedimiento corresponde?",
@@ -2500,10 +2500,10 @@ const preguntas = [
       "D": "Consulta"
     },
     "id": 179,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Ética - Derechos de los usuarios",
     "origen": "examen",
-    "explicacion": "Ante un posible maltrato por no respetar el orden de llegada, el procedimiento que corresponde es la consejería según la respuesta del examen. La consejería permite orientar al usuario sobre sus derechos y los mecanismos disponibles para canalizar su reclamo de manera adecuada."
+    "explicacion": "Ante un posible maltrato por no respetar el orden de llegada, el procedimiento que corresponde es la queja. La queja es el mecanismo formal que tiene el usuario para expresar su insatisfacción por el trato recibido o por el incumplimiento de sus derechos en el establecimiento de salud."
   },
   {
     "pregunta": "Realizando visita domiciliaria, según el plan del cuidado integral de salud de las personas adultas mayores, se encuentra a un varón de 66 años de edad, vive solo; refiere tener “mal de ojo”, presenta “dolor de cabeza y dolor muscular”, llegará el curandero, realizará una limpia con cuy macho de color negro. Se le muestra interés e integración de los cuidados que requiere. ¿Éste enunciado se denomina?",
@@ -2514,10 +2514,10 @@ const preguntas = [
       "D": "Interculturalidad en salud"
     },
     "id": 180,
-    "respuesta": "A",
+    "respuesta": "D",
     "tema": "Ética - Interculturalidad",
     "origen": "examen",
-    "explicacion": "El caso del adulto mayor que cree en el 'mal de ojo' y espera al curandero para una limpia con cuy corresponde a población indígena según la respuesta del examen. Las creencias y prácticas de medicina tradicional son características de poblaciones indígenas que mantienen sus costumbres ancestrales."
+    "explicacion": "Mostrar interés e integración de los cuidados que requiere un adulto mayor que cree en el 'mal de ojo' y espera al curandero corresponde a interculturalidad en salud. Es el enfoque que reconoce, respeta e integra las prácticas de medicina tradicional con el sistema de salud convencional."
   },
   {
     "pregunta": "El puesto de salud del distrito de Lares a 2 horas del Cusco reporta que veinte gallinas amanecieron muertas en toda su localidad; realiza el reporte como corresponde. ¿Esto se denomina?",
@@ -2542,10 +2542,10 @@ const preguntas = [
       "D": "Cuasi experimental"
     },
     "id": 182,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Investigación - Tipos de investigación",
     "origen": "examen",
-    "explicacion": "Medir Hb y peso en un día para investigar su relación corresponde a un método mixto según la respuesta del examen. Combina la medición cuantitativa de variables (Hb, peso) con la observación directa en campo, integrando diferentes aproximaciones metodológicas en un mismo estudio."
+    "explicacion": "Medir Hb y peso en un día para investigar su relación corresponde a un método observacional. El investigador solo observa y mide variables sin manipularlas ni intervenir. Es un estudio transversal donde se recolectan datos en un momento único."
   },
   {
     "pregunta": "Pablo vive con su hermano, que es un paciente con tuberculosis, fue registrado en el SIG-TB, ha recibido una evaluación médica y además le han realizado el examen de PPD y radiografía. ¿Qué tipo de contacto es Pablo?",
@@ -2556,10 +2556,10 @@ const preguntas = [
       "D": "Sospechoso"
     },
     "id": 183,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Cuidado Integral - Tuberculosis",
     "origen": "examen",
-    "explicacion": "Pablo es un contacto censado porque fue registrado en el SIG-TB, recibió evaluación médica y le realizaron PPD y radiografía. El contacto censado es aquel identificado y registrado en el sistema. El contacto examinado ya completó todos los exámenes, y el controlado ya tiene seguimiento completo."
+    "explicacion": "Pablo es un contacto examinado porque fue registrado en el SIG-TB, recibió evaluación médica y le realizaron PPD y radiografía. El contacto examinado es aquel que ya completó todos los exámenes de evaluación. El censado solo está identificado y registrado, y el controlado ya tiene seguimiento completo."
   },
   {
     "pregunta": "En la metodología del análisis FODA, el comportamiento de la población, costumbre y hábitos negativos que son difíciles de cambiar, se identifican como:",
@@ -2570,10 +2570,10 @@ const preguntas = [
       "D": "Oportunidades"
     },
     "id": 184,
-    "respuesta": "D",
+    "respuesta": "A",
     "tema": "Gestión - Planeamiento estratégico",
     "origen": "examen",
-    "explicacion": "Los comportamientos, costumbres y hábitos negativos de la población difíciles de cambiar se identifican como oportunidades según la respuesta del examen. Clásicamente estos factores externos negativos se clasificarían como amenazas en el FODA, pero el examen los ubica como oportunidades de intervención."
+    "explicacion": "En el análisis FODA, los comportamientos, costumbres y hábitos negativos de la población difíciles de cambiar se identifican como amenazas. Son factores externos negativos que afectan la gestión del establecimiento y dificultan el logro de los objetivos sanitarios."
   },
   {
     "pregunta": "Las acciones para mejorar la calidad de la atención orientados a mejorar la experiencia y la confianza de las personas, las familias y las comunidades en los servicios de salud, más allá de la optimización de los procesos, se enmarca dentro de las Funciones Esenciales de Salud Publica. ¿A qué función corresponde?",
@@ -2598,10 +2598,10 @@ const preguntas = [
       "D": "consentimiento informado"
     },
     "id": 186,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Ética - Derechos de los usuarios",
     "origen": "examen",
-    "explicacion": "En Salud Escolar, los padres firman en cumplimiento al derecho de autorización. Al tratarse de menores de edad, los padres deben autorizar las intervenciones de salud (vacunación, descarte de anemia, desparasitación) que se realizarán a sus hijos en las instituciones educativas."
+    "explicacion": "En Salud Escolar, los padres firman en cumplimiento al derecho de consentimiento informado. Al tratarse de menores de edad, los padres deben dar su consentimiento informado para las intervenciones de salud (vacunación, descarte de anemia, desparasitación) que se realizarán a sus hijos."
   },
   {
     "pregunta": "Un profesional de la salud desea realizar una ecografía, pero no cuenta en su centro con ese apoyo diagnóstico. Para realizar una referencia a otro establecimiento de salud. ¿Qué debe evaluar?",
@@ -2640,10 +2640,10 @@ const preguntas = [
       "D": "porcentaje de grasa"
     },
     "id": 189,
-    "respuesta": "D",
+    "respuesta": "B",
     "tema": "Cuidado Integral - Paquete del adulto mayor",
     "origen": "examen",
-    "explicacion": "En el adulto mayor, el IMC es referencial por los cambios antropométricos del envejecimiento (pérdida de talla, redistribución de grasa). Se recomienda determinar el porcentaje de grasa para identificar riesgo de diabetes tipo 2, hipertensión y enfermedades cardiovasculares de manera más precisa."
+    "explicacion": "En el adulto mayor, el IMC es referencial por los cambios antropométricos del envejecimiento. Se recomienda determinar el perímetro abdominal para identificar riesgo de diabetes tipo 2, hipertensión y enfermedades cardiovasculares. El perímetro abdominal es un indicador de obesidad central, principal factor de riesgo cardiometabólico."
   },
   {
     "pregunta": "Niño de un año 6 meses, es llevado a su control de crecimiento y desarrollo, a la evaluación antropométrica tiene los siguientes resultados: Indicador P/E: entre -2 y +2 DS, Indicador P/T: por debajo de -2 DS e Indicador T/E: entre -2 y +2 DS. ¿Cuál es su clasificación nutricional?",
@@ -2654,10 +2654,10 @@ const preguntas = [
       "D": "Desnutrición crónica"
     },
     "id": 190,
-    "respuesta": "B",
+    "respuesta": "A",
     "tema": "Cuidado Integral - Alimentación y nutrición",
     "origen": "examen",
-    "explicacion": "Con P/E normal, P/T por debajo de -2 DS y T/E normal, la clasificación es desnutrición global. La desnutrición aguda se refleja en P/T bajo (peso insuficiente para su talla), mientras que la T/E normal descarta desnutrición crónica. La combinación de estos indicadores configura desnutrición global."
+    "explicacion": "Con P/E normal, P/T por debajo de -2 DS y T/E normal, la clasificación es desnutrición aguda. El indicador P/T bajo indica que el niño tiene peso insuficiente para su talla actual (adelgazamiento), lo que configura desnutrición aguda. La T/E normal descarta desnutrición crónica."
   },
   {
     "pregunta": "¿Cuáles son los principales ejes estratégicos que garantizan el éxito de la participación comunitaria en la planeación en salud?",
@@ -2668,10 +2668,10 @@ const preguntas = [
       "D": "Los cambios en la realidad económico-social y ordenanzas municipales"
     },
     "id": 191,
-    "respuesta": "B",
+    "respuesta": "C",
     "tema": "Salud Comunitaria - Participación social y comunitaria",
     "origen": "examen",
-    "explicacion": "Los principales ejes estratégicos para el éxito de la participación comunitaria en la planeación en salud son la participación comunitaria y las escuelas saludables. Estos dos ejes articulan la comunidad organizada con los espacios educativos para promover la salud de manera integral."
+    "explicacion": "Los principales ejes estratégicos que garantizan el éxito de la participación comunitaria en la planeación en salud son: el abordaje territorial, los espacios participativos y la familia como base. Estos tres ejes articulan el territorio, la participación activa y el núcleo familiar para promover la salud integral."
   },
   {
     "pregunta": "Los medicamentos que han perdido su eficacia y que han llevado a diezmar la efectividad en la lucha contra la tuberculosis, las enfermedades diarreicas y la neumonía debido a la resistencia antimicrobiana, se debe a:",
@@ -2710,10 +2710,10 @@ const preguntas = [
       "D": "Enviarla a otro establecimiento"
     },
     "id": 194,
-    "respuesta": "D",
+    "respuesta": "A",
     "tema": "Ética - Parto vertical",
     "origen": "examen",
-    "explicacion": "Según la respuesta del examen, ante una gestante que solicita parto vertical en un centro materno, se debe enviarla a otro establecimiento. Esto puede deberse a que el centro materno no cuenta con las condiciones o personal capacitado para atender parto vertical, por lo que se refiere a un establecimiento que sí lo ofrezca."
+    "explicacion": "Ante una gestante que solicita parto vertical, el profesional de salud debe respetar su pedido. El parto vertical es una opción reconocida por la norma técnica del MINSA y forma parte de la adecuación intercultural de los servicios de salud materna. Negar o persuadir vulnera los derechos de la gestante."
   },
   {
     "pregunta": "Dentro del petitorio nacional único de medicamentos esenciales para el sector salud existen consideraciones especiales de su uso, por lo cual requieren de un manejo especializado. ¿Qué tipo de medicamentos están en este rubro?",
@@ -2724,10 +2724,10 @@ const preguntas = [
       "D": "Específico para hepatitis A"
     },
     "id": 195,
-    "respuesta": "A",
+    "respuesta": "B",
     "tema": "Gestión - Uso racional de medicamentos",
     "origen": "examen",
-    "explicacion": "Dentro del petitorio nacional, los medicamentos para métodos de planificación familiar requieren manejo especializado por sus consideraciones especiales de uso: indicaciones específicas, contraindicaciones, efectos secundarios y necesidad de consejería previa para su prescripción adecuada."
+    "explicacion": "Dentro del petitorio nacional, los medicamentos exclusivos para dolor oncológico requieren manejo especializado por sus consideraciones especiales de uso: son opioides y analgésicos potentes que requieren prescripción médica especializada, control estricto y seguimiento por el riesgo de dependencia y efectos adversos."
   },
   {
     "pregunta": "El C.S. Paz, ha sectorizado su jurisdicción para realizar intervenciones de promoción y prevención basados en el Modelo de Cuidado Integral de la Familia y Comunidad por Curso de Vida. En el marco de las Funciones Esenciales de la Salud Pública renovada, esta acción corresponde a la etapa de:",
@@ -2752,10 +2752,10 @@ const preguntas = [
       "D": "Antiamarílica, contra Hepatitis A"
     },
     "id": 197,
-    "respuesta": "B",
+    "respuesta": "D",
     "tema": "Cuidado Integral - Vacunación y ESAVI",
     "origen": "examen",
-    "explicacion": "A los 15 meses, según la respuesta del examen, corresponde aplicar vacuna contra Hepatitis y la influenza pediátrica. En el esquema regular peruano, a los 15 meses se aplican: Varicela, Hepatitis A y antiamarílica. La influenza pediátrica se aplica anualmente a partir de los 7 meses."
+    "explicacion": "A los 15 meses, según el calendario de vacunación peruano, corresponde aplicar la vacuna antiamarílica (AMA) y la vacuna contra Hepatitis A. Estas vacunas se administran en dosis única a esta edad como parte del esquema regular de inmunizaciones del niño."
   },
   {
     "pregunta": "El personal de salud en Cañete atiende a una madre de familia y su hija de 5 años de edad; en la evaluación de la niña se evidencia: inapetente, sueño incrementado, piel seca y su ganancia de peso no fue de acuerdo a su edad; usa el hemoglobinómetro portátil, obteniendo Hb: 9 g/dL. ¿Inmediatamente correspondería realizar?",
@@ -2766,10 +2766,10 @@ const preguntas = [
       "D": "Prescripción nutricional"
     },
     "id": 198,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Cuidado Integral - Prevención y control de anemia",
     "origen": "examen",
-    "explicacion": "Con Hb de 9 g/dL (anemia moderada) y síntomas como inapetencia, sueño incrementado y piel seca, lo inmediato es solicitar análisis de laboratorio completo. Se necesita confirmar el valor de hemoglobina, evaluar el hemograma completo y descartar otras causas de anemia antes de iniciar tratamiento."
+    "explicacion": "Con Hb de 9 g/dL (anemia moderada) y síntomas como inapetencia, sueño incrementado, piel seca y ganancia de peso inadecuada, lo inmediato es realizar diagnóstico diferencial. Los síntomas sugieren que la anemia puede tener múltiples causas (nutricional, parasitaria, hipotiroidismo) que deben diferenciarse para un tratamiento adecuado."
   },
   {
     "pregunta": "¿A qué corresponde la siguiente definición?: “Es el conjunto de acciones que desarrolla un profesional de la salud mediante el uso de las TIC, para proporcionar a la persona usuaria de salud, consejería y asesoría con fines de promoción de la salud, prevención, recuperación o rehabilitación de las enfermedades”.",
@@ -2780,10 +2780,10 @@ const preguntas = [
       "D": "Teleinterconsulta"
     },
     "id": 199,
-    "respuesta": "A",
+    "respuesta": "C",
     "tema": "Gestión - Telesalud",
     "origen": "examen",
-    "explicacion": "La definición describe el telemonitoreo según la respuesta del examen: conjunto de acciones mediante TIC para proporcionar consejería y asesoría con fines de promoción, prevención, recuperación o rehabilitación. Clásicamente esta definición se acerca más a la teleorientación."
+    "explicacion": "La teleorientación es el conjunto de acciones que desarrolla un profesional de salud mediante TIC para proporcionar consejería y asesoría con fines de promoción, prevención, recuperación o rehabilitación. Se diferencia de la teleconsulta (atención clínica) y la teleinterconsulta (entre profesionales)."
   },
   {
     "pregunta": "Varón de 35 años, acude al establecimiento I-2 para atención de morbilidad, como parte de la atención integral, se hace tamizaje de VIH con prueba rápida y tiene resultado reactivo, se aplica una segunda prueba con resultado No reactivo. ¿Cuál es el procedimiento a seguir?",
@@ -6998,5 +6998,1405 @@ const preguntas = [
     "explicacion": "El trabajo multidisciplinario integra diferentes disciplinas profesionales (médicos, enfermeras, obstetrices, psicólogos, nutricionistas) que aportan desde su especialidad para lograr objetivos comunes en beneficio del paciente. Requiere comunicación, coordinación y respeto mutuo entre profesionales.",
     "origen": "nueva",
     "tema": "Gestión - Trabajo colaborativo"
+  },
+  {
+      "id": 501,
+      "pregunta": "La organización mundial de la salud ratifica la importancia de la actividad física y la considera como el factor que interviene en el estado de salud de las personas y la define como la principal estrategia en prevención de la ...",
+      "opciones": {
+          "A": "morbilidad.",
+          "B": "obesidad.",
+          "C": "letalidad.",
+          "D": "mortalidad."
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Promoción de la salud",
+      "origen": "examen",
+      "explicacion": "La OMS define la actividad física como la principal estrategia en prevención de la obesidad. La inactividad física es uno de los principales factores de riesgo para enfermedades no transmisibles, y la actividad física regular previene el sobrepeso y la obesidad."
+  },
+  {
+      "id": 502,
+      "pregunta": "En un establecimiento de salud I-4 el médico jefe debe elaborar el ...... que es una herramienta de gestión que considera las actividades para la implementación del plan operativo institucional.",
+      "opciones": {
+          "A": "Plan de abastecimiento e inversiones",
+          "B": "Plan estratégico institucional",
+          "C": "Cuadro multianual de necesidades",
+          "D": "Plan de salud local"
+      },
+      "respuesta": "D",
+      "tema": "Gestión - Planificación y Presupuesto",
+      "origen": "examen",
+      "explicacion": "El Plan de salud local es la herramienta de gestión que considera las actividades para la implementación del plan operativo institucional a nivel del establecimiento de salud. Permite operativizar las intervenciones sanitarias según la realidad local."
+  },
+  {
+      "id": 503,
+      "pregunta": "Personal de salud, realiza sesión educativa en el establecimiento e identifica a mujer con vida sexual activa, que desde hace un año no usa método anticonceptivo, la refiere a consultorio de PPFF, donde opta por un método. ¿Cuál es la definición operacional para su registro en el HIS?",
+      "opciones": {
+          "A": "Usuaria captada",
+          "B": "Atención en PPFF",
+          "C": "Charla informativa",
+          "D": "Consejería en PPFF"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - Salud sexual y reproductiva",
+      "origen": "examen",
+      "explicacion": "Una usuaria captada es aquella mujer en edad fértil con vida sexual activa que no usaba método anticonceptivo y que, tras ser identificada y referida, opta por un método. Esta definición operacional se registra en el HIS para el seguimiento de indicadores de planificación familiar."
+  },
+  {
+      "id": 504,
+      "pregunta": "Dentro del paquete integral de salud adulto mujer. ¿Qué atenciones preventivas se realizan?",
+      "opciones": {
+          "A": "Despistaje de Sífilis, VIH/SIDA, cáncer de cérvix",
+          "B": "Atención de violencia familiar",
+          "C": "Tratamiento de algún daño prevalente",
+          "D": "Identificación de síndrome de maltrato"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - Paquete del adulto",
+      "origen": "examen",
+      "explicacion": "Las atenciones preventivas del paquete integral de salud adulto mujer incluyen despistaje de Sífilis, VIH/SIDA y cáncer de cérvix. La atención de violencia familiar y el tratamiento de daños prevalentes son atenciones recuperativas, no preventivas."
+  },
+  {
+      "id": 505,
+      "pregunta": "Al realizar la visita de seguimiento a una gestante de 28 años de edad, relata que su esposo la dopa y abusa sexualmente, por lo que el embarazo es no deseado, pide confidencialidad no comentar con otros profesionales de la salud por sentir vergüenza. Si la intervención es multidisciplinaria. ¿Qué acciones se debe tener en cuenta para respetar el derecho a la confidencialidad?",
+      "opciones": {
+          "A": "Coordinar acciones conjuntas para el acompañamiento y protección",
+          "B": "Prevención de enfermedades de transmisión sexual",
+          "C": "Derivar a psicología para atención en salud mental",
+          "D": "Derivar a un establecimiento de salud de mayor complejidad"
+      },
+      "respuesta": "A",
+      "tema": "Ética - Derechos de los usuarios",
+      "origen": "examen",
+      "explicacion": "Para respetar la confidencialidad en una intervención multidisciplinaria ante violencia sexual, se deben coordinar acciones conjuntas para el acompañamiento y protección de la gestante. La información se comparte solo entre los profesionales involucrados en su atención, manteniendo la reserva del caso."
+  },
+  {
+      "id": 506,
+      "pregunta": "En la comunidad rural donde realiza su SERUMS varios moradores reportan el hallazgo de muerte y enfermedad inusuales en cuyes y ratas de campo, por lo que debe proceder a la notificación respectiva. ¿Cuál es el acontecimiento epidemiológico presentado?",
+      "opciones": {
+          "A": "Zoonosis",
+          "B": "Endemia animal",
+          "C": "Epizootia",
+          "D": "Brote infeccioso"
+      },
+      "respuesta": "C",
+      "tema": "Salud Pública - Brotes y epidemias",
+      "origen": "examen",
+      "explicacion": "Una epizootia es una enfermedad que afecta a un gran número de animales de manera inusual en un área y tiempo determinados, equivalente a una epidemia en humanos. La muerte y enfermedad inusuales en cuyes y ratas de campo configura una epizootia que debe notificarse al sistema de vigilancia."
+  },
+  {
+      "id": 507,
+      "pregunta": "En el centro de salud del primer nivel de atención, se está llevando a cabo, pruebas de tamizaje de enfermedades venéreas. Dicha estrategia corresponde al nivel de prevención:",
+      "opciones": {
+          "A": "Primaria",
+          "B": "Cuaternaria",
+          "C": "Terciaria",
+          "D": "Secundaria"
+      },
+      "respuesta": "D",
+      "tema": "Salud Pública - Niveles de prevención",
+      "origen": "examen",
+      "explicacion": "Las pruebas de tamizaje corresponden a prevención secundaria, ya que buscan la detección precoz de enfermedades en personas aparentemente sanas. El tamizaje de enfermedades venéreas permite identificar casos asintomáticos para tratamiento temprano y evitar complicaciones."
+  },
+  {
+      "id": 508,
+      "pregunta": "Adolescente de 13 años, con 38 semanas de gestación, migrante de los andes, sin control, indica relaciones sexuales han sido voluntaria con ex pareja de 35 años, viene acompañada de madre al establecimiento I-3 ¿Cuál es la conducta a seguir?",
+      "opciones": {
+          "A": "Comunicar a las autoridades, como código violeta y referencia hospitalaria",
+          "B": "Responsabilizar a sus progenitores por negligencia hacia la paciente",
+          "C": "Aplicar kits completos de emergencia para descarte de ITS, VIH, Hepatitis B",
+          "D": "Brindar actividades socio educativas a fin de que paciente identifique riesgos"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - Violencia y protección",
+      "origen": "examen",
+      "explicacion": "Una adolescente de 13 años gestante constituye un caso de violencia sexual por ley (menor de 14 años no puede consentir relaciones sexuales). Se debe comunicar a las autoridades como código violeta y referir a un establecimiento hospitalario para atención integral de la gestación de alto riesgo."
+  },
+  {
+      "id": 509,
+      "pregunta": "Varón de 35 años acude al establecimiento de salud para evaluación médica. Durante la consulta refiere que presenta tos y flema desde hace 15 días. Según la Norma Técnica de salud para la prevención y control de tuberculosis. ¿Cómo se denomina a un paciente con esta sintomatología?",
+      "opciones": {
+          "A": "Paciente con infección latente por tuberculosis",
+          "B": "Sintomático respiratorio examinado",
+          "C": "Sintomático respiratorio",
+          "D": "Paciente con tuberculosis sensible"
+      },
+      "respuesta": "C",
+      "tema": "Cuidado Integral - Tuberculosis",
+      "origen": "examen",
+      "explicacion": "Un sintomático respiratorio es toda persona que presenta tos con o sin flema por 15 días o más. Es la definición operativa para la búsqueda activa de casos de tuberculosis. El sintomático respiratorio examinado es aquel al que ya se le tomó muestra de esputo."
+  },
+  {
+      "id": 510,
+      "pregunta": "¿Cuál es una vacuna multidosis, indicada a partir de los 15 meses hasta los 59 años?",
+      "opciones": {
+          "A": "BCG",
+          "B": "Sarampión, Papera y Rubeola (SPR)",
+          "C": "Antiamarílica (AMA)",
+          "D": "Tétano y Difteria (DT)"
+      },
+      "respuesta": "C",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "La vacuna antiamarílica (AMA) es multidosis, se indica a partir de los 15 meses hasta los 59 años. Se aplica en dosis única y protege contra la fiebre amarilla. La BCG es monodosis al recién nacido, la SPR se aplica al año y 18 meses, y la DT es para adultos."
+  },
+  {
+      "id": 511,
+      "pregunta": "En estudios clínicos y epidemiológicos, la medición de variables que incluyen la perspectiva del paciente con referencia a resultados relacionados a su calidad de vida. ¿Cuáles son los instrumentos de recolección de datos más indicados?",
+      "opciones": {
+          "A": "Entrevistas y cuestionarios",
+          "B": "Observación directa e indirecta",
+          "C": "Registro por el paciente y familiar",
+          "D": "Registros y documentos ya existentes"
+      },
+      "respuesta": "A",
+      "tema": "Investigación - Instrumentos de recolección",
+      "origen": "examen",
+      "explicacion": "Las entrevistas y cuestionarios son los instrumentos más indicados para medir variables que incluyen la perspectiva del paciente sobre su calidad de vida. Permiten captar la percepción subjetiva del paciente sobre su estado de salud, bienestar y funcionamiento."
+  },
+  {
+      "id": 512,
+      "pregunta": "Un médico serumista se encuentra trabajando en un centro de salud de 12 horas, al cual acude una gestante de bajo riesgo obstétrico con contracciones. ¿A qué establecimiento de salud le corresponde referir?",
+      "opciones": {
+          "A": "II - 1",
+          "B": "III - 1",
+          "C": "I - 3",
+          "D": "I - 4"
+      },
+      "respuesta": "D",
+      "tema": "Gestión - Referencia y contrarreferencia",
+      "origen": "examen",
+      "explicacion": "Una gestante con contracciones en un centro de salud de 12 horas (I-3) debe ser referida a un establecimiento I-4, que cuenta con internamiento y capacidad para atención de partos. El I-4 es el siguiente nivel de complejidad en el primer nivel de atención."
+  },
+  {
+      "id": 513,
+      "pregunta": "El responsable de la RIS desea saber la cantidad de atenciones realizadas por el médico serumista en consulta externa. ¿Qué indicador de gestión debe utilizar?",
+      "opciones": {
+          "A": "Rendimiento",
+          "B": "Productividad",
+          "C": "Permanencia",
+          "D": "Concentración"
+      },
+      "respuesta": "B",
+      "tema": "Gestión - Indicadores de gestión",
+      "origen": "examen",
+      "explicacion": "La productividad es el indicador que mide la cantidad de atenciones realizadas por un profesional en un periodo determinado. Se diferencia del rendimiento (hora/profesional), la concentración (atenciones por usuario) y la permanencia (tiempo de estancia)."
+  },
+  {
+      "id": 514,
+      "pregunta": "El pueblo de Coronilla, están experimentando una contaminación ambiental por derrame de petróleo en un lago circundante a la población, la enfermera encargada de la posta de salud prioriza la etiqueta diagnóstica de \"Gestión ineficaz de salud comunitaria\". ¿Qué intervención NIC es prioritario?",
+      "opciones": {
+          "A": "Colaboración con otros profesionales sanitarios",
+          "B": "Favorecimiento de la resiliencia: comunidad",
+          "C": "Desarrollo de la salud de la comunidad",
+          "D": "Manejo ambiental: comunidad"
+      },
+      "respuesta": "C",
+      "tema": "Cuidado Integral - Proceso de atención de enfermería",
+      "origen": "examen",
+      "explicacion": "Ante una gestión ineficaz de salud comunitaria por contaminación ambiental, la intervención NIC prioritaria es el desarrollo de la salud de la comunidad. Esta intervención facilita que los miembros de la comunidad identifiquen sus problemas de salud y gestionen estrategias para mejorarlos."
+  },
+  {
+      "id": 515,
+      "pregunta": "La infección de un ciudadano por el virus del dengue y el desenlace en muerte, corresponde a la historia natural de la enfermedad. Considerando este concepto, la ... es un momento importante en el conocimiento de la enfermedad.",
+      "opciones": {
+          "A": "vacunación",
+          "B": "aparición de síntomas",
+          "C": "investigación",
+          "D": "promoción de la salud"
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Historia natural de la enfermedad",
+      "origen": "examen",
+      "explicacion": "La aparición de síntomas es un momento importante en el conocimiento de la historia natural de la enfermedad, ya que marca la transición de la fase subclínica a la fase clínica del periodo patogénico. Permite identificar el inicio de las manifestaciones y orientar el diagnóstico y tratamiento."
+  },
+  {
+      "id": 516,
+      "pregunta": "En la evaluación de una gestante se evidencia úlcera indurada e indolora (chancro) localizada en mucosa genital. ¿En qué fase de la historia natural de la enfermedad se encuentra?",
+      "opciones": {
+          "A": "Clínica",
+          "B": "Subclínica",
+          "C": "Inducción",
+          "D": "Resolutiva"
+      },
+      "respuesta": "A",
+      "tema": "Salud Pública - Historia natural de la enfermedad",
+      "origen": "examen",
+      "explicacion": "La presencia de una úlcera indurada e indolora (chancro sifilítico) es una manifestación clínica visible, por lo que la gestante se encuentra en la fase clínica de la historia natural de la enfermedad. La fase subclínica no presenta signos ni síntomas evidentes."
+  },
+  {
+      "id": 517,
+      "pregunta": "Si la interacción entre un paciente y el personal sanitario tratante, se da mediante uso de las TICs, ¿Qué concepto de salud se está aplicando?",
+      "opciones": {
+          "A": "Salud intercultural",
+          "B": "Promoviendo salud",
+          "C": "Cuidado integral",
+          "D": "Telesalud"
+      },
+      "respuesta": "D",
+      "tema": "Gestión - Telesalud",
+      "origen": "examen",
+      "explicacion": "La telesalud es el concepto que se aplica cuando la interacción entre paciente y personal sanitario se realiza mediante el uso de las TIC. Incluye teleconsulta, teleorientación, telemonitoreo y teleinterconsulta como modalidades de atención a distancia."
+  },
+  {
+      "id": 518,
+      "pregunta": "Melissa gestante adolescente de 14 años acude al Cs Huáscar para colocarse sus dosis de vacunas indicando a la enfermera que no presenta antecedente de antidiftérica. ¿Cuál es el trimestre de vacunación que le corresponde?",
+      "opciones": {
+          "A": "II trimestre",
+          "B": "I trimestre",
+          "C": "VI trimestre",
+          "D": "III trimestre"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "La vacunación antidiftérica en gestantes sin antecedente de vacunación se inicia en el II trimestre de gestación. Se administra la vacuna dT (difteria y tétanos) a partir de las 20 semanas para proteger a la madre y al recién nacido."
+  },
+  {
+      "id": 519,
+      "pregunta": "Cuando un niño menor de 5 años con diagnóstico de enfermería de Organización del desarrollo infantil deteriorado está en control del servicio de CRED, la priorización de resultados NOC e intervención NIC es:",
+      "opciones": {
+          "A": "Desarrollo infantil: 5 años - Manejo ambiental: seguridad",
+          "B": "Conocimiento: conducta de salud - Enseñanza: seguridad del niño",
+          "C": "Conocimiento: manejo del TDAH – Enseñanza: desarrollo en la primera infancia",
+          "D": "Desempeño de rol de padres niño pequeño – Favorecimiento del rol parental"
+      },
+      "respuesta": "C",
+      "tema": "Cuidado Integral - Proceso de atención de enfermería",
+      "origen": "examen",
+      "explicacion": "Para un niño con organización del desarrollo infantil deteriorado, el resultado NOC priorizado es el conocimiento sobre manejo del TDAH y la intervención NIC es la enseñanza sobre desarrollo en la primera infancia. Esto permite orientar a los padres sobre estimulación temprana y manejo del desarrollo."
+  },
+  {
+      "id": 520,
+      "pregunta": "Paciente migrante gestante quechua hablante, tiene derecho a …… para parto vertical",
+      "opciones": {
+          "A": "Presencia solo de pareja",
+          "B": "Servicios de salud con adecuación cultural",
+          "C": "Traductor de idioma original",
+          "D": "Acompañamiento de familia"
+      },
+      "respuesta": "B",
+      "tema": "Ética - Interculturalidad",
+      "origen": "examen",
+      "explicacion": "La gestante quechua hablante tiene derecho a servicios de salud con adecuación cultural para parto vertical. La adecuación cultural implica que el establecimiento adapte sus servicios respetando las prácticas culturales de la paciente, incluyendo la posición del parto, el idioma y las costumbres."
+  },
+  {
+      "id": 521,
+      "pregunta": "El enfermero ubicado en un centro asistencial comunitario de salud mental, está liderando el programa \"TaytaWuasi\" en el centro poblado Huaycarán, ha iniciado un plan de acción \"Intervención familiar para influir positivamente\" ¿Qué actividad realizó primero para este plan?",
+      "opciones": {
+          "A": "Identificar puntos fuertes en los recursos dentro de la familia",
+          "B": "Ver que los familiares sean expertos en el cuidado de su paciente",
+          "C": "Fomentar la toma de decisiones familiares en el plan de cuidado",
+          "D": "Establecer una relación de confianza con los miembros familiares"
+      },
+      "respuesta": "D",
+      "tema": "Salud Comunitaria - Salud mental comunitaria",
+      "origen": "examen",
+      "explicacion": "La primera actividad en un plan de intervención familiar es establecer una relación de confianza con los miembros familiares. Sin confianza no es posible identificar recursos, fomentar decisiones ni lograr que los familiares participen activamente en el cuidado."
+  },
+  {
+      "id": 522,
+      "pregunta": "En la lucha contra la anemia, se realiza el dosaje de hemoglobina a los 6 meses de nacido, para determinar si tiene anemia. Sí es positivo se inicia el tratamiento …",
+      "opciones": {
+          "A": "promocional.",
+          "B": "recuperativo.",
+          "C": "profiláctico.",
+          "D": "preventivo."
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Prevención y control de anemia",
+      "origen": "examen",
+      "explicacion": "Si el dosaje de hemoglobina a los 6 meses confirma anemia, se inicia tratamiento recuperativo con hierro terapéutico. El tratamiento recuperativo busca restablecer los niveles normales de hemoglobina. El preventivo o profiláctico se da cuando NO tiene anemia."
+  },
+  {
+      "id": 523,
+      "pregunta": "Los pobladores de una comunidad ashaninka llegan al centro de salud preocupados debido a que sus niños presentan dolor y diarrea con mucha frecuencia. Además, refieren que tomaron preparados de hierbas y posteriormente algunos fallecieron. ¿Cuál es la función de salud pública que debe fortalecer el personal de salud?",
+      "opciones": {
+          "A": "Vigilancia y valoración por el laboratorio",
+          "B": "Valoración del estado de salud",
+          "C": "Valoración clínica y laboratorio",
+          "D": "Vigilancia y valoración del estado de salud"
+      },
+      "respuesta": "D",
+      "tema": "Salud Pública - Conceptos básicos",
+      "origen": "examen",
+      "explicacion": "Ante una situación de enfermedad frecuente con fallecimientos en una comunidad, la función de salud pública a fortalecer es la vigilancia y valoración del estado de salud. Esto permite monitorear, investigar y analizar los problemas de salud de la comunidad para tomar decisiones oportunas."
+  },
+  {
+      "id": 524,
+      "pregunta": "En un caserío de Pasco, se presentan 5 casos de la enfermedad de pertussis durante los meses de enero y febrero. Como jefe de establecimiento. ¿Qué actividades dispone realizar?",
+      "opciones": {
+          "A": "Complementarias de vacunación",
+          "B": "Vacunación regular",
+          "C": "Desinfección en comunidad",
+          "D": "Control de vectores"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "Ante 5 casos de pertussis (tos ferina) se deben realizar actividades complementarias de vacunación, que incluyen bloqueo vacunal y barrido en la comunidad afectada. No es vacunación regular sino una respuesta específica al brote para completar esquemas y proteger a susceptibles."
+  },
+  {
+      "id": 525,
+      "pregunta": "El jefe del establecimiento de salud nivel I-2 ha identificado que existe necesidad de otro personal técnico para las visitas domiciliarias, porque no se logran las metas programadas. ¿En qué instrumento de gestión se debe programar este recurso?",
+      "opciones": {
+          "A": "Presupuesto por resultados",
+          "B": "Plan de salud local",
+          "C": "Plan operativo",
+          "D": "Plan estratégico"
+      },
+      "respuesta": "C",
+      "tema": "Gestión - Planificación y Presupuesto",
+      "origen": "examen",
+      "explicacion": "La necesidad de personal técnico adicional para cumplir metas se programa en el Plan Operativo. Este instrumento de gestión programa las actividades, recursos humanos y financieros necesarios para el cumplimiento de metas en el corto plazo (1 año)."
+  },
+  {
+      "id": 526,
+      "pregunta": "Ud. es jefe de un establecimiento I-4 en la región norte del país y los boletines informativos de epidemiología indican un aumento de casos de melanomas por exposición a rayos UV en el último año. ¿A qué tipo de casos corresponden?",
+      "opciones": {
+          "A": "Incidentes",
+          "B": "Reincidentes",
+          "C": "Probables",
+          "D": "Prevalentes"
+      },
+      "respuesta": "A",
+      "tema": "Salud Pública - Epidemiología",
+      "origen": "examen",
+      "explicacion": "Los casos nuevos de melanoma que aparecen en un periodo determinado corresponden a casos incidentes. La incidencia mide los casos nuevos de una enfermedad en una población durante un tiempo específico. Los prevalentes incluyen tanto casos nuevos como existentes."
+  },
+  {
+      "id": 527,
+      "pregunta": "A un establecimiento de salud, llegan 25 niños beneficiarios del programa de alimentación escolar, por presentar cuadro de intoxicación alimentaria, luego del consumir el desayuno escolar. Este tipo de evento debe ser notificado y corresponde a:",
+      "opciones": {
+          "A": "Endemia",
+          "B": "Epizootia",
+          "C": "Brote",
+          "D": "Pandemia"
+      },
+      "respuesta": "C",
+      "tema": "Salud Pública - Brotes y epidemias",
+      "origen": "examen",
+      "explicacion": "25 niños con intoxicación alimentaria tras consumir el mismo desayuno escolar configura un brote. Un brote es la aparición de dos o más casos de una enfermedad vinculados epidemiológicamente en un área y tiempo determinados, con una fuente común identificable."
+  },
+  {
+      "id": 528,
+      "pregunta": "En un pueblo amazónico se está implementando una RIS de manera ordenada, siguiendo la normativa del MINSA, considerando su realidad local. ¿Qué característica del proceso se está cumpliendo?",
+      "opciones": {
+          "A": "Progresivo",
+          "B": "Sostenible",
+          "C": "Planificado",
+          "D": "Sistemático"
+      },
+      "respuesta": "D",
+      "tema": "Gestión - Administración de servicios",
+      "origen": "examen",
+      "explicacion": "Implementar una RIS de manera ordenada, siguiendo normativa y considerando la realidad local corresponde a un proceso sistemático. Lo sistemático implica seguir un orden lógico, metódico y estructurado basado en normas y procedimientos establecidos."
+  },
+  {
+      "id": 529,
+      "pregunta": "El fortalecimiento de capacidades del personal de salud para mejorar la calidad en un servicio específico de atención primaria de salud, es una actividad acorde al objetivo de planeamiento estratégico relacionado a …",
+      "opciones": {
+          "A": "fortalecer el ejercicio de la rectoría de la autoridad nacional de salud.",
+          "B": "mejorar asignación de presupuesto para atención integral.",
+          "C": "incrementar el acceso a atención integral de salud.",
+          "D": "difundir la importancia de la salud como derecho."
+      },
+      "respuesta": "C",
+      "tema": "Gestión - Planeamiento estratégico",
+      "origen": "examen",
+      "explicacion": "El fortalecimiento de capacidades del personal para mejorar la calidad en atención primaria se relaciona con el objetivo de incrementar el acceso a atención integral de salud. Mejorar las competencias del personal permite ofrecer servicios de mayor calidad y ampliar el acceso efectivo."
+  },
+  {
+      "id": 530,
+      "pregunta": "La autoridad regional de salud está implementando la estrategia de Salud Familiar para que se pueda desarrollar efectivamente en el siguiente año. ¿En qué plan institucional se debe programar?",
+      "opciones": {
+          "A": "Contingencia",
+          "B": "Continuidad",
+          "C": "Operativo",
+          "D": "Estratégico"
+      },
+      "respuesta": "C",
+      "tema": "Gestión - Planificación y Presupuesto",
+      "origen": "examen",
+      "explicacion": "Una estrategia que se implementará en el siguiente año se programa en el Plan Operativo. El plan operativo programa actividades a corto plazo (1 año) con metas físicas y financieras. El plan estratégico es a mediano-largo plazo y el de contingencia es para emergencias."
+  },
+  {
+      "id": 531,
+      "pregunta": "Durante la campaña de vacunación se interviene a las Instituciones Educativas a fin de vacunar a los niños y niñas con la vacuna de VPH para protegerlos y prevenir el cáncer cervical. ¿Desde qué edad se puede vacunar y cuantas dosis se debe aplicar?",
+      "opciones": {
+          "A": "9 años y dos dosis",
+          "B": "13 años y dosis única",
+          "C": "11 años y dosis única",
+          "D": "9 años y dosis única"
+      },
+      "respuesta": "D",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "La vacuna contra el VPH se aplica desde los 9 años en dosis única según el esquema actual del calendario de vacunación peruano. Protege contra los tipos de VPH que causan cáncer cervical, siendo más efectiva cuando se administra antes del inicio de la actividad sexual."
+  },
+  {
+      "id": 532,
+      "pregunta": "Mujer de 25 años con diagnóstico de TB pulmonar, es evaluada por especialista quien le detecta que presenta resistencia a la Isoniacida y a la Rifampicina. ¿Cómo se denomina a la tuberculosis que presenta resistencia a ambos fármacos?",
+      "opciones": {
+          "A": "Extensamente resistente",
+          "B": "Multidrogorresistente",
+          "C": "Sensible",
+          "D": "Pre- extensamente resistente"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Tuberculosis",
+      "origen": "examen",
+      "explicacion": "La TB multidrogorresistente (TB MDR) es aquella que presenta resistencia simultánea a Isoniazida y Rifampicina, los dos fármacos de primera línea más importantes. La extensamente resistente (XDR) agrega resistencia a fluoroquinolonas y al menos un inyectable de segunda línea."
+  },
+  {
+      "id": 533,
+      "pregunta": "Personal de salud de P.S. I-1, se dispone a transportar una muestra para despistaje de TBC hacia el hospital, según el documento técnico para el transporte seguro de sustancias infecciosas, la muestra debe almacenarse en:",
+      "opciones": {
+          "A": "Contenedor de plástico hermético",
+          "B": "Contenedor de metal",
+          "C": "Cooler resistente",
+          "D": "Placa petri recubierta"
+      },
+      "respuesta": "A",
+      "tema": "Salud Pública - Bioseguridad",
+      "origen": "examen",
+      "explicacion": "Para el transporte seguro de muestras de TBC, se debe usar un contenedor de plástico hermético que evite derrames y contaminación. El sistema de triple embalaje incluye recipiente primario hermético, embalaje secundario y embalaje exterior rígido."
+  },
+  {
+      "id": 534,
+      "pregunta": "Disminución de la tolerancia a la actividad, carga excesiva de fatiga, recuperación quirúrgica deteriorada ¿a qué dominio pertenece?",
+      "opciones": {
+          "A": "Dominio 2. Descanso y sueño / Clase 3 regulación",
+          "B": "Dominio 1. Promoción de la salud / Clase 3 autocuidado",
+          "C": "Dominio 5. Autocuidado / clase 2 regulación",
+          "D": "Dominio 4. Actividad / descanso - clase 3. Balance energético"
+      },
+      "respuesta": "D",
+      "tema": "Cuidado Integral - Proceso de atención de enfermería",
+      "origen": "examen",
+      "explicacion": "La disminución de tolerancia a la actividad, fatiga excesiva y recuperación quirúrgica deteriorada pertenecen al Dominio 4 (Actividad/descanso), Clase 3 (Balance energético) de la taxonomía NANDA. Este dominio abarca la producción, conservación y gasto de energía."
+  },
+  {
+      "id": 535,
+      "pregunta": "Tras administrar un medicamento \"x\" a un paciente, este reporta náuseas. Esta reacción a pesar de solo ser una sospecha de haber sido generada por el medicamento \"x\", sin necesidad de confirmar la relación causal, debe reportarse en la historia clínica del paciente; porque corresponde a:",
+      "opciones": {
+          "A": "Evento centinela",
+          "B": "Sospecha de reacción adversa",
+          "C": "Reacción bien caracterizada",
+          "D": "ESAVI"
+      },
+      "respuesta": "B",
+      "tema": "Gestión - Uso racional de medicamentos",
+      "origen": "examen",
+      "explicacion": "Una sospecha de reacción adversa es cualquier efecto no deseado que se presenta tras la administración de un medicamento, sin necesidad de confirmar la relación causal. Debe registrarse obligatoriamente en la historia clínica y reportarse al sistema de farmacovigilancia."
+  },
+  {
+      "id": 536,
+      "pregunta": "Un centro de salud I-3 que no genera más de 10 litros al día de residuos sólidos biocontaminados y cuenta con autoclave para el tratamiento. ¿Cuál es el tiempo máximo que puede almacenarlos antes de su disposición final?",
+      "opciones": {
+          "A": "Un mes",
+          "B": "Siete días",
+          "C": "48 horas",
+          "D": "Tres días"
+      },
+      "respuesta": "B",
+      "tema": "Salud Comunitaria - Gestión de residuos sólidos",
+      "origen": "examen",
+      "explicacion": "Un establecimiento que genera menos de 10 litros diarios de residuos biocontaminados y cuenta con autoclave puede almacenarlos hasta siete días antes de su disposición final. Este plazo permite acumular suficiente volumen para un tratamiento eficiente."
+  },
+  {
+      "id": 537,
+      "pregunta": "En un establecimiento de salud I-4, mujer de 25 años, recibió tratamiento según esquema TB, pero indica que los síntomas continúan, y que su hija menor de 5 años, también fue diagnosticada de lo mismo. ¿Qué principio del uso de medicamentos antimicrobianos NO se aplicó?",
+      "opciones": {
+          "A": "Resistencia",
+          "B": "Biodisponibilidad",
+          "C": "Concentración",
+          "D": "Calidad"
+      },
+      "respuesta": "A",
+      "tema": "Gestión - Uso racional de medicamentos",
+      "origen": "examen",
+      "explicacion": "Si los síntomas de TB continúan tras el tratamiento y la hija también fue diagnosticada, el principio que no se aplicó es el de resistencia. No se evaluó la posible resistencia del Mycobacterium tuberculosis a los fármacos, lo que llevó a un tratamiento ineficaz y transmisión intrafamiliar."
+  },
+  {
+      "id": 538,
+      "pregunta": "En el centro de salud del primer nivel, como serumista, el registro de los datos organizados (estadística de casos) o la colecta de datos en campo (estudios de flora y fauna, vectores, entre otros) son acciones de:",
+      "opciones": {
+          "A": "Salud pública",
+          "B": "Vigilancia epidemiológica",
+          "C": "Vigilancia centinela",
+          "D": "Investigación"
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Vigilancia epidemiológica",
+      "origen": "examen",
+      "explicacion": "El registro de datos organizados y la colecta de datos en campo sobre casos, flora, fauna y vectores son acciones de vigilancia epidemiológica. La vigilancia recopila, analiza e interpreta datos de salud de forma sistemática para la toma de decisiones en salud pública."
+  },
+  {
+      "id": 539,
+      "pregunta": "¿Con qué se determina el número de la historia clínica de una persona de nacionalidad peruana?",
+      "opciones": {
+          "A": "Carnet de extranjería",
+          "B": "Pasaporte",
+          "C": "Según número de ingreso",
+          "D": "Documento Nacional de Identidad"
+      },
+      "respuesta": "D",
+      "tema": "Gestión - Historia clínica",
+      "origen": "examen",
+      "explicacion": "El número de historia clínica de una persona de nacionalidad peruana se determina con el Documento Nacional de Identidad (DNI). El DNI es el documento único de identificación que permite vincular al paciente con su registro médico de manera unívoca."
+  },
+  {
+      "id": 540,
+      "pregunta": "Es un componente prioritario y esencial de los programas de inmunización y comprende el cumplimiento de un conjunto de procedimientos normalizados, estandarizados o protocolizados que se observan desde la formulación de la vacuna, su producción, transporte, almacenamiento y conservación, distribución, reconstitución, administración (inyección segura), eliminación (bioseguridad) y la vigilancia epidemiológica e investigación de los ESAVI. ¿A qué vacuna corresponde?",
+      "opciones": {
+          "A": "Vacuna regular",
+          "B": "Vacuna segura",
+          "C": "Vacuna inatenuada",
+          "D": "Vacuna atenuada"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "El concepto de vacuna segura comprende todos los procedimientos estandarizados desde la formulación hasta la vigilancia de ESAVI. Garantiza que cada etapa del proceso de inmunización cumpla estándares de calidad y seguridad para proteger al paciente."
+  },
+  {
+      "id": 541,
+      "pregunta": "Durante la vacunación casa por casa muy cerca al establecimiento de salud, una enfermera aplica la última vacuna de DT que le quedaba a una mujer de 40 años de edad. De regreso al EESS, al abrir su thermo para guardar los paquetes de hielo, visualiza que la T° registraba 10°C. ¿Qué riesgos puede padecer última mujer vacunada ante la ruptura de la cadena de frio?",
+      "opciones": {
+          "A": "Disminución del número de personas susceptibles",
+          "B": "Incremento de la eficacia de la vacuna",
+          "C": "Presentación abscesos no sépticos",
+          "D": "Ganancia de la confianza de la población"
+      },
+      "respuesta": "C",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "Ante la ruptura de cadena de frío (T° de 10°C, superior al rango de +2 a +8°C), la vacuna DT puede perder potencia y generar abscesos no sépticos en el sitio de aplicación. La degradación del adyuvante de aluminio por temperatura inadecuada causa reacciones locales inflamatorias."
+  },
+  {
+      "id": 542,
+      "pregunta": "¿Cuál es el rango de T° en °C, necesario para la conservación de las vacunas?",
+      "opciones": {
+          "A": "1 a 8",
+          "B": "2 a 8",
+          "C": "4 a 10",
+          "D": "-1 a -8"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "El rango de temperatura para la conservación de la mayoría de vacunas es de +2°C a +8°C. Temperaturas menores a 0°C destruyen vacunas adsorbidas y temperaturas mayores a +8°C degradan los antígenos, especialmente de vacunas virales vivas."
+  },
+  {
+      "id": 543,
+      "pregunta": "Para garantizar el adecuado desempeño de los recursos humanos de su establecimiento de salud. ¿Qué se debe considerar?",
+      "opciones": {
+          "A": "Valores",
+          "B": "Competencias",
+          "C": "Virtudes",
+          "D": "Caracteres"
+      },
+      "respuesta": "B",
+      "tema": "Gestión - Administración de servicios",
+      "origen": "examen",
+      "explicacion": "Para garantizar el adecuado desempeño de los recursos humanos se deben considerar las competencias. Las competencias integran conocimientos, habilidades y actitudes necesarias para el desempeño efectivo de las funciones asignadas en el establecimiento de salud."
+  },
+  {
+      "id": 544,
+      "pregunta": "Adela es una adulta mayor viviendo con diabetes mellitus, la cual tiene dificultad para movilizarse. Refiere que vive con su hija que trabaja todo el día y no puede acompañarla siempre al establecimiento de salud. Está estable, pero necesita su medicación de manera oportuna. ¿Qué tipo de intervención de Telesalud requiere?",
+      "opciones": {
+          "A": "Telemonitoreo",
+          "B": "Telecapacitación",
+          "C": "Teleconsulta",
+          "D": "Teleorientación"
+      },
+      "respuesta": "A",
+      "tema": "Gestión - Telesalud",
+      "origen": "examen",
+      "explicacion": "El telemonitoreo es la intervención adecuada para una paciente estable con diabetes que tiene dificultad para movilizarse. Permite el seguimiento a distancia de sus parámetros clínicos, adherencia al tratamiento y estado de salud sin necesidad de acudir al establecimiento."
+  },
+  {
+      "id": 545,
+      "pregunta": "En las sesiones educativas a madres de familia del programa JUNTOS, manifiestan que para eliminar la anemia les dan a sus niños remolacha, hojas de berros entre otros productos de la zona. Como personal de salud. ¿Qué acciones se deben realizar para continuar las capacitaciones sin contradecir las creencias de la comunidad?",
+      "opciones": {
+          "A": "Desestimar las opiniones e indicar que estos alimentos no son ricos en hierro",
+          "B": "Retirarlos del beneficio económico del programa JUNTOS",
+          "C": "Fortalecer el consumo de alimentos ricos en hierro, respetando sus opiniones",
+          "D": "Obligar el consumo de alimentos ricos en hierro para evitar la anemia"
+      },
+      "respuesta": "C",
+      "tema": "Ética - Interculturalidad",
+      "origen": "examen",
+      "explicacion": "Se debe fortalecer el consumo de alimentos ricos en hierro respetando las opiniones de las madres. El enfoque intercultural exige no contradecir las creencias sino complementarlas, orientando sobre alimentos con mayor contenido de hierro hemínico sin desvalorizar sus prácticas tradicionales."
+  },
+  {
+      "id": 546,
+      "pregunta": "¿Cuál es la vacuna que se administra vía intradérmica, en la región del músculo deltoides del brazo derecho a 2 cm del acromion o vértice del hombro?",
+      "opciones": {
+          "A": "APO",
+          "B": "BCG",
+          "C": "Fiebre amarilla",
+          "D": "Hepatitis B"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "La BCG (Bacilo de Calmette-Guérin) se administra vía intradérmica en la región del músculo deltoides del brazo derecho, a 2 cm del acromion. Es la única vacuna del esquema regular que se aplica por vía intradérmica. La APO es oral, y la fiebre amarilla y hepatitis B son subcutánea e intramuscular respectivamente."
+  },
+  {
+      "id": 547,
+      "pregunta": "Dentro del periodo prenatal. ¿Qué factor de riesgo neonatal consideramos en la evaluación de la gestante?",
+      "opciones": {
+          "A": "Cesárea de emergencia",
+          "B": "Diabetes materna",
+          "C": "Parto prolongado",
+          "D": "Placenta previa"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Paquete prenatal",
+      "origen": "examen",
+      "explicacion": "La diabetes materna es un factor de riesgo neonatal que se evalúa durante el periodo prenatal. Puede causar macrosomía fetal, hipoglucemia neonatal, distrés respiratorio y malformaciones congénitas. La cesárea de emergencia, parto prolongado y placenta previa son factores intraparto."
+  },
+  {
+      "id": 548,
+      "pregunta": "Mujer de 52 años, natural de región selva, trabaja en prostitución, refiere a profesional de salud que el día anterior fue dopada y sufrió agresión sexual, tiene dolor pélvico y moretones en el cuerpo, ¿Qué debe hacer el profesional de salud?",
+      "opciones": {
+          "A": "Derivar a paciente para que se le brinde atención en salud mental",
+          "B": "Aplicar kit completo de emergencia, previo consentimiento",
+          "C": "Aplicar kit de descarte sin consentimiento para que no se asuste",
+          "D": "Hacer denuncia a las autoridades sin autorización de paciente"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Violencia y protección",
+      "origen": "examen",
+      "explicacion": "Ante una agresión sexual, el profesional de salud debe aplicar el kit completo de emergencia previo consentimiento informado de la paciente. El kit incluye anticoncepción de emergencia, profilaxis de ITS, VIH y Hepatitis B. Siempre se requiere el consentimiento de la paciente."
+  },
+  {
+      "id": 549,
+      "pregunta": "Se observa que hay migrantes de selva que viven en un asentamiento humano de un distrito de Lima, que son discriminados y rechazados entre los pobladores del distrito donde pernoctan, por lo que se debe …",
+      "opciones": {
+          "A": "imponer acciones socio educativas.",
+          "B": "normalizar el comportamiento de la comunidad.",
+          "C": "cambiar hábitos, costumbres y creencias.",
+          "D": "reforzar la interacción cultural."
+      },
+      "respuesta": "D",
+      "tema": "Ética - Interculturalidad",
+      "origen": "examen",
+      "explicacion": "Ante la discriminación de migrantes de la selva, se debe reforzar la interacción cultural. La interculturalidad promueve el diálogo, respeto mutuo y convivencia entre diferentes culturas. No se imponen cambios ni se normalizan comportamientos discriminatorios."
+  },
+  {
+      "id": 550,
+      "pregunta": "Recientemente usted fue asignado a un C.S. y quiere conocer cómo se transmite una enfermedad de una persona a otra o de un reservorio no humano a una población humana, además de las razones por las que los comportamientos de riesgo causan enfermedades. ¿En qué se basa para realizar este estudio?",
+      "opciones": {
+          "A": "Tanatología",
+          "B": "Epidemiología",
+          "C": "Estadística",
+          "D": "Salud pública"
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Epidemiología",
+      "origen": "examen",
+      "explicacion": "La epidemiología es la ciencia que estudia cómo se transmiten las enfermedades, su distribución en la población y los factores que las determinan. Permite conocer las cadenas de transmisión y los comportamientos de riesgo que causan enfermedades."
+  },
+  {
+      "id": 551,
+      "pregunta": "En una comunidad se reportan dos o más casos de una misma enfermedad y están relacionados entre sí, el personal de salud según criterio epidemiológico identifica que es:",
+      "opciones": {
+          "A": "Pandemia",
+          "B": "Brote",
+          "C": "Endemia",
+          "D": "Epidemia"
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Brotes y epidemias",
+      "origen": "examen",
+      "explicacion": "Dos o más casos de una misma enfermedad relacionados entre sí configuran un brote. El brote es la aparición de casos vinculados epidemiológicamente que superan lo esperado en un área y tiempo determinados."
+  },
+  {
+      "id": 552,
+      "pregunta": "En un establecimiento de salud, acude mujer de 25 años, indicando que su pareja la obligó a ver \"material pornográfico\", el médico que la atiende brinda atención integral y requiere registrarla en su HIS. Este acontecimiento está tipificado como:",
+      "opciones": {
+          "A": "Abuso sexual",
+          "B": "Agresión física",
+          "C": "Violencia sexual",
+          "D": "Violencia de género"
+      },
+      "respuesta": "C",
+      "tema": "Cuidado Integral - Violencia y protección",
+      "origen": "examen",
+      "explicacion": "Obligar a ver material pornográfico está tipificado como violencia sexual. La violencia sexual incluye cualquier acto de naturaleza sexual impuesto sin consentimiento, incluyendo obligar a ver pornografía, tocamientos, acoso y violación."
+  },
+  {
+      "id": 553,
+      "pregunta": "Gestante de 8 semanas de 36 años, refiere ser violentada sexualmente por su pareja, acude al servicio a solicitar apoyo. Como profesional de la salud se debe indicar que la gestante realice su denuncia en primera instancia a la:",
+      "opciones": {
+          "A": "Ministerio de la mujer",
+          "B": "Policía del sector",
+          "C": "Centro de emergencia mujer",
+          "D": "Fiscalía de familia"
+      },
+      "respuesta": "D",
+      "tema": "Cuidado Integral - Violencia y protección",
+      "origen": "examen",
+      "explicacion": "La gestante víctima de violencia sexual debe realizar su denuncia en primera instancia a la Fiscalía de familia. La fiscalía es la entidad competente para recibir denuncias, investigar y actuar de oficio en casos de violencia familiar y sexual."
+  },
+  {
+      "id": 554,
+      "pregunta": "En un establecimiento de salud I-4, un ejemplo de UPSS podría considerarse al servicio de …",
+      "opciones": {
+          "A": "docencia.",
+          "B": "gestión de investigación.",
+          "C": "pediatría.",
+          "D": "epidemiología."
+      },
+      "respuesta": "C",
+      "tema": "Gestión - Clasificación de establecimientos",
+      "origen": "examen",
+      "explicacion": "En un establecimiento I-4, un ejemplo de UPSS (Unidad Productora de Servicios de Salud) es el servicio de pediatría. Las UPSS son unidades que brindan atención directa al usuario. Docencia, investigación y epidemiología son unidades de apoyo, no UPSS."
+  },
+  {
+      "id": 555,
+      "pregunta": "Paciente migrante con tuberculosis pulmonar acude al establecimiento de salud solicitando ser atendido en el programa de PCT, no cuenta con documento de identificación. ¿Cuál es el procedimiento para solucionar el problema y brindar una atención adecuada y oportuna?",
+      "opciones": {
+          "A": "Por estrategia sanitaria no requiere documento",
+          "B": "Referir a migraciones con el diagnóstico de TB",
+          "C": "Solicitar la exoneración del tratamiento",
+          "D": "Exigir su inscripción al SIS por enfermedad infecto contagiosa"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Tuberculosis",
+      "origen": "examen",
+      "explicacion": "El paciente migrante con TB sin documento de identificación debe ser referido a migraciones con el diagnóstico de TB para regularizar su situación documentaria y acceder al tratamiento. La TB es una enfermedad de interés en salud pública que requiere atención independientemente del estatus migratorio."
+  },
+  {
+      "id": 556,
+      "pregunta": "En el establecimiento de salud I-4, acude paciente con tratamiento de sífilis. Para la clasificación de la etapa clínica y diagnóstico de neurosífilis. ¿Cuál es la prueba indicada?",
+      "opciones": {
+          "A": "VDRL (Venereal Disease Research Laboratory)",
+          "B": "FTA Abs (Fluorescent Treponemal Antibody-Absorption)",
+          "C": "TPPA (Treponema pallidum particle agglutination)",
+          "D": "TPHA (Treponema pallidum Haemagglutination)"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - ITS",
+      "origen": "examen",
+      "explicacion": "El VDRL es la prueba indicada para la clasificación de la etapa clínica y diagnóstico de neurosífilis. Se realiza en líquido cefalorraquídeo (LCR) y es la prueba estándar para detectar compromiso del sistema nervioso central por Treponema pallidum."
+  },
+  {
+      "id": 557,
+      "pregunta": "Si un adulto recibió las 3 dosis de vacunación completa de la difteria y tétanos, ¿a los cuantos años después debe reforzar la inmunidad con una sola dosis?",
+      "opciones": {
+          "A": "15",
+          "B": "10",
+          "C": "20",
+          "D": "5"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "Después de completar las 3 dosis de dT, se debe reforzar la inmunidad cada 10 años con una dosis de refuerzo. Este intervalo mantiene niveles protectores de anticuerpos contra difteria y tétanos a lo largo de la vida adulta."
+  },
+  {
+      "id": 558,
+      "pregunta": "Los factores que afectan a la salud son múltiples, y las relaciones entre ellos, complejas. Los determinantes sociales, definidos como las condiciones en las que viven las personas y a sus experiencias sociales que tienen un efecto sobre su salud, tienen los siguientes componentes:",
+      "opciones": {
+          "A": "Etnia - factores biológicos",
+          "B": "Posición socioeconómica - genética",
+          "C": "Estructurales - intermedios",
+          "D": "Socioeconómicos - interculturales"
+      },
+      "respuesta": "C",
+      "tema": "Salud Comunitaria - Determinantes sociales",
+      "origen": "examen",
+      "explicacion": "Los determinantes sociales de la salud tienen dos componentes principales: estructurales (gobernanza, políticas, valores culturales que generan estratificación social) e intermedios (condiciones materiales, factores psicosociales, conductas, sistema de salud). Ambos interactúan para producir inequidades en salud."
+  },
+  {
+      "id": 559,
+      "pregunta": "Se realiza la visita a un niño con anemia, se le orienta a la madre darle alimentos ricos en hierro como la sangrecita. La madre señala que su religión no le permite. ¿Cuál es la conducta más adecuada para mejorar el estado de salud del menor?",
+      "opciones": {
+          "A": "Respetar la decisión y creencia de la familia",
+          "B": "Fortalecer el consumo de hierro intradomiciliario",
+          "C": "Llamarle la atención por negligencia y desidia",
+          "D": "Obligar a que la madre lo alimente con la sangrecita"
+      },
+      "respuesta": "B",
+      "tema": "Ética - Interculturalidad",
+      "origen": "examen",
+      "explicacion": "La conducta adecuada es fortalecer el consumo de hierro intradomiciliario, ofreciendo alternativas de alimentos ricos en hierro que sean aceptables para la familia según sus creencias religiosas. Se respeta la creencia pero se buscan opciones para mejorar la salud del niño."
+  },
+  {
+      "id": 560,
+      "pregunta": "En la comunidad, se identifican a niños <1 año sin vacunas, sin CRED y sin tamizaje de anemia. Se les brinda orientación y consejería a las madres de la importancia de cumplir con el calendario de atención integral de salud de los menores, quienes responden que no tienen tiempo para llevarlos al centro de salud. ¿Qué estrategias se deben realizar para sensibilizar y promover el cuidado integral de salud de los infantes?",
+      "opciones": {
+          "A": "Comunicar a las autoridades por exposición al peligro de los menores",
+          "B": "Organizar un plan de visitas por el equipo multidisciplinario",
+          "C": "Hacer de conocimiento a la fiscalía de la familia",
+          "D": "Captar y capacitar a líderes comunales para las visitas continuas"
+      },
+      "respuesta": "D",
+      "tema": "Salud Comunitaria - Participación social y comunitaria",
+      "origen": "examen",
+      "explicacion": "La estrategia más efectiva es captar y capacitar a líderes comunales para realizar visitas continuas. Los líderes comunales son el nexo entre el establecimiento y la comunidad, pueden sensibilizar a las madres en su propio entorno y facilitar el acceso a los servicios de salud."
+  },
+  {
+      "id": 561,
+      "pregunta": "En un establecimiento de primer nivel de atención detectamos un caso de tamizaje positivo de TBC pero el paciente tiene el diagnóstico de problemas de salud mental, ¿dónde se debe derivar?",
+      "opciones": {
+          "A": "Hospital psiquiátrico",
+          "B": "Centro de salud mental y comunitaria",
+          "C": "Considerar como un paciente altamente de riesgo",
+          "D": "Establecimiento de salud de más complejidad"
+      },
+      "respuesta": "B",
+      "tema": "Salud Comunitaria - Salud mental comunitaria",
+      "origen": "examen",
+      "explicacion": "Un paciente con TBC y problemas de salud mental debe derivarse al Centro de Salud Mental Comunitaria (CSMC). El CSMC ofrece atención ambulatoria especializada en salud mental con enfoque comunitario, permitiendo el manejo integral del paciente sin necesidad de hospitalización psiquiátrica."
+  },
+  {
+      "id": 562,
+      "pregunta": "¿Cuál es la función esencial que ha sido identificada como crítica para la práctica de la salud pública relacionada a la colaboración activa del personal de los servicios de salud en el desarrollo de programas educativos en la comunidad?",
+      "opciones": {
+          "A": "Participación social",
+          "B": "Promoción de la salud",
+          "C": "Regulación y fiscalización",
+          "D": "Promoción del acceso equitativo"
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Promoción de la salud",
+      "origen": "examen",
+      "explicacion": "La promoción de la salud es la función esencial relacionada con la colaboración activa del personal en programas educativos comunitarios. Incluye educación sanitaria, comunicación social y empoderamiento de la comunidad para adoptar estilos de vida saludables."
+  },
+  {
+      "id": 563,
+      "pregunta": "La búsqueda intencionada y sistemática de casos de dislipidemia y obesidad infantil en las historias clínicas y archivos estadísticos del centro de salud. ¿A qué tipo de vigilancia corresponde?",
+      "opciones": {
+          "A": "Activa",
+          "B": "Centinela",
+          "C": "Pasiva",
+          "D": "Retrospectiva"
+      },
+      "respuesta": "C",
+      "tema": "Salud Pública - Vigilancia epidemiológica",
+      "origen": "examen",
+      "explicacion": "La búsqueda de casos en historias clínicas y archivos estadísticos ya existentes corresponde a vigilancia pasiva. La vigilancia pasiva utiliza datos que ya fueron recolectados rutinariamente en los servicios de salud, a diferencia de la activa que sale a buscar casos en la comunidad."
+  },
+  {
+      "id": 564,
+      "pregunta": "La tendencia del crecimiento y peso de una niña que acude a su control de CRED no se encuentran paralelos al patrón de referencia, esto se ha visualizado con respecto a su control anterior. En esta situación. ¿Cómo es su crecimiento?",
+      "opciones": {
+          "A": "Inadecuado",
+          "B": "Adecuado",
+          "C": "Logrado",
+          "D": "Esperado"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - Paquete del niño",
+      "origen": "examen",
+      "explicacion": "Cuando la tendencia de crecimiento y peso no es paralela al patrón de referencia, el crecimiento se clasifica como inadecuado. El crecimiento adecuado se caracteriza por una curva paralela al patrón de referencia entre controles consecutivos."
+  },
+  {
+      "id": 565,
+      "pregunta": "Adolescente de iniciales J.P.C. de 14 años, tiene autismo moderado, hace 3 años dejó la medicación, en los últimos meses tiene conducta agresiva con la comunidad (vecinos y colegio), mamá refiere \"no es colérico en casa, pero tiene actitud negativista y aptitud apática, rechaza a la gente\" ¿Cuál es la etiqueta diagnóstica NANDA priorizada para iniciar la intervención primaria de vida adolescente?",
+      "opciones": {
+          "A": "Deterioro de la regulación del estado de ánimo",
+          "B": "Interacción social deteriorada",
+          "C": "Gestión ineficaz de la salud comunitaria",
+          "D": "Conectividad social deteriorada"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Proceso de atención de enfermería",
+      "origen": "examen",
+      "explicacion": "La etiqueta diagnóstica NANDA priorizada es interacción social deteriorada. El adolescente presenta conducta agresiva con la comunidad, actitud negativista y rechazo a las personas, lo que evidencia un deterioro en su capacidad de interactuar socialmente de manera efectiva."
+  },
+  {
+      "id": 566,
+      "pregunta": "En una comunidad amazónica se registra un brote de malaria por Plasmodium falciparum, donde dos niños fallecieron de un total de 50 pacientes (4%) confirmados con gota gruesa y PCR. ¿Cuál es la medida epidemiológica de frecuencia referida?",
+      "opciones": {
+          "A": "Tasa de ataque",
+          "B": "Tasa de letalidad",
+          "C": "Incidencia acumulada",
+          "D": "Tasa de mortalidad general"
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Epidemiología",
+      "origen": "examen",
+      "explicacion": "La tasa de letalidad mide la proporción de personas que mueren entre los enfermos (2 fallecidos / 50 enfermos = 4%). Se diferencia de la tasa de mortalidad (muertes / población total) y la tasa de ataque (enfermos / población expuesta)."
+  },
+  {
+      "id": 567,
+      "pregunta": "Se encuentra atendiendo el serumista profesional de salud no médico en un establecimiento de salud nivel I-1. ¿Cuál es la atención de salud de urgencia prioritaria que debe referir?",
+      "opciones": {
+          "A": "Parasitosis intestinal",
+          "B": "Hemorragia leve",
+          "C": "Asma no complicada",
+          "D": "Síndrome febril"
+      },
+      "respuesta": "D",
+      "tema": "Gestión - Referencia y contrarreferencia",
+      "origen": "examen",
+      "explicacion": "El síndrome febril es la urgencia prioritaria que debe referir un profesional no médico en un I-1, ya que puede ser manifestación de enfermedades graves (malaria, dengue, fiebre amarilla) que requieren evaluación médica y exámenes de laboratorio no disponibles en un I-1."
+  },
+  {
+      "id": 568,
+      "pregunta": "Juana y Gregorio acuden al centro de salud para recibir orientación por personal capacitado en ITS, al finalizar la sesión, les proveen preservativos masculinos y condones femeninos en un número de ... respectivamente.",
+      "opciones": {
+          "A": "20 y 30",
+          "B": "20 y 10",
+          "C": "60 y 20",
+          "D": "30 y 10"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Salud sexual y reproductiva",
+      "origen": "examen",
+      "explicacion": "Según la norma, se proveen 20 preservativos masculinos y 10 condones femeninos por pareja en cada sesión de orientación en ITS. Esta cantidad cubre aproximadamente un mes de uso regular para la prevención de ITS."
+  },
+  {
+      "id": 569,
+      "pregunta": "Es una estrategia de intervención que consiste en la indicación y la entrega de los micronutrientes o hierro (en forma de sulfato ferroso o complejo polimaltosado férrico) con la finalidad de prevenir la anemia por deficiencia de hierro, ¿quién es el profesional que prescribe?",
+      "opciones": {
+          "A": "El profesional de salud médico",
+          "B": "El profesional de salud en general",
+          "C": "El profesional de salud nutricionista",
+          "D": "El profesional de salud que realiza el control de la niña o niño"
+      },
+      "respuesta": "D",
+      "tema": "Cuidado Integral - Prevención y control de anemia",
+      "origen": "examen",
+      "explicacion": "El profesional de salud que realiza el control de la niña o niño (CRED) es quien prescribe la suplementación preventiva con hierro. Puede ser médico, enfermera u obstetra que realiza el control de crecimiento y desarrollo, según la norma técnica de prevención de anemia."
+  },
+  {
+      "id": 570,
+      "pregunta": "El jefe del puesto de salud acudió a la reunión convocada por el municipio para empadronamiento y evaluación sanitaria de los drogadictos que pernoctan a las afueras de la ciudad y que han ido en aumento. Este hábito negativo para la salud, está dentro del grupo de determinantes:",
+      "opciones": {
+          "A": "Biológicos",
+          "B": "Ambientales",
+          "C": "Asistenciales",
+          "D": "Genéticos"
+      },
+      "respuesta": "B",
+      "tema": "Salud Comunitaria - Determinantes sociales",
+      "origen": "examen",
+      "explicacion": "La drogadicción como hábito negativo para la salud está dentro del grupo de determinantes ambientales. Los determinantes ambientales incluyen el entorno físico y social donde viven las personas, incluyendo las condiciones que favorecen conductas de riesgo como el consumo de drogas."
+  },
+  {
+      "id": 571,
+      "pregunta": "Cerca al centro de salud de primer nivel, existe una tienda de abarrotes que vende medicamentos, a la que acuden los pacientes. Las fechas de expiración de dichos medicamentos están dentro del rango apropiado y no se observa indicios de ser de dudosa procedencia, según comenta un poblador. Según la \"Política Nacional de Medicamentos\" se debe:",
+      "opciones": {
+          "A": "Verificar periódicamente las fechas de vencimiento",
+          "B": "Velar por precios asequibles de medicamentos",
+          "C": "Formalizar dicho comercio",
+          "D": "Erradicar el comercio informal"
+      },
+      "respuesta": "D",
+      "tema": "Gestión - Uso racional de medicamentos",
+      "origen": "examen",
+      "explicacion": "Según la Política Nacional de Medicamentos, se debe erradicar el comercio informal de medicamentos. La venta de medicamentos en tiendas de abarrotes es ilegal y pone en riesgo la salud de la población, independientemente de que los productos parezcan estar en buen estado."
+  },
+  {
+      "id": 572,
+      "pregunta": "El enfoque intercultural implica que el estado valore e incorpore las diferentes visiones de grupos étnico culturales para la generación de los servicios con pertinencia cultural, promoviendo el reconocimiento de la ciudadanía intercultural basada en el diálogo y la atención diferenciada. Estos enfoques debería ser diferenciada de manera especial en los:",
+      "opciones": {
+          "A": "Pueblos latinos y europeos",
+          "B": "Pueblos indígenas y población afroperuana",
+          "C": "Población en general",
+          "D": "Pueblos aymaras e indígenas"
+      },
+      "respuesta": "B",
+      "tema": "Ética - Interculturalidad",
+      "origen": "examen",
+      "explicacion": "El enfoque intercultural debe aplicarse de manera especial en los pueblos indígenas y la población afroperuana. Estos grupos históricamente han enfrentado barreras culturales y lingüísticas para acceder a servicios de salud, requiriendo atención diferenciada con pertinencia cultural."
+  },
+  {
+      "id": 573,
+      "pregunta": "Ud. desea definir las líneas de mejora continua de su centro de salud para lo cual es necesario conocer sus fortalezas. ¿Qué pregunta debe realizar?",
+      "opciones": {
+          "A": "¿Qué se está haciendo bien?",
+          "B": "¿Qué facilidades se presentan?",
+          "C": "¿Qué nos falta para mejorar?",
+          "D": "¿Qué riesgos externos existen?"
+      },
+      "respuesta": "A",
+      "tema": "Gestión - Planeamiento estratégico",
+      "origen": "examen",
+      "explicacion": "Para identificar fortalezas se debe preguntar '¿Qué se está haciendo bien?'. Las fortalezas son aspectos positivos internos. '¿Qué facilidades se presentan?' identifica oportunidades (externas), '¿Qué nos falta?' identifica debilidades y '¿Qué riesgos externos?' identifica amenazas."
+  },
+  {
+      "id": 574,
+      "pregunta": "El tabaco es un factor de riesgo para cáncer pulmonar y EPOC, una intervención efectiva para disminuir la exposición es la implementación de medidas correctivas que favorezcan espacios libres de humo, siendo una función de salud...",
+      "opciones": {
+          "A": "individual.",
+          "B": "familiar.",
+          "C": "pública.",
+          "D": "participativa."
+      },
+      "respuesta": "C",
+      "tema": "Salud Pública - Conceptos básicos",
+      "origen": "examen",
+      "explicacion": "La implementación de medidas para espacios libres de humo es una función de salud pública. Las políticas de control del tabaco y protección de la población frente al humo de segunda mano son intervenciones poblacionales que corresponden al ámbito de la salud pública."
+  },
+  {
+      "id": 575,
+      "pregunta": "La Enfermera según su norma técnica tiene visita de seguimiento de casos inconclusos del plan de atención de salud para adolescentes, determina la visita en al menos ... visitas para conocer el entorno personal, social y familiar saludable.",
+      "opciones": {
+          "A": "3",
+          "B": "2",
+          "C": "5",
+          "D": "4"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Paquete del adolescente",
+      "origen": "examen",
+      "explicacion": "La enfermera debe realizar al menos 2 visitas de seguimiento para casos inconclusos del plan de atención de salud del adolescente. Estas visitas permiten conocer el entorno personal, social y familiar, y completar las atenciones pendientes del plan integral."
+  },
+  {
+      "id": 576,
+      "pregunta": "NT de prevención y control de anemia del niño(a) menor de 36 meses en diagnóstico situacional de Hb baja, habiendo tenido un diagnóstico de enfermería \"dinámica ineficaz de la alimentación infantil relacionado a estreñimiento\", en la efectividad del suplemento de hierro, la recomendación es:",
+      "opciones": {
+          "A": "Cambie el horario de las gotas y fraccione la dosis indicada",
+          "B": "Dele lactancia materna seguida y fraccione la dosis en 2 tomas",
+          "C": "No se preocupe, las gotas cambian el color de las deposiciones",
+          "D": "Mezcle el suplemento con un poco de agua o jugo de frutas"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Prevención y control de anemia",
+      "origen": "examen",
+      "explicacion": "Ante estreñimiento por suplemento de hierro, la recomendación es dar lactancia materna seguida y fraccionar la dosis en 2 tomas. La lactancia materna ayuda a mejorar el tránsito intestinal y fraccionar la dosis reduce los efectos gastrointestinales del hierro."
+  },
+  {
+      "id": 577,
+      "pregunta": "En la comunidad de un PS I-2 se identifica que existe un número elevado de adolescentes entre 13 y 15 años que se encuentran laborando pasteando ganado y pernoctando en el campo y que no han sido matriculados en la escuela. ¿A qué determinantes corresponde esta situación?",
+      "opciones": {
+          "A": "Estilo de vida",
+          "B": "Intermedios",
+          "C": "Ambientales",
+          "D": "Estructurales"
+      },
+      "respuesta": "B",
+      "tema": "Salud Comunitaria - Determinantes sociales",
+      "origen": "examen",
+      "explicacion": "El trabajo infantil y la deserción escolar corresponden a determinantes intermedios de la salud. Los determinantes intermedios incluyen las condiciones materiales de vida, circunstancias psicosociales y conductas que son consecuencia de la posición socioeconómica (determinante estructural)."
+  },
+  {
+      "id": 578,
+      "pregunta": "Los migrantes de la selva que viven en una comunidad de Lima, mantienen sus estilos de vida donde prevalece el trabajo informal, la deserción escolar y el ausentismo en servicios de salud, por lo que se debe realizar …",
+      "opciones": {
+          "A": "brindar solamente acceso a los diversos programas sociales.",
+          "B": "censo a fin de conocer las personas que se encuentran en riesgo de salud.",
+          "C": "gestionar políticas públicas que brinden recursos en la comunidad.",
+          "D": "visitas domiciliarias a fin de integrarlos a los servicios de salud."
+      },
+      "respuesta": "C",
+      "tema": "Salud Comunitaria - Determinantes sociales",
+      "origen": "examen",
+      "explicacion": "Ante migrantes con trabajo informal, deserción escolar y ausentismo en salud, se deben gestionar políticas públicas que brinden recursos en la comunidad. Las políticas públicas abordan los determinantes estructurales que generan estas condiciones de vulnerabilidad."
+  },
+  {
+      "id": 579,
+      "pregunta": "Para prevenir las muertes neonatales institucionales, la población de las zonas rurales por costumbre y cultura prefieren los partos intradomiciliarios. ¿Qué acciones se deben de tomar en cuenta para cumplir con los objetivos del sector al impulsar el parto?",
+      "opciones": {
+          "A": "Prometer la entrega de canastas de víveres",
+          "B": "Educación vivencial de participación comunitaria",
+          "C": "Informar a las gestantes que la atención es gratuita",
+          "D": "Atender los partos intradomiciliarios"
+      },
+      "respuesta": "B",
+      "tema": "Salud Comunitaria - Participación social y comunitaria",
+      "origen": "examen",
+      "explicacion": "La educación vivencial de participación comunitaria es la acción más efectiva para impulsar el parto institucional en zonas rurales. Involucra a la comunidad en experiencias educativas prácticas que demuestran los beneficios del parto institucional respetando su cultura."
+  },
+  {
+      "id": 580,
+      "pregunta": "En el PS I-2 de la región central se ha detectado un caso de fiebre amarilla selvática, en este caso la notificación es:",
+      "opciones": {
+          "A": "Semanal",
+          "B": "Mensual",
+          "C": "Inmediata",
+          "D": "Quincenal"
+      },
+      "respuesta": "C",
+      "tema": "Salud Pública - Vigilancia epidemiológica",
+      "origen": "examen",
+      "explicacion": "La fiebre amarilla selvática es una enfermedad de notificación inmediata. Al ser una enfermedad con alto potencial epidémico y letalidad, requiere notificación dentro de las primeras 24 horas para activar las medidas de control y prevención oportunamente."
+  },
+  {
+      "id": 581,
+      "pregunta": "En el Cs San Cosme una de las acciones para diagnóstico de la Depresión es realizar tamizaje a personas mayores de 18 años a lo cual se realiza prioritariamente en los servicios de …",
+      "opciones": {
+          "A": "crecimiento y desarrollo.",
+          "B": "odontología.",
+          "C": "consulta externa.",
+          "D": "nutrición."
+      },
+      "respuesta": "C",
+      "tema": "Cuidado Integral - Salud mental",
+      "origen": "examen",
+      "explicacion": "El tamizaje de depresión en personas mayores de 18 años se realiza prioritariamente en consulta externa. Es el servicio donde acuden la mayoría de adultos por morbilidad, siendo una oportunidad para detectar precozmente problemas de salud mental."
+  },
+  {
+      "id": 582,
+      "pregunta": "Se desea ordenar el servicio de Admisión en un establecimiento de salud. ¿Hasta cuántos años de la última consulta se pueden tener las historias clínicas en el archivo activo?",
+      "opciones": {
+          "A": "2",
+          "B": "3",
+          "C": "10",
+          "D": "5"
+      },
+      "respuesta": "D",
+      "tema": "Gestión - Historia clínica",
+      "origen": "examen",
+      "explicacion": "Las historias clínicas se mantienen en el archivo activo hasta 5 años desde la última consulta. Después de este periodo sin ser requeridas, pasan al archivo pasivo. Esto permite mantener organizado el servicio de admisión con las historias de uso frecuente."
+  },
+  {
+      "id": 583,
+      "pregunta": "Usted acaba de ganar su plaza SERUMS, y en su primer día de trabajo, su jefatura le indica que se encuentran en el proceso de búsqueda de información a fin de elaborar el documento que oriente una gestión eficiente en salud acorde con los procesos de planificación. ¿Cuál es el documento?",
+      "opciones": {
+          "A": "Análisis de Situación de Salud",
+          "B": "Análisis Global del Estado de la Salud",
+          "C": "Análisis Global de los Determinantes de la Salud",
+          "D": "Análisis de la Vulnerabilidad territorial"
+      },
+      "respuesta": "A",
+      "tema": "Salud Pública - ASIS",
+      "origen": "examen",
+      "explicacion": "El Análisis de Situación de Salud (ASIS) es el documento que orienta una gestión eficiente en salud acorde con los procesos de planificación. Proporciona información sobre los problemas de salud, determinantes y recursos disponibles para la toma de decisiones."
+  },
+  {
+      "id": 584,
+      "pregunta": "En una comunidad de la selva del Perú, sólo los casos ... de mordeduras por serpientes venenosas y no venenosas se reportan ...",
+      "opciones": {
+          "A": "Probable y confirmado / inmediatamente.",
+          "B": "Probable y confirmado / semanalmente.",
+          "C": "Sospechoso, probable y confirmado / inmediatamente.",
+          "D": "Confirmado / semanalmente."
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Vigilancia epidemiológica",
+      "origen": "examen",
+      "explicacion": "Los casos probables y confirmados de mordeduras por serpientes se reportan semanalmente. Las mordeduras de serpientes son eventos de vigilancia epidemiológica de notificación semanal, a diferencia de enfermedades como fiebre amarilla o peste que son de notificación inmediata."
+  },
+  {
+      "id": 585,
+      "pregunta": "Personal de enfermería de I-2, se dispone a la preparación de una vacuna con el uso de polvo liofilizado que requiere constitución con cloruro de sodio al 0.9%. ¿Qué característica de la vacuna aplica?",
+      "opciones": {
+          "A": "Composición",
+          "B": "Presentación",
+          "C": "Conservación",
+          "D": "Dosis"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "El uso de polvo liofilizado que requiere reconstitución con cloruro de sodio corresponde a la característica de composición de la vacuna. La composición describe los componentes de la vacuna incluyendo el antígeno, adyuvantes, conservantes y diluyentes necesarios."
+  },
+  {
+      "id": 586,
+      "pregunta": "El conjunto de procedimientos asistenciales a través del cual se asegura la continuidad de la atención de las necesidades de salud de los usuarios, transfiriéndolo del establecimiento de menor a mayor capacidad resolutiva corresponde a:",
+      "opciones": {
+          "A": "Atención primaria",
+          "B": "Contrarreferencia",
+          "C": "Referencia",
+          "D": "Atención compartida"
+      },
+      "respuesta": "C",
+      "tema": "Gestión - Referencia y contrarreferencia",
+      "origen": "examen",
+      "explicacion": "La referencia es el conjunto de procedimientos asistenciales que transfiere al usuario de un establecimiento de menor a mayor capacidad resolutiva para asegurar la continuidad de la atención. La contrarreferencia es el proceso inverso, de mayor a menor complejidad."
+  },
+  {
+      "id": 587,
+      "pregunta": "En una comunidad con escenario de intervención III para Aedes aegypti se realizaron actividades de vigilancia mediante ovitrampas, obteniendo un índice IPO/IDH de 70. ¿Qué medidas se debe adoptar, considerando la estratificación del riesgo entomológico?",
+      "opciones": {
+          "A": "Identificar criaderos para eliminar",
+          "B": "Aplicar larvicidas y adulticidas",
+          "C": "Realizar inspecciones adicionales",
+          "D": "Seguir con el monitoreo"
+      },
+      "respuesta": "B",
+      "tema": "Salud Comunitaria - Control de vectores",
+      "origen": "examen",
+      "explicacion": "Con un índice IPO/IDH de 70 en escenario III, se deben aplicar larvicidas y adulticidas. Un índice alto indica alta infestación vectorial que requiere intervención química intensiva para reducir rápidamente la población de Aedes aegypti y el riesgo de transmisión."
+  },
+  {
+      "id": 588,
+      "pregunta": "Una persona después de haberse vacunado contra el dengue. ¿Cuánto tiempo debe permanecer en el área de reposo?",
+      "opciones": {
+          "A": "Una hora",
+          "B": "30 minutos",
+          "C": "45 minutos",
+          "D": "2 horas"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "Después de vacunarse contra el dengue, la persona debe permanecer 30 minutos en el área de reposo. Este tiempo permite observar posibles reacciones adversas inmediatas, especialmente reacciones anafilácticas que suelen presentarse en los primeros 30 minutos post-vacunación."
+  },
+  {
+      "id": 589,
+      "pregunta": "Se apersona una mujer de 25 años, al establecimiento de salud, con 20 semanas de gestación, sin controles previos, de acuerdo a protocolo le realizan los exámenes de VIH, con resultados positivo. ¿Qué acciones se realizan desde el centro de salud nivel I-3?",
+      "opciones": {
+          "A": "Control de gestación y psicoprofilaxis",
+          "B": "Derivación a centro hospitalario para recibir retrovirales",
+          "C": "Ubicación de familiares para soporte socio familiar",
+          "D": "Gestionar apoyo con programa social del MIDIS"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - VIH",
+      "origen": "examen",
+      "explicacion": "Una gestante con VIH positivo en un I-3 debe ser derivada a un centro hospitalario para recibir tratamiento antirretroviral. La terapia antirretroviral en gestantes es urgente para prevenir la transmisión vertical al feto y requiere manejo especializado."
+  },
+  {
+      "id": 590,
+      "pregunta": "En un establecimiento de salud I-4, ingresa paciente con parto inminente, no controlada. ¿Cuál de las siguientes pruebas de tamizaje rápido se utiliza para detectar anticuerpos contra VIH y treponema pallidum o anticuerpos treponémicos totales?",
+      "opciones": {
+          "A": "PRT (pruebas rápidas triples)",
+          "B": "PRD (pruebas rápidas duales)",
+          "C": "FTA-Abs",
+          "D": "PM (pruebas moleculares)"
+      },
+      "respuesta": "B",
+      "tema": "Cuidado Integral - ITS",
+      "origen": "examen",
+      "explicacion": "Las pruebas rápidas duales (PRD) detectan simultáneamente anticuerpos contra VIH y Treponema pallidum en una sola muestra de sangre. Son ideales para gestantes no controladas con parto inminente porque permiten un tamizaje rápido de ambas infecciones."
+  },
+  {
+      "id": 591,
+      "pregunta": "En un establecimiento de salud I-4 el personal de salud está organizado para identificar problemas de salud, facilitando el control y resolución de los mismos en su comunidad. ¿Qué estrategia han implementado?",
+      "opciones": {
+          "A": "Gestión por procesos",
+          "B": "Presupuesto por resultados",
+          "C": "Vigilancia epidemiológica",
+          "D": "Oferta de servicios"
+      },
+      "respuesta": "C",
+      "tema": "Salud Pública - Vigilancia epidemiológica",
+      "origen": "examen",
+      "explicacion": "La vigilancia epidemiológica es la estrategia que permite al personal de salud identificar problemas de salud, facilitar su control y resolución en la comunidad. Implica la recolección, análisis e interpretación sistemática de datos para la toma de decisiones."
+  },
+  {
+      "id": 592,
+      "pregunta": "En el EESS Conde de la Vega acude un varón de 72 años al cual la enfermera determina su condición clínica, su estado físico, emocional y cognitivo, así como su situación socioeconómica. ¿Qué acciones viene aplicando dentro del cuidado integral de salud?",
+      "opciones": {
+          "A": "Valoración clínica del adulto mayor",
+          "B": "Mini valoración nutricional",
+          "C": "Consejería integral de salud",
+          "D": "Tamizaje de salud"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - Paquete del adulto mayor",
+      "origen": "examen",
+      "explicacion": "Determinar la condición clínica, estado físico, emocional, cognitivo y situación socioeconómica del adulto mayor corresponde a la Valoración Clínica del Adulto Mayor (VACAM). Es una evaluación integral que permite clasificar al adulto mayor según su nivel de funcionalidad."
+  },
+  {
+      "id": 593,
+      "pregunta": "Paciente migrante de la zona alto andina llega al establecimiento de salud I-3, solicitando una referencia al hospital, por incapacidad motora. El SIS de la paciente es de provincia. ¿Qué acciones se debe realizar para solucionar el requerimiento de la paciente?",
+      "opciones": {
+          "A": "Que regrese a su lugar de origen para su referencia",
+          "B": "Hacer su referencia para una atención inmediata",
+          "C": "Negarle la atención por no tener HC en el establecimiento",
+          "D": "Coordinar y gestionar con los responsables del SIS central"
+      },
+      "respuesta": "D",
+      "tema": "Gestión - Referencia y contrarreferencia",
+      "origen": "examen",
+      "explicacion": "Se debe coordinar y gestionar con los responsables del SIS central para solucionar la cobertura de la paciente migrante. El SIS tiene mecanismos de portabilidad que permiten atender a asegurados de otras regiones, previa coordinación con la sede central."
+  },
+  {
+      "id": 594,
+      "pregunta": "El establecimiento I-3 de una comunidad se encuentra celebrando su aniversario, por lo cual limitó el número de atenciones a los usuarios de los servicios de salud, generando malestar en ellos. En relación a la Atención Primaria en Salud ¿Qué atributo se está afectando?",
+      "opciones": {
+          "A": "Integralidad",
+          "B": "Accesibilidad",
+          "C": "Coordinación",
+          "D": "Longitudinalidad"
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Conceptos básicos",
+      "origen": "examen",
+      "explicacion": "Al limitar el número de atenciones por celebración de aniversario se afecta la accesibilidad. La accesibilidad es el atributo de la APS que garantiza que los servicios estén disponibles y sean utilizables por la población cuando los necesite, sin barreras organizativas."
+  },
+  {
+      "id": 595,
+      "pregunta": "Neonato de 8 horas de parto domiciliario, en zona rural. Deben recibir BCG y HvB. ¿Cuál es el tiempo ideal para recibirlas?",
+      "opciones": {
+          "A": "Dentro de las 24 horas",
+          "B": "Hasta un año",
+          "C": "Dentro de una semana",
+          "D": "Hasta un mes"
+      },
+      "respuesta": "A",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "Las vacunas BCG y HvB deben administrarse dentro de las primeras 24 horas de nacido. La BCG protege contra formas graves de TB infantil y la HvB previene la transmisión vertical de hepatitis B. La administración temprana maximiza la protección del recién nacido."
+  },
+  {
+      "id": 596,
+      "pregunta": "En un centro de salud I-4, el nuevo médico jefe ha reestructurado el rol central de esta institución, la población objetivo asignada y los atributos de la entidad. Esta construcción de elementos se denomina:",
+      "opciones": {
+          "A": "Indicador",
+          "B": "Misión",
+          "C": "Objetivo",
+          "D": "Visión"
+      },
+      "respuesta": "B",
+      "tema": "Gestión - Planeamiento estratégico",
+      "origen": "examen",
+      "explicacion": "La construcción del rol central, población objetivo y atributos de la entidad corresponde a la misión. La misión define la razón de ser de la institución, a quién sirve y cómo lo hace. La visión es la imagen futura deseada y los objetivos son las metas a alcanzar."
+  },
+  {
+      "id": 597,
+      "pregunta": "Recién nacida de parto eutócico con bajo peso (2kg) debe recibir sus vacunas de acuerdo a calendario de vacunación para su edad. ¿Qué vacunas le corresponden recibir antes del alta?",
+      "opciones": {
+          "A": "Vacuna combinada hexavalente",
+          "B": "Vacuna antipolio inactivada",
+          "C": "Vacuna combinada pentavalente",
+          "D": "BCG (antituberculosis) y HvB (antihepatitis)"
+      },
+      "respuesta": "D",
+      "tema": "Cuidado Integral - Vacunación y ESAVI",
+      "origen": "examen",
+      "explicacion": "La recién nacida con bajo peso (2kg) debe recibir BCG y HvB antes del alta. Estas son las vacunas del recién nacido según el calendario de vacunación. La BCG se aplica con peso mínimo de 2kg y la HvB dentro de las primeras 24 horas de vida."
+  },
+  {
+      "id": 598,
+      "pregunta": "Durante la atención integral de la gestante, los controles prenatales buscan detectar riesgos para eliminarlos o minimizarlos. ¿Qué tipo de prevención es?",
+      "opciones": {
+          "A": "Secundaria",
+          "B": "Cuaternaria",
+          "C": "Primaria",
+          "D": "Terciaria"
+      },
+      "respuesta": "C",
+      "tema": "Salud Pública - Niveles de prevención",
+      "origen": "examen",
+      "explicacion": "Los controles prenatales que buscan detectar riesgos para eliminarlos o minimizarlos corresponden a prevención primaria. La prevención primaria actúa antes de que aparezca la enfermedad, identificando y controlando factores de riesgo para evitar complicaciones."
+  },
+  {
+      "id": 599,
+      "pregunta": "Para realizar un trabajo de investigación y obtener información de las exposiciones anteriores y actuales. ¿Qué tipo de recolección se debe realizar?",
+      "opciones": {
+          "A": "Informante",
+          "B": "Instrumento",
+          "C": "Observación",
+          "D": "Entrevista"
+      },
+      "respuesta": "D",
+      "tema": "Investigación - Instrumentos de recolección",
+      "origen": "examen",
+      "explicacion": "La entrevista es el tipo de recolección adecuado para obtener información sobre exposiciones anteriores y actuales. Permite indagar directamente con el sujeto sobre sus antecedentes, hábitos y exposiciones pasadas y presentes de manera detallada."
+  },
+  {
+      "id": 600,
+      "pregunta": "Un estudio de investigación realizado en una población aledaña a su centro de salud, reporta que los niños cuya familia es monoparental tiene el doble de riesgo de presentar anemia (RR=2.0), respecto a aquellos con familia biparental. ¿Cuál es el tipo de medida epidemiológica a la que se hace referencia?",
+      "opciones": {
+          "A": "Frecuencia",
+          "B": "Asociación",
+          "C": "Mortalidad",
+          "D": "Impacto"
+      },
+      "respuesta": "B",
+      "tema": "Salud Pública - Epidemiología",
+      "origen": "examen",
+      "explicacion": "El Riesgo Relativo (RR=2.0) es una medida de asociación epidemiológica. Las medidas de asociación comparan el riesgo de enfermar entre expuestos y no expuestos. Un RR de 2.0 indica que los niños de familias monoparentales tienen el doble de riesgo de anemia que los de familias biparentales."
   }
 ];
