@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1a73e8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Simulacro SERUMS - Enfermería 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; color: #333; }
+    .header { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: #fff; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; }
+    .header h1 { font-size: 1.4em; }
+    .header p { font-size: 0.85em; opacity: 0.9; margin-top: 4px; }
+    .container { max-width: 800px; margin: 0 auto; padding: 16px; }
+
+    /* MENU */
+    .menu { text-align: center; margin-top: 40px; }
+    .menu h2 { margin-bottom: 20px; color: #1a73e8; }
+    .menu-grid { display: grid; gap: 12px; }
+    .menu-btn { padding: 16px; font-size: 1em; border: 2px solid #1a73e8; background: #fff; color: #1a73e8; border-radius: 10px; cursor: pointer; transition: all 0.2s; font-weight: 600; }
+    .menu-btn:hover { background: #1a73e8; color: #fff; }
+    .menu-config { margin-top: 20px; padding: 16px; background: #fff; border-radius: 10px; }
+    .menu-config label { font-weight: 600; display: block; margin-bottom: 6px; }
+    .menu-config select, .menu-config input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 1em; margin-bottom: 12px; }
+
+    /* QUIZ */
+    .quiz-header { display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 12px 16px; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .timer { font-weight: 700; color: #e53935; font-size: 1.1em; }
+    .progress { font-size: 0.9em; color: #666; }
+    .question-card { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .question-card .q-num { font-size: 0.8em; color: #1a73e8; font-weight: 700; margin-bottom: 6px; }
+    .question-card .q-tema { font-size: 0.7em; color: #999; margin-bottom: 8px; }
+    .question-card .q-text { font-size: 0.95em; line-height: 1.5; margin-bottom: 14px; font-weight: 500; }
+    .option { display: block; padding: 12px 14px; margin-bottom: 8px; border: 2px solid #e0e0e0; border-radius: 8px; cursor: pointer; transition: all 0.15s; font-size: 0.9em; line-height: 1.4; }
+    .option:hover { border-color: #1a73e8; background: #e8f0fe; }
+    .option.selected { border-color: #1a73e8; background: #e8f0fe; font-weight: 600; }
+    .option.correct { border-color: #2e7d32; background: #e8f5e9; }
+    .option.incorrect { border-color: #c62828; background: #ffebee; }
+    .option.show-correct { border-color: #2e7d32; background: #e8f5e9; }
+
+    /* NAV */
+    .nav-btns { display: flex; gap: 10px; justify-content: center; margin: 20px 0; flex-wrap: wrap; }
+    .nav-btn { padding: 12px 28px; border: none; border-radius: 8px; font-size: 1em; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .btn-prev { background: #e0e0e0; color: #333; }
+    .btn-next { background: #1a73e8; color: #fff; }
+    .btn-finish { background: #2e7d32; color: #fff; }
+    .btn-back { background: #e53935; color: #fff; }
+    .nav-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    /* QUESTION MAP */
+    .q-map { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 16px 0; }
+    .q-dot { width: 36px; height: 36px; border-radius: 6px; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 0.75em; cursor: pointer; font-weight: 600; background: #fff; transition: all 0.15s; }
+    .q-dot.answered { background: #1a73e8; color: #fff; border-color: #1a73e8; }
+    .q-dot.current { border: 2px solid #ff9800; }
+    .q-dot.correct-dot { background: #2e7d32; color: #fff; }
+    .q-dot.incorrect-dot { background: #c62828; color: #fff; }
+
+    /* RESULTS */
+    .results { text-align: center; background: #fff; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .results .score { font-size: 3em; font-weight: 800; margin: 16px 0; }
+    .results .score.pass { color: #2e7d32; }
+    .results .score.fail { color: #c62828; }
+    .results .detail { font-size: 0.95em; color: #666; margin-bottom: 20px; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; }
+    .stat-box { padding: 14px; border-radius: 8px; }
+    .stat-box.green { background: #e8f5e9; color: #2e7d32; }
+    .stat-box.red { background: #ffebee; color: #c62828; }
+    .stat-box.gray { background: #f5f5f5; color: #666; }
+    .stat-box .stat-num { font-size: 1.8em; font-weight: 800; }
+    .stat-box .stat-label { font-size: 0.75em; }
+
+    .hidden { display: none !important; }
+    .balotario-info { text-align: center; padding: 10px; background: #fff3e0; border-radius: 8px; margin-bottom: 16px; font-size: 0.85em; color: #e65100; }
+
+    /* STATS */
+    .stats-screen { max-width: 800px; }
+    .stats-summary { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+    .stats-summary .s-card { background: #fff; border-radius: 10px; padding: 16px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .s-card .s-num { font-size: 2em; font-weight: 800; }
+    .s-card .s-lbl { font-size: 0.75em; color: #666; margin-top: 2px; }
+    .tema-card { background: #fff; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
+    .tema-card .tema-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .tema-card .tema-name { font-size: 0.85em; font-weight: 600; flex: 1; margin-right: 8px; }
+    .tema-card .tema-pct { font-size: 0.85em; font-weight: 800; min-width: 48px; text-align: right; }
+    .tema-card .tema-detail { font-size: 0.72em; color: #888; margin-bottom: 6px; }
+    .bar-bg { height: 8px; background: #e0e0e0; border-radius: 4px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+    .tema-card .tema-actions { margin-top: 8px; text-align: right; }
+    .btn-practice { padding: 6px 14px; font-size: 0.75em; border: 1.5px solid #1a73e8; background: #fff; color: #1a73e8; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.15s; }
+    .btn-practice:hover { background: #1a73e8; color: #fff; }
+    .filter-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; justify-content: center; }
+    .filter-tab { padding: 6px 14px; border-radius: 20px; border: 1.5px solid #ddd; background: #fff; font-size: 0.8em; cursor: pointer; font-weight: 600; transition: all 0.15s; }
+    .filter-tab.active { background: #1a73e8; color: #fff; border-color: #1a73e8; }
+    .btn-reset-stats { padding: 8px 16px; font-size: 0.8em; border: 1.5px solid #e53935; background: #fff; color: #e53935; border-radius: 6px; cursor: pointer; font-weight: 600; margin-top: 12px; }
+    .btn-reset-stats:hover { background: #e53935; color: #fff; }
+
+    /* AUTH BAR */
+    .auth-bar { background: #fff; border-radius: 10px; padding: 12px 16px; margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.08); gap: 10px; }
+    .auth-bar .user-info { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+    .auth-bar .user-avatar { width: 36px; height: 36px; border-radius: 50%; border: 2px solid #1a73e8; }
+    .auth-bar .user-name { font-size: 0.85em; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .auth-bar .sync-badge { font-size: 0.65em; background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+    .btn-google { display: flex; align-items: center; gap: 8px; padding: 10px 18px; border: 2px solid #4285f4; background: #fff; color: #4285f4; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.9em; transition: all 0.2s; }
+    .btn-google:hover { background: #4285f4; color: #fff; }
+    .btn-logout { padding: 6px 12px; border: 1.5px solid #999; background: #fff; color: #666; border-radius: 6px; cursor: pointer; font-size: 0.75em; font-weight: 600; }
+    .btn-logout:hover { background: #eee; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📋 Simulacro SERUMS - Enfermería 2026</h1>
+    <p id="headerSub">Bienvenida ANYELA YAMILETH QUISPE CHAMBI &#10084;&#65039;&#10084;&#65039;&#10084;&#65039;</p>
+  </div>
+
+  <div class="container">
+    <!-- AUTH -->
+    <div id="authBar">
+      <div id="loggedOut" class="auth-bar">
+        <span style="font-size:0.85em;color:#666;">🔒 Inicia sesión para sincronizar entre dispositivos</span>
+        <button class="btn-google" onclick="loginGoogle()">🔵 Google</button>
+      </div>
+      <div id="loggedIn" class="auth-bar hidden">
+        <div class="user-info">
+          <img id="userAvatar" class="user-avatar" src="" alt="">
+          <div>
+            <div class="user-name" id="userName"></div>
+            <span class="sync-badge">☁️ Sincronizado</span>
+          </div>
+        </div>
+        <button class="btn-logout" onclick="logoutGoogle()">Cerrar sesión</button>
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <div id="menuScreen">
+      <div class="balotario-info">
+        📚 Balotario actual: <strong><span id="totalPreguntas"></span> preguntas</strong> disponibles
+      </div>
+      <div class="menu">
+        <h2>Elige tu modo de práctica</h2>
+        <div class="menu-config">
+          <label>Cantidad de preguntas:</label>
+          <select id="numPreguntas">
+            <option value="10">10 preguntas (rápido)</option>
+            <option value="20" selected>20 preguntas</option>
+            <option value="30">30 preguntas</option>
+            <option value="50">50 preguntas</option>
+            <option value="100">100 preguntas (simulacro real)</option>
+            <option value="0">Todas las disponibles</option>
+          </select>
+          <label>Origen de preguntas:</label>
+          <select id="filtroOrigen">
+            <option value="todos">Todas (examen + nuevas + vacunas + Dr. López)</option>
+            <option value="examen">Solo de exámenes anteriores</option>
+            <option value="nueva">Solo preguntas nuevas</option>
+            <option value="vacunas">Solo preguntas de vacunas</option>
+            <option value="banco_dr_lopez">Banco Dr. López</option>
+          </select>
+          <label>Filtrar por tema:</label>
+          <select id="filtroTema">
+            <option value="todos">Todos los temas</option>
+          </select>
+          <label>Modo:</label>
+          <select id="modo">
+            <option value="simulacro">Simulacro (ver resultado al final)</option>
+            <option value="practica">Práctica (ver respuesta por pregunta)</option>
+          </select>
+        </div>
+        <div class="menu-grid" style="margin-top: 16px;">
+          <button class="menu-btn" onclick="iniciarQuiz()">🚀 Comenzar</button>
+          <button class="menu-btn" onclick="mostrarStats()" style="border-color:#ff9800;color:#ff9800;">📊 Mis Estadísticas</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quizScreen" class="hidden">
+      <div class="quiz-header">
+        <span class="progress" id="progressText">1 / 20</span>
+        <span class="timer" id="timerText">00:00</span>
+      </div>
+      <div class="q-map hidden" id="questionMap"></div>
+      <div id="questionContainer"></div>
+      <div class="nav-btns">
+        <button class="nav-btn btn-prev" onclick="navegar(-1)">← Anterior</button>
+        <button class="nav-btn btn-next" id="btnNext" onclick="navegar(1)">Siguiente →</button>
+        <button class="nav-btn btn-finish hidden" id="btnFinish" onclick="terminar()">✅ Terminar</button>
+        <button class="nav-btn btn-back" onclick="volverMenu()">✖ Salir</button>
+      </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div id="resultsScreen" class="hidden">
+      <div class="results">
+        <h2>📊 Resultados</h2>
+        <div class="score" id="scoreText"></div>
+        <div class="detail" id="detailText"></div>
+        <div class="stats-grid">
+          <div class="stat-box green"><div class="stat-num" id="correctas">0</div><div class="stat-label">Correctas</div></div>
+          <div class="stat-box red"><div class="stat-num" id="incorrectas">0</div><div class="stat-label">Incorrectas</div></div>
+          <div class="stat-box gray"><div class="stat-num" id="sinResponder">0</div><div class="stat-label">Sin responder</div></div>
+        </div>
+        <div class="nav-btns">
+          <button class="nav-btn btn-next" onclick="revisarRespuestas()">🔍 Revisar respuestas</button>
+          <button class="nav-btn btn-prev" onclick="volverMenu()">🏠 Volver al menú</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEW -->
+    <div id="reviewScreen" class="hidden">
+      <h2 style="text-align:center;margin-bottom:16px;color:#1a73e8;">📝 Revisión de respuestas</h2>
+      <div id="reviewContainer"></div>
+      <div class="nav-btns">
+        <button class="nav-btn btn-prev" onclick="volverMenu()">🏠 Volver al menú</button>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div id="statsScreen" class="hidden stats-screen">
+      <h2 style="text-align:center;margin-bottom:6px;color:#ff9800;">📊 Mis Estadísticas</h2>
+      <p style="text-align:center;font-size:0.8em;color:#888;margin-bottom:16px;">Basado en todas tus sesiones de práctica y simulacro</p>
+      <div class="stats-summary" id="statsSummary"></div>
+      <div class="filter-tabs" id="statsFilter"></div>
+      <div id="statsTemasContainer"></div>
+      <div class="nav-btns">
+        <button class="nav-btn btn-prev" onclick="volverMenu()">🏠 Volver al menú</button>
+        <button class="btn-reset-stats" onclick="resetStats()">🗑️ Borrar estadísticas</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="preguntas.js" charset="UTF-8"></script>
+  <script src="vacunas.js" charset="UTF-8"></script>
+  <script src="preguntas_banco_lopez.js" charset="UTF-8"></script>
+  <script>if(typeof preguntasVacunas!=='undefined') preguntas.push(...preguntasVacunas);</script>
+  <script>if(typeof preguntasBancoLopez!=='undefined') preguntas.push(...preguntasBancoLopez);</script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js');}</script>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBA3AgPUOJsltDMNpGh-F_iIikSTaty6a0",
+      authDomain: "anyela-serums.firebaseapp.com",
+      projectId: "anyela-serums",
+      storageBucket: "anyela-serums.firebasestorage.app",
+      messagingSenderId: "947580440267",
+      appId: "1:947580440267:web:8e89fb244be3778285554e"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    let currentUser = null;
+    auth.getRedirectResult().catch(() => {});
+  </script>
+  <script>
+    let quizPreguntas = [];
+    let respuestasUsuario = {};
+    let preguntaActual = 0;
+    let timerInterval = null;
+    let segundos = 0;
+    let modoActual = 'simulacro';
+
+    // Init
+    document.getElementById('totalPreguntas').textContent = preguntas.length;
+    cargarTemas();
+    document.getElementById('filtroOrigen').addEventListener('change', cargarTemas);
+
+    function cargarTemas() {
+      const origen = document.getElementById('filtroOrigen').value;
+      let pool = [...preguntas];
+      if (origen !== 'todos') pool = pool.filter(p => p.origen === origen);
+      const temas = [...new Set(pool.map(p => p.tema))].sort();
+      const sel = document.getElementById('filtroTema');
+      const prev = sel.value;
+      sel.innerHTML = '<option value="todos">Todos los temas</option>';
+      temas.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t; opt.textContent = t;
+        sel.appendChild(opt);
+      });
+      if ([...sel.options].some(o => o.value === prev)) sel.value = prev;
+    }
+
+    function iniciarQuiz() {
+      const num = parseInt(document.getElementById('numPreguntas').value);
+      const tema = document.getElementById('filtroTema').value;
+      const origen = document.getElementById('filtroOrigen').value;
+      modoActual = document.getElementById('modo').value;
+
+      let pool = [...preguntas];
+      if (origen !== 'todos') pool = pool.filter(p => p.origen === origen);
+      if (tema !== 'todos') pool = pool.filter(p => p.tema === tema);
+      pool = shuffle(pool);
+      quizPreguntas = num === 0 ? pool : pool.slice(0, Math.min(num, pool.length));
+
+      if (quizPreguntas.length === 0) { alert('No hay preguntas con ese filtro'); return; }
+
+      respuestasUsuario = {};
+      preguntaActual = 0;
+      segundos = 0;
+
+      document.getElementById('menuScreen').classList.add('hidden');
+      document.getElementById('quizScreen').classList.remove('hidden');
+      document.getElementById('resultsScreen').classList.add('hidden');
+      document.getElementById('reviewScreen').classList.add('hidden');
+
+      renderMap();
+      renderPregunta();
+      iniciarTimer();
+    }
+
+    function renderPregunta() {
+      const p = quizPreguntas[preguntaActual];
+      const sel = respuestasUsuario[preguntaActual];
+      document.getElementById('progressText').textContent = `${preguntaActual + 1} / ${quizPreguntas.length}`;
+
+      let html = `<div class="question-card">
+        <div class="q-num">Pregunta ${preguntaActual + 1} de ${quizPreguntas.length} <span style="background:${p.origen==='nueva'?'#ff9800':p.origen==='banco_dr_lopez'?'#9c27b0':p.origen==='vacunas'?'#00897b':'#1a73e8'};color:#fff;padding:2px 8px;border-radius:4px;font-size:0.85em;margin-left:6px">${p.origen==='nueva'?'🆕 Nueva':p.origen==='banco_dr_lopez'?'📖 Dr. López':p.origen==='vacunas'?'💉 Vacunas':'📋 Examen'}</span></div>
+        <div class="q-tema">${p.tema}</div>
+        <div class="q-text">${p.pregunta}</div>`;
+
+      for (const [letra, texto] of Object.entries(p.opciones)) {
+        let cls = 'option';
+        if (sel === letra) cls += ' selected';
+        if (modoActual === 'practica' && sel) {
+          if (letra === p.respuesta) cls += ' correct show-correct';
+          else if (sel === letra && sel !== p.respuesta) cls += ' incorrect';
+        }
+        const disabled = modoActual === 'practica' && sel ? 'style="pointer-events:none"' : '';
+        html += `<div class="${cls}" onclick="seleccionar(${preguntaActual},'${letra}')" ${disabled}><strong>${letra}.</strong> ${texto}</div>`;
+      }
+
+      if (modoActual === 'practica' && sel) {
+        const ok = sel === p.respuesta;
+        html += `<div style="margin-top:12px;padding:10px;border-radius:8px;background:${ok ? '#e8f5e9' : '#ffebee'};font-size:0.85em;">
+          ${ok ? '✅ ¡Correcto!' : `❌ Incorrecto. La respuesta correcta es: <strong>${p.respuesta}</strong>`}
+        </div>`;
+        if (p.explicacion) {
+          html += `<div style="margin-top:8px;padding:12px;border-radius:8px;background:#e3f2fd;font-size:0.85em;border-left:4px solid #1a73e8;">
+            💡 <strong>Explicación:</strong> ${p.explicacion}
+          </div>`;
+        }
+      }
+
+      html += '</div>';
+      document.getElementById('questionContainer').innerHTML = html;
+
+      document.getElementById('btnNext').classList.toggle('hidden', preguntaActual === quizPreguntas.length - 1);
+      document.getElementById('btnFinish').classList.toggle('hidden', preguntaActual !== quizPreguntas.length - 1);
+      updateMap();
+    }
+
+    function seleccionar(idx, letra) {
+      respuestasUsuario[idx] = letra;
+      renderPregunta();
+    }
+
+    function navegar(dir) {
+      preguntaActual = Math.max(0, Math.min(quizPreguntas.length - 1, preguntaActual + dir));
+      renderPregunta();
+    }
+
+    function renderMap() {
+      let html = '';
+      for (let i = 0; i < quizPreguntas.length; i++) {
+        html += `<div class="q-dot" id="dot-${i}" onclick="irA(${i})">${i + 1}</div>`;
+      }
+      document.getElementById('questionMap').innerHTML = html;
+    }
+
+    function updateMap() {
+      for (let i = 0; i < quizPreguntas.length; i++) {
+        const dot = document.getElementById(`dot-${i}`);
+        dot.className = 'q-dot';
+        if (respuestasUsuario[i]) dot.classList.add('answered');
+        if (i === preguntaActual) dot.classList.add('current');
+      }
+    }
+
+    function irA(i) { preguntaActual = i; renderPregunta(); }
+
+    function iniciarTimer() {
+      clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        segundos++;
+        const m = String(Math.floor(segundos / 60)).padStart(2, '0');
+        const s = String(segundos % 60).padStart(2, '0');
+        document.getElementById('timerText').textContent = `${m}:${s}`;
+      }, 1000);
+    }
+
+    function terminar() {
+      const sinResp = quizPreguntas.length - Object.keys(respuestasUsuario).length;
+      if (sinResp > 0 && !confirm(`Tienes ${sinResp} preguntas sin responder. ¿Deseas terminar?`)) return;
+      clearInterval(timerInterval);
+      mostrarResultados();
+    }
+
+    function mostrarResultados() {
+      let correctas = 0, incorrectas = 0, sinResp = 0;
+      quizPreguntas.forEach((p, i) => {
+        if (!respuestasUsuario[i]) sinResp++;
+        else if (respuestasUsuario[i] === p.respuesta) correctas++;
+        else incorrectas++;
+      });
+
+      guardarStats();
+
+      const nota = ((correctas / quizPreguntas.length) * 20).toFixed(1);
+      const pct = ((correctas / quizPreguntas.length) * 100).toFixed(0);
+
+      document.getElementById('quizScreen').classList.add('hidden');
+      document.getElementById('resultsScreen').classList.remove('hidden');
+
+      const scoreEl = document.getElementById('scoreText');
+      scoreEl.textContent = `${nota} / 20`;
+      scoreEl.className = `score ${parseFloat(nota) >= 11 ? 'pass' : 'fail'}`;
+
+      document.getElementById('detailText').textContent = `${pct}% de aciertos — Tiempo: ${document.getElementById('timerText').textContent}`;
+      document.getElementById('correctas').textContent = correctas;
+      document.getElementById('incorrectas').textContent = incorrectas;
+      document.getElementById('sinResponder').textContent = sinResp;
+    }
+
+    function revisarRespuestas() {
+      document.getElementById('resultsScreen').classList.add('hidden');
+      document.getElementById('reviewScreen').classList.remove('hidden');
+
+      let html = '';
+      quizPreguntas.forEach((p, i) => {
+        const sel = respuestasUsuario[i];
+        const ok = sel === p.respuesta;
+        html += `<div class="question-card" style="border-left:4px solid ${!sel ? '#999' : ok ? '#2e7d32' : '#c62828'}">
+          <div class="q-num">Pregunta ${i + 1}</div>
+          <div class="q-tema">${p.tema}</div>
+          <div class="q-text">${p.pregunta}</div>`;
+
+        for (const [letra, texto] of Object.entries(p.opciones)) {
+          let cls = 'option';
+          if (letra === p.respuesta) cls += ' correct show-correct';
+          else if (sel === letra && sel !== p.respuesta) cls += ' incorrect';
+          html += `<div class="${cls}" style="pointer-events:none"><strong>${letra}.</strong> ${texto}</div>`;
+        }
+
+        if (!sel) html += `<div style="margin-top:8px;color:#999;font-size:0.85em;">⚠️ No respondida — Respuesta: <strong>${p.respuesta}</strong></div>`;
+        else if (!ok) html += `<div style="margin-top:8px;color:#c62828;font-size:0.85em;">❌ Tu respuesta: <strong>${sel}</strong> — Correcta: <strong>${p.respuesta}</strong></div>`;
+        else html += `<div style="margin-top:8px;color:#2e7d32;font-size:0.85em;">✅ ¡Correcto!</div>`;
+        if (p.explicacion) {
+          html += `<div style="margin-top:8px;padding:12px;border-radius:8px;background:#e3f2fd;font-size:0.85em;border-left:4px solid #1a73e8;">
+            💡 <strong>Explicación:</strong> ${p.explicacion}
+          </div>`;
+        }
+
+        html += '</div>';
+      });
+      document.getElementById('reviewContainer').innerHTML = html;
+    }
+
+    function volverMenu() {
+      clearInterval(timerInterval);
+      ['quizScreen','resultsScreen','reviewScreen','statsScreen'].forEach(id => document.getElementById(id).classList.add('hidden'));
+      document.getElementById('menuScreen').classList.remove('hidden');
+    }
+
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    // ========== AUTH ==========
+    function loginGoogle() {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      auth.signInWithPopup(provider).catch(e => {
+        if (e.code === 'auth/operation-not-supported-in-this-environment' || e.code === 'auth/popup-blocked') {
+          auth.signInWithRedirect(provider);
+        } else if (e.code !== 'auth/popup-closed-by-user') {
+          alert('Error al iniciar sesión: ' + e.message);
+        }
+      });
+    }
+    function logoutGoogle() {
+      if (confirm('¿Cerrar sesión? Tus datos locales se mantienen.')) auth.signOut();
+    }
+
+    auth.onAuthStateChanged(async user => {
+      currentUser = user;
+      if (user) {
+        document.getElementById('loggedOut').classList.add('hidden');
+        document.getElementById('loggedIn').classList.remove('hidden');
+        document.getElementById('userName').textContent = user.displayName || user.email;
+        document.getElementById('userAvatar').src = user.photoURL || '';
+        await syncFromCloud();
+      } else {
+        document.getElementById('loggedOut').classList.remove('hidden');
+        document.getElementById('loggedIn').classList.add('hidden');
+      }
+    });
+
+    // ========== STATS SYSTEM ==========
+    function getStats() {
+      try { return JSON.parse(localStorage.getItem('serumsStats')) || {}; } catch { return {}; }
+    }
+    function saveStats(s) {
+      localStorage.setItem('serumsStats', JSON.stringify(s));
+      syncToCloud(s);
+    }
+
+    async function syncToCloud(s) {
+      if (!currentUser) return;
+      try {
+        await db.collection('stats').doc(currentUser.uid).set({ data: s, updated: firebase.firestore.FieldValue.serverTimestamp() }, { merge: true });
+      } catch (e) { console.warn('Error sync to cloud:', e); }
+    }
+
+    async function syncFromCloud() {
+      if (!currentUser) return;
+      try {
+        const doc = await db.collection('stats').doc(currentUser.uid).get();
+        if (doc.exists && doc.data().data) {
+          const cloud = doc.data().data;
+          const local = getStats();
+          const merged = { ...cloud };
+          for (const [tema, d] of Object.entries(local)) {
+            if (!merged[tema]) merged[tema] = { ok: 0, mal: 0, total: 0 };
+            merged[tema].ok = Math.max(merged[tema].ok, d.ok);
+            merged[tema].mal = Math.max(merged[tema].mal, d.mal);
+            merged[tema].total = Math.max(merged[tema].total, d.total);
+          }
+          localStorage.setItem('serumsStats', JSON.stringify(merged));
+          await syncToCloud(merged);
+        } else {
+          await syncToCloud(getStats());
+        }
+      } catch (e) { console.warn('Error sync from cloud:', e); }
+    }
+
+    function guardarStats() {
+      const s = getStats();
+      quizPreguntas.forEach((p, i) => {
+        if (!respuestasUsuario[i]) return;
+        const t = p.tema || 'Sin tema';
+        if (!s[t]) s[t] = { ok: 0, mal: 0, total: 0 };
+        s[t].total++;
+        if (respuestasUsuario[i] === p.respuesta) s[t].ok++;
+        else s[t].mal++;
+      });
+      saveStats(s);
+    }
+
+    function mostrarStats() {
+      const s = getStats();
+      ['menuScreen','quizScreen','resultsScreen','reviewScreen'].forEach(id => document.getElementById(id).classList.add('hidden'));
+      document.getElementById('statsScreen').classList.remove('hidden');
+
+      let totalOk = 0, totalMal = 0, totalResp = 0;
+      const temas = Object.entries(s).map(([tema, d]) => {
+        totalOk += d.ok; totalMal += d.mal; totalResp += d.total;
+        return { tema, ...d, pct: d.total > 0 ? Math.round((d.ok / d.total) * 100) : 0 };
+      });
+
+      const globalPct = totalResp > 0 ? Math.round((totalOk / totalResp) * 100) : 0;
+      document.getElementById('statsSummary').innerHTML = `
+        <div class="s-card"><div class="s-num" style="color:#1a73e8">${totalResp}</div><div class="s-lbl">Preguntas respondidas</div></div>
+        <div class="s-card"><div class="s-num" style="color:${globalPct>=60?'#2e7d32':'#c62828'}">${globalPct}%</div><div class="s-lbl">Acierto global</div></div>
+        <div class="s-card"><div class="s-num" style="color:#2e7d32">${totalOk}</div><div class="s-lbl">Correctas</div></div>
+        <div class="s-card"><div class="s-num" style="color:#c62828">${totalMal}</div><div class="s-lbl">Incorrectas</div></div>
+      `;
+
+      // Filtros
+      const cats = [...new Set(temas.map(t => t.tema.split(' - ')[0]))].sort();
+      let filterHtml = '<div class="filter-tab active" onclick="filtrarStats(\'todos\',this)">Todos</div>';
+      cats.forEach(c => { filterHtml += `<div class="filter-tab" onclick="filtrarStats('${c}',this)">${c}</div>`; });
+      filterHtml += '<div class="filter-tab" style="border-color:#c62828;color:#c62828" onclick="filtrarStats(\'debiles\',this)">🔴 Más débiles</div>';
+      document.getElementById('statsFilter').innerHTML = filterHtml;
+
+      renderStatsTemas(temas, 'todos');
+    }
+
+    function filtrarStats(filtro, el) {
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      if (el) el.classList.add('active');
+      const s = getStats();
+      let temas = Object.entries(s).map(([tema, d]) => ({ tema, ...d, pct: d.total > 0 ? Math.round((d.ok / d.total) * 100) : 0 }));
+      if (filtro === 'debiles') temas.sort((a, b) => a.pct - b.pct);
+      else if (filtro !== 'todos') temas = temas.filter(t => t.tema.startsWith(filtro));
+      renderStatsTemas(temas, filtro);
+    }
+
+    function renderStatsTemas(temas, filtro) {
+      if (filtro !== 'debiles') temas.sort((a, b) => a.pct - b.pct);
+      if (temas.length === 0) {
+        document.getElementById('statsTemasContainer').innerHTML = '<div style="text-align:center;padding:40px;color:#999;">No hay datos aún. ¡Empieza a practicar! 💪</div>';
+        return;
+      }
+      let html = '';
+      temas.forEach(t => {
+        const color = t.pct >= 80 ? '#2e7d32' : t.pct >= 50 ? '#ff9800' : '#c62828';
+        const emoji = t.pct >= 80 ? '🟢' : t.pct >= 50 ? '🟡' : '🔴';
+        html += `<div class="tema-card">
+          <div class="tema-head">
+            <span class="tema-name">${emoji} ${t.tema}</span>
+            <span class="tema-pct" style="color:${color}">${t.pct}%</span>
+          </div>
+          <div class="tema-detail">✅ ${t.ok} correctas · ❌ ${t.mal} incorrectas · 📝 ${t.total} respondidas</div>
+          <div class="bar-bg"><div class="bar-fill" style="width:${t.pct}%;background:${color}"></div></div>
+          <div class="tema-actions"><button class="btn-practice" onclick="practicarTema('${t.tema.replace(/'/g,"\\'")}')">🎯 Practicar este tema</button></div>
+        </div>`;
+      });
+      document.getElementById('statsTemasContainer').innerHTML = html;
+    }
+
+    function practicarTema(tema) {
+      document.getElementById('statsScreen').classList.add('hidden');
+      document.getElementById('menuScreen').classList.remove('hidden');
+      document.getElementById('filtroTema').value = tema;
+      document.getElementById('modo').value = 'practica';
+      document.getElementById('numPreguntas').value = '20';
+      document.getElementById('filtroOrigen').value = 'todos';
+      iniciarQuiz();
+    }
+
+    function resetStats() {
+      if (confirm('¿Segura que deseas borrar todas tus estadísticas? Esta acción no se puede deshacer.')) {
+        localStorage.removeItem('serumsStats');
+        if (currentUser) db.collection('stats').doc(currentUser.uid).delete().catch(()=>{});
+        mostrarStats();
+      }
+    }
+  </script>
+</body>
+</html>
